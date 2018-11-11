@@ -1,0 +1,125 @@
+fileFormatVersion: 2
+guid: df38f2037ae249c449be2bfc43927c8e
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Puzzle_1_geo_Puzzle_grp
+    100002: Puzzle_grp_Puzzle_2_geo
+    100004: Puzzle_grp_Puzzle_3_geo
+    100006: Puzzle_grp_Puzzle_4_geo
+    100008: Puzzle_grp_Puzzle_5_geo
+    100010: Puzzle_grp_Puzzle_6_geo
+    100012: //RootNode
+    400000: Puzzle_1_geo_Puzzle_grp
+    400002: Puzzle_grp_Puzzle_2_geo
+    400004: Puzzle_grp_Puzzle_3_geo
+    400006: Puzzle_grp_Puzzle_4_geo
+    400008: Puzzle_grp_Puzzle_5_geo
+    400010: Puzzle_grp_Puzzle_6_geo
+    400012: //RootNode
+    2100000: Puzzle_1_geo_Puzzle_grpMat
+    2100002: Puzzle_grp_Puzzle_2_geoMat
+    2100004: Puzzle_grp_Puzzle_3_geoMat
+    2100006: Puzzle_grp_Puzzle_4_geoMat
+    2100008: Puzzle_grp_Puzzle_5_geoMat
+    2100010: Puzzle_grp_Puzzle_6_geoMat
+    2300000: Puzzle_1_geo_Puzzle_grp
+    2300002: Puzzle_grp_Puzzle_2_geo
+    2300004: Puzzle_grp_Puzzle_3_geo
+    2300006: Puzzle_grp_Puzzle_4_geo
+    2300008: Puzzle_grp_Puzzle_5_geo
+    2300010: Puzzle_grp_Puzzle_6_geo
+    3300000: Puzzle_1_geo_Puzzle_grp
+    3300002: Puzzle_grp_Puzzle_2_geo
+    3300004: Puzzle_grp_Puzzle_3_geo
+    3300006: Puzzle_grp_Puzzle_4_geo
+    3300008: Puzzle_grp_Puzzle_5_geo
+    3300010: Puzzle_grp_Puzzle_6_geo
+    4300000: Puzzle_1_geo_Puzzle_grp
+    4300002: Puzzle_grp_Puzzle_2_geo
+    4300004: Puzzle_grp_Puzzle_3_geo
+    4300006: Puzzle_grp_Puzzle_4_geo
+    4300008: Puzzle_grp_Puzzle_5_geo
+    4300010: Puzzle_grp_Puzzle_6_geo
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

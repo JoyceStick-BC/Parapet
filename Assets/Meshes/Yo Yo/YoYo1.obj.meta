@@ -1,0 +1,113 @@
+fileFormatVersion: 2
+guid: 5dffc78369c58d44f957e6f6211e3582
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Yoyo:Yoyo_1_grp_Yoyo:Rope_geo
+    100004: Yoyo:Yoyo_1_grp_Yoyo:Yoyo_Bottom_geo
+    100006: Yoyo:Yoyo_1_grp_Yoyo:Yoyo_Core_geo
+    100008: Yoyo:Yoyo_Top_geo_Yoyo:Yoyo_1_grp
+    400000: //RootNode
+    400002: Yoyo:Yoyo_1_grp_Yoyo:Rope_geo
+    400004: Yoyo:Yoyo_1_grp_Yoyo:Yoyo_Bottom_geo
+    400006: Yoyo:Yoyo_1_grp_Yoyo:Yoyo_Core_geo
+    400008: Yoyo:Yoyo_Top_geo_Yoyo:Yoyo_1_grp
+    2100000: Yoyo_Yoyo_1_grp_Yoyo_Rope_geoMat
+    2100002: Yoyo_Yoyo_1_grp_Yoyo_Yoyo_Bottom_geoMat
+    2100004: Yoyo_Yoyo_1_grp_Yoyo_Yoyo_Core_geoMat
+    2100006: Yoyo_Yoyo_Top_geo_Yoyo_Yoyo_1_grpMat
+    2300000: Yoyo:Yoyo_1_grp_Yoyo:Rope_geo
+    2300002: Yoyo:Yoyo_1_grp_Yoyo:Yoyo_Bottom_geo
+    2300004: Yoyo:Yoyo_1_grp_Yoyo:Yoyo_Core_geo
+    2300006: Yoyo:Yoyo_Top_geo_Yoyo:Yoyo_1_grp
+    3300000: Yoyo:Yoyo_1_grp_Yoyo:Rope_geo
+    3300002: Yoyo:Yoyo_1_grp_Yoyo:Yoyo_Bottom_geo
+    3300004: Yoyo:Yoyo_1_grp_Yoyo:Yoyo_Core_geo
+    3300006: Yoyo:Yoyo_Top_geo_Yoyo:Yoyo_1_grp
+    4300000: Yoyo:Yoyo_1_grp_Yoyo:Rope_geo
+    4300002: Yoyo:Yoyo_1_grp_Yoyo:Yoyo_Bottom_geo
+    4300004: Yoyo:Yoyo_1_grp_Yoyo:Yoyo_Core_geo
+    4300006: Yoyo:Yoyo_Top_geo_Yoyo:Yoyo_1_grp
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
