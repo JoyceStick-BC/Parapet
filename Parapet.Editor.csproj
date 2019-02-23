@@ -193,6 +193,12 @@
     <Reference Include="UnityEngine.WindModule">
       <HintPath>Library\UnityAssemblies\UnityEngine.WindModule.dll</HintPath>
     </Reference>
+    <Reference Include="Vuforia.UnityExtensions.Editor">
+      <HintPath>Library\UnityAssemblies\Vuforia.UnityExtensions.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Vuforia.UnityExtensions">
+      <HintPath>Library\UnityAssemblies\Vuforia.UnityExtensions.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
@@ -253,8 +259,20 @@
     <Reference Include="UnityEditor.Graphs">
       <HintPath>Library\UnityAssemblies\UnityEditor.Graphs.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.WSA.Extensions">
+      <HintPath>Library\UnityAssemblies\UnityEditor.WSA.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WebGL.Extensions">
+      <HintPath>Library\UnityAssemblies\UnityEditor.WebGL.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.LinuxStandalone.Extensions">
+      <HintPath>Library\UnityAssemblies\UnityEditor.LinuxStandalone.Extensions.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>Library\UnityAssemblies\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.OSXStandalone.Extensions">
+      <HintPath>Library\UnityAssemblies\UnityEditor.OSXStandalone.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>Library\UnityAssemblies\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
@@ -304,6 +322,59 @@
     <Compile Include="Assets\VRTK\Editor\VRTK_SDKSetupEditor.cs" />
     <Compile Include="Assets\VRTK\Editor\VRTK_SupportInfoWindow.cs" />
     <Compile Include="Assets\VRTK\Editor\VRTK_UpdatePrompt.cs" />
+    <Compile Include="Assets\Wwise\Editor\WwiseComponents\AkAmbientInspector.cs" />
+    <Compile Include="Assets\Wwise\Editor\WwiseComponents\AkAudioListenerInspector.cs" />
+    <Compile Include="Assets\Wwise\Editor\WwiseComponents\AkBankInspector.cs" />
+    <Compile Include="Assets\Wwise\Editor\WwiseComponents\AkBaseInspector.cs" />
+    <Compile Include="Assets\Wwise\Editor\WwiseComponents\AkEnvironmentInspector.cs" />
+    <Compile Include="Assets\Wwise\Editor\WwiseComponents\AkEnvironmentPortalInspector.cs" />
+    <Compile Include="Assets\Wwise\Editor\WwiseComponents\AkEventCallbackDataDrawer.cs" />
+    <Compile Include="Assets\Wwise\Editor\WwiseComponents\AkEventInspector.cs" />
+    <Compile Include="Assets\Wwise\Editor\WwiseComponents\AkEventPlayableInspector.cs" />
+    <Compile Include="Assets\Wwise\Editor\WwiseComponents\AkGameObjectInspector.cs" />
+    <Compile Include="Assets\Wwise\Editor\WwiseComponents\AkGameObjListenerListDrawer.cs" />
+    <Compile Include="Assets\Wwise\Editor\WwiseComponents\AkPortalManager.cs" />
+    <Compile Include="Assets\Wwise\Editor\WwiseComponents\AkRoomInspector.cs" />
+    <Compile Include="Assets\Wwise\Editor\WwiseComponents\AkRoomPortalInspector.cs" />
+    <Compile Include="Assets\Wwise\Editor\WwiseComponents\AkRTPCPlayableInspector.cs" />
+    <Compile Include="Assets\Wwise\Editor\WwiseComponents\AkRTPCTrackInspector.cs" />
+    <Compile Include="Assets\Wwise\Editor\WwiseComponents\AkSpatialAudioListenerInspector.cs" />
+    <Compile Include="Assets\Wwise\Editor\WwiseComponents\AkStateInspector.cs" />
+    <Compile Include="Assets\Wwise\Editor\WwiseComponents\AkSwitchInspector.cs" />
+    <Compile Include="Assets\Wwise\Editor\WwiseComponents\AkUnityEventHandlerInspector.cs" />
+    <Compile Include="Assets\Wwise\Editor\WwiseMenu\Common\AkUnityBuilderBase.cs" />
+    <Compile Include="Assets\Wwise\Editor\WwiseMenu\Common\AkUnityPluginInstallerBase.cs" />
+    <Compile Include="Assets\Wwise\Editor\WwiseMenu\Common\AkWwiseIdConverter.cs" />
+    <Compile Include="Assets\Wwise\Editor\WwiseMenu\Mac\AkWwiseMenu_Mac.cs" />
+    <Compile Include="Assets\Wwise\Editor\WwiseMenu\Windows\AkWwiseMenu_Windows.cs" />
+    <Compile Include="Assets\Wwise\Editor\WwiseSetupWizard\AkBuildPreprocessor.cs" />
+    <Compile Include="Assets\Wwise\Editor\WwiseSetupWizard\AkPluginActivator.cs" />
+    <Compile Include="Assets\Wwise\Editor\WwiseSetupWizard\AkSceneUtils.cs" />
+    <Compile Include="Assets\Wwise\Editor\WwiseSetupWizard\AkUnitySettingsParser.cs" />
+    <Compile Include="Assets\Wwise\Editor\WwiseSetupWizard\AkWSAUtils.cs" />
+    <Compile Include="Assets\Wwise\Editor\WwiseSetupWizard\AkWwisePostImportCallbackSetup.cs" />
+    <Compile Include="Assets\Wwise\Editor\WwiseSetupWizard\AkWwiseSettingsWindow.cs" />
+    <Compile Include="Assets\Wwise\Editor\WwiseSetupWizard\AkWwiseSetupWizard.cs" />
+    <Compile Include="Assets\Wwise\Editor\WwiseSetupWizard\AkXboxOneUtils.cs" />
+    <Compile Include="Assets\Wwise\Editor\WwiseTypes\AcousticTextureDrawer.cs" />
+    <Compile Include="Assets\Wwise\Editor\WwiseTypes\AuxBusDrawer.cs" />
+    <Compile Include="Assets\Wwise\Editor\WwiseTypes\BankDrawer.cs" />
+    <Compile Include="Assets\Wwise\Editor\WwiseTypes\BaseTypeDrawer.cs" />
+    <Compile Include="Assets\Wwise\Editor\WwiseTypes\CallbackFlagsDrawer.cs" />
+    <Compile Include="Assets\Wwise\Editor\WwiseTypes\EventDrawer.cs" />
+    <Compile Include="Assets\Wwise\Editor\WwiseTypes\RTPCDrawer.cs" />
+    <Compile Include="Assets\Wwise\Editor\WwiseTypes\StateDrawer.cs" />
+    <Compile Include="Assets\Wwise\Editor\WwiseTypes\SwitchDrawer.cs" />
+    <Compile Include="Assets\Wwise\Editor\WwiseTypes\TriggerDrawer.cs" />
+    <Compile Include="Assets\Wwise\Editor\WwiseWindows\AkWwiseComponentPicker.cs" />
+    <Compile Include="Assets\Wwise\Editor\WwiseWindows\AkWwisePicker.cs" />
+    <Compile Include="Assets\Wwise\Editor\WwiseWindows\AkWwiseProjectData.cs" />
+    <Compile Include="Assets\Wwise\Editor\WwiseWindows\AkWwiseProjectInfo.cs" />
+    <Compile Include="Assets\Wwise\Editor\WwiseWindows\AkWwiseTreeView.cs" />
+    <Compile Include="Assets\Wwise\Editor\WwiseWindows\AkWwiseWWUBuilder.cs" />
+    <Compile Include="Assets\Wwise\Editor\WwiseWindows\AkWwiseXMLBuilder.cs" />
+    <Compile Include="Assets\Wwise\Editor\WwiseWindows\TreeViewControl\TreeViewControl.cs" />
+    <Compile Include="Assets\Wwise\Editor\WwiseWindows\TreeViewControl\TreeViewItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\SteamVR\InteractionSystem\Core\Shaders\SeeThru.shader" />
@@ -317,11 +388,14 @@
     <None Include="Assets\SteamVR\Resources\SteamVR_Fade.shader" />
     <None Include="Assets\SteamVR\Resources\SteamVR_SphericalProjection.shader" />
     <None Include="Assets\SteamVR\readme.txt" />
+    <None Include="Assets\StreamingAssets\desc.txt" />
     <None Include="Assets\VRTK\Scripts\Internal\Shaders\AdaptiveQualityDebugVisualization.shader" />
     <None Include="Assets\VRTK\Scripts\Internal\Shaders\TransparentFresnelBehind.shader" />
     <None Include="Assets\VRTK\Scripts\Internal\Shaders\UIOverlay.shader" />
     <None Include="Assets\VRTK\Scripts\Internal\Shaders\Unlit_TransparentColor.shader" />
     <None Include="Assets\VRTK\Scripts\Internal\Shaders\VRTK_OutlineBasic.shader" />
+    <None Include="Assets\Wwise\Version.txt" />
+    <None Include="Assets\WwiseSettings.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
