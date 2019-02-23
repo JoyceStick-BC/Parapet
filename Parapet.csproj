@@ -194,9 +194,6 @@
     <Reference Include="UnityEngine.WindModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
     </Reference>
-    <Reference Include="Vuforia.UnityExtensions">
-      <HintPath>Library\UnityAssemblies\Vuforia.UnityExtensions.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
     </Reference>
@@ -245,14 +242,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Explode.cs" />
-<<<<<<< HEAD
+    <Compile Include="Assets\PuzzleScripts\A1.cs" />
     <Compile Include="Assets\Scripts\Audio\AudioTestSeagul.cs" />
     <Compile Include="Assets\Scripts\Audio\CollisionManager.cs" />
     <Compile Include="Assets\Scripts\Audio\MaterialHolder.cs" />
     <Compile Include="Assets\Scripts\Audio\ScriptableObj\MaterialInfo.cs" />
-=======
-    <Compile Include="Assets\PuzzleScripts\A1.cs" />
->>>>>>> master
     <Compile Include="Assets\SteamVR\Extras\SteamVR_GazeTracker.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_LaserPointer.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_Teleporter.cs" />
