@@ -1,6 +1,1233 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{C875FD9F-D567-46A3-AFDF-F034770F11DC}" SchemaVersion="89">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{C875FD9F-D567-46A3-AFDF-F034770F11DC}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{C875FD9F-D567-46A3-AFDF-F034770F11DC}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Parapet_sfx" ID="{F5D00055-0038-429F-A8B5-A08F8DD216E4}" ShortID="305869691">
+					<ChildrenList>
+						<Sound Name="Parapet_sfx_Ambiance_Loop" ID="{5FE9C025-499B-4910-9CCA-7567EB4C6A87}" ShortID="85067654">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-7</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{58846A0B-1A67-4E80-B12F-B0CA438EE8B1}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Parapet_sfx_Ambiance_Loop" ID="{5E5B1F5B-41BD-46E0-BE6C-3437780937A6}" ShortID="147345636">
+									<Language>SFX</Language>
+									<AudioFile>Parapet_sfx\Parapet_sfx_Ambiance_Loop.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Parapet_sfx_Ambiance_Loop" ID="{5E5B1F5B-41BD-46E0-BE6C-3437780937A6}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<SwitchContainer Name="Parapet_sfx_seagull" ID="{BCBB2775-792B-4DFE-9AE6-86CBF89AEFA1}" ShortID="839234783">
+							<PropertyList>
+								<Property Name="3DPosition" Type="int16" Value="2"/>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Parapet_sfx_Segull" ID="{F3372730-03D1-4449-9399-84A7CC75C5D4}" WorkUnitID="{417C7A31-DFA2-4567-B6FE-B70E2C7D4DD7}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="Seagul_Single" ID="{BC87925E-8F6E-462C-BA32-D92B6DC00C09}" WorkUnitID="{997F5B51-2756-46AF-9184-BCACDF7666AE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Seagul" ID="{BDA30D67-9F11-4422-AF5D-A09C60DA0A3E}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="Seagul" ID="{FC9F1E7C-C774-4BB1-AB58-FC1EFFB4B6A9}" WorkUnitID="{997F5B51-2756-46AF-9184-BCACDF7666AE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Parapet_sfx_Seagull_single" ID="{DC42AD33-AF4F-4405-97C9-E7E19E22247C}" ShortID="101270517">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="2"/>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Parapet_sfx_Segull" ID="{F3372730-03D1-4449-9399-84A7CC75C5D4}" WorkUnitID="{417C7A31-DFA2-4567-B6FE-B70E2C7D4DD7}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Seagull_Single_03" ID="{51C21D51-B85B-429B-8377-BBCA3D72A86F}" ShortID="206591031">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Seagull_Single_03" ID="{4F51ADB7-D6AA-4274-83D8-BFA83AD8B1CC}" ShortID="816674011">
+													<Language>SFX</Language>
+													<AudioFile>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_03.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Seagull_Single_03" ID="{4F51ADB7-D6AA-4274-83D8-BFA83AD8B1CC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Seagull_Single_01" ID="{66D22FBE-96BA-49E3-81D3-05BDA38C89B8}" ShortID="669943940">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Seagull_Single_01" ID="{F4188844-F0E8-4C0A-9FF3-873785C7D5E2}" ShortID="608342837">
+													<Language>SFX</Language>
+													<AudioFile>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Seagull_Single_01" ID="{F4188844-F0E8-4C0A-9FF3-873785C7D5E2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Seagull_Single_04" ID="{3A365BCB-75B4-42FE-B883-DBF9FAB87952}" ShortID="830636128">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Seagull_Single_04" ID="{0F72B8D6-9329-457B-94BD-6FF280A37B9C}" ShortID="189502074">
+													<Language>SFX</Language>
+													<AudioFile>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_04.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Seagull_Single_04" ID="{0F72B8D6-9329-457B-94BD-6FF280A37B9C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Seagull_Single_02" ID="{1A1102A9-0C31-498D-ADB6-AF0E731C891E}" ShortID="300366446">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Seagull_Single_02" ID="{AB715943-689F-47D7-B8CA-E18DC7B88C20}" ShortID="1061475821">
+													<Language>SFX</Language>
+													<AudioFile>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_02.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Seagull_Single_02" ID="{AB715943-689F-47D7-B8CA-E18DC7B88C20}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Seagull_Single_09" ID="{18A7DCC5-7BC4-4139-9DBC-0B55081010C4}" ShortID="107132072">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Seagull_Single_09" ID="{5F4A5446-69BD-4431-B9A2-BC08E962CEF8}" ShortID="887557441">
+													<Language>SFX</Language>
+													<AudioFile>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_09.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Seagull_Single_09" ID="{5F4A5446-69BD-4431-B9A2-BC08E962CEF8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Seagull_Single_05" ID="{64128D3F-9285-488F-9281-408BC88D8104}" ShortID="635540912">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Seagull_Single_05" ID="{7BEF1BCD-D7C1-484D-9C23-91BE99EC0C94}" ShortID="566240432">
+													<Language>SFX</Language>
+													<AudioFile>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_05.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Seagull_Single_05" ID="{7BEF1BCD-D7C1-484D-9C23-91BE99EC0C94}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Seagull_Single_26" ID="{01530B9A-8F53-4EDD-9B47-3F50DC6BD64C}" ShortID="274505286">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Seagull_Single_26" ID="{F76151D0-B6CC-4FC8-B2FE-81EE5B3E7D8D}" ShortID="1009669621">
+													<Language>SFX</Language>
+													<AudioFile>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_26.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Seagull_Single_26" ID="{F76151D0-B6CC-4FC8-B2FE-81EE5B3E7D8D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Seagull_Single_13" ID="{25235278-42B7-4DD5-94DA-345013CE9800}" ShortID="592223041">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Seagull_Single_13" ID="{6A82E01E-269B-4CD3-A45E-239623F83179}" ShortID="434835537">
+													<Language>SFX</Language>
+													<AudioFile>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_13.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Seagull_Single_13" ID="{6A82E01E-269B-4CD3-A45E-239623F83179}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Seagull_Single_24" ID="{96095BEF-44DF-43BD-AD68-67D70E88B7AF}" ShortID="406313849">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Seagull_Single_24" ID="{03C7570C-41B3-4A71-A7CA-1E3324138A1E}" ShortID="219928311">
+													<Language>SFX</Language>
+													<AudioFile>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_24.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Seagull_Single_24" ID="{03C7570C-41B3-4A71-A7CA-1E3324138A1E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Seagull_Single_27" ID="{3F73CB23-2484-489D-B392-4BF0E2AE25CC}" ShortID="744630746">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Seagull_Single_27" ID="{0B6C5167-03D9-4E61-A5F3-08328B497A66}" ShortID="1013528602">
+													<Language>SFX</Language>
+													<AudioFile>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_27.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Seagull_Single_27" ID="{0B6C5167-03D9-4E61-A5F3-08328B497A66}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Seagull_Single_21" ID="{7E451F10-9D23-4DB6-A694-43CC804D6B15}" ShortID="279931215">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Seagull_Single_21" ID="{29BFBB0F-0B7F-4401-8086-5ED97BBC9C74}" ShortID="621599710">
+													<Language>SFX</Language>
+													<AudioFile>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_21.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Seagull_Single_21" ID="{29BFBB0F-0B7F-4401-8086-5ED97BBC9C74}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Seagull_Single_30" ID="{69719ECC-2DFC-4D39-8AD9-1EF9EC7FB9ED}" ShortID="705084162">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Seagull_Single_30" ID="{AB3B022A-1C3B-4A65-A3B1-BDD55D6126BF}" ShortID="635563570">
+													<Language>SFX</Language>
+													<AudioFile>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_30.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Seagull_Single_30" ID="{AB3B022A-1C3B-4A65-A3B1-BDD55D6126BF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Seagull_Single_18" ID="{CA07546F-24B3-4997-82AF-BDBADED84F1C}" ShortID="578892663">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Seagull_Single_18" ID="{A713BCD8-FC7C-42B5-A7E0-3C6C2B1084D2}" ShortID="302519786">
+													<Language>SFX</Language>
+													<AudioFile>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_18.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Seagull_Single_18" ID="{A713BCD8-FC7C-42B5-A7E0-3C6C2B1084D2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Seagull_Single_28" ID="{52F0D4D8-324A-46D9-AA6F-4B898510ACDB}" ShortID="358752891">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Seagull_Single_28" ID="{08B99E70-8D56-4096-881B-670BD9961D10}" ShortID="787110918">
+													<Language>SFX</Language>
+													<AudioFile>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_28.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Seagull_Single_28" ID="{08B99E70-8D56-4096-881B-670BD9961D10}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Seagull_Single_22" ID="{C4DB9AD6-CB2D-4BCB-84A3-4B2B3419686C}" ShortID="782329908">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Seagull_Single_22" ID="{0CA86114-42E8-4D1A-BB6E-EE854E72EB3E}" ShortID="345190887">
+													<Language>SFX</Language>
+													<AudioFile>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_22.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Seagull_Single_22" ID="{0CA86114-42E8-4D1A-BB6E-EE854E72EB3E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Seagull_Single_06" ID="{2863A62F-1676-433B-8B66-19A1CD4FF9AA}" ShortID="467092655">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Seagull_Single_06" ID="{098CC076-8CB0-429E-9E3C-8A1BC0D1D76B}" ShortID="12073382">
+													<Language>SFX</Language>
+													<AudioFile>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_06.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Seagull_Single_06" ID="{098CC076-8CB0-429E-9E3C-8A1BC0D1D76B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Seagull_Single_07" ID="{5930F54F-9F81-40C8-AD0D-D73011B5DC87}" ShortID="559332703">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Seagull_Single_07" ID="{FFAD6050-7037-4F8A-953B-4590490F46A3}" ShortID="143905231">
+													<Language>SFX</Language>
+													<AudioFile>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_07.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Seagull_Single_07" ID="{FFAD6050-7037-4F8A-953B-4590490F46A3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Seagull_Single_14" ID="{72D5D712-3FA3-4E74-B412-3FAA8A795947}" ShortID="14345381">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Seagull_Single_14" ID="{B71668D1-4669-4D7D-93A8-CEB125D7A91E}" ShortID="523356765">
+													<Language>SFX</Language>
+													<AudioFile>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_14.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Seagull_Single_14" ID="{B71668D1-4669-4D7D-93A8-CEB125D7A91E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Seagull_Single_15" ID="{D3E03C12-E3D2-4DEA-BF14-96AE52212CBF}" ShortID="954608516">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Seagull_Single_15" ID="{A11A8C70-F96C-421B-B4A5-45DAEE77F5A9}" ShortID="72628124">
+													<Language>SFX</Language>
+													<AudioFile>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_15.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Seagull_Single_15" ID="{A11A8C70-F96C-421B-B4A5-45DAEE77F5A9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Seagull_Single_16" ID="{909BC615-FBB7-4A3C-A2A9-A3258D6FB841}" ShortID="106947886">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Seagull_Single_16" ID="{A447F8CD-70BD-4083-AE09-130FA6F2BA33}" ShortID="1057876071">
+													<Language>SFX</Language>
+													<AudioFile>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_16.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Seagull_Single_16" ID="{A447F8CD-70BD-4083-AE09-130FA6F2BA33}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Seagull_Single_08" ID="{C8A94592-A519-4130-84CB-04D2DEE91F35}" ShortID="915677187">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Seagull_Single_08" ID="{CFDA7EA5-D24E-4F28-9D50-A36D20BA7EB7}" ShortID="108793063">
+													<Language>SFX</Language>
+													<AudioFile>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_08.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Seagull_Single_08" ID="{CFDA7EA5-D24E-4F28-9D50-A36D20BA7EB7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Seagull_Single_10" ID="{5F5E30CE-D7CC-4FF1-99EC-D3DBA2DE6F85}" ShortID="127104230">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Seagull_Single_10" ID="{8793450F-95E2-483A-920D-FB2E5A4ED0AF}" ShortID="836302210">
+													<Language>SFX</Language>
+													<AudioFile>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_10.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Seagull_Single_10" ID="{8793450F-95E2-483A-920D-FB2E5A4ED0AF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Seagull_Single_20" ID="{51BF8909-CB27-4C7A-8BE7-103E518C6F10}" ShortID="172829034">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Seagull_Single_20" ID="{C6122D3C-AD29-446A-BB0B-13C2C953CE61}" ShortID="56283853">
+													<Language>SFX</Language>
+													<AudioFile>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_20.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Seagull_Single_20" ID="{C6122D3C-AD29-446A-BB0B-13C2C953CE61}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Seagull_Single_23" ID="{F8A86516-38EB-4110-8A66-39F4CD781FBC}" ShortID="505328028">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Seagull_Single_23" ID="{A336B4CA-8A40-46FF-90E8-379F59D48206}" ShortID="888795400">
+													<Language>SFX</Language>
+													<AudioFile>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_23.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Seagull_Single_23" ID="{A336B4CA-8A40-46FF-90E8-379F59D48206}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Seagull_Single_29" ID="{99B941AE-5E7C-4E29-A60C-0FD1468D16A7}" ShortID="170327460">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Seagull_Single_29" ID="{9AB22301-CF45-4E81-A78F-E0CD08C9F427}" ShortID="471365296">
+													<Language>SFX</Language>
+													<AudioFile>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_29.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Seagull_Single_29" ID="{9AB22301-CF45-4E81-A78F-E0CD08C9F427}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Seagull_Single_17" ID="{12CC9B5F-12FF-4107-AC2B-425604989145}" ShortID="623394454">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Seagull_Single_17" ID="{22995218-EE4D-4869-AB5A-3BA80CC3D49B}" ShortID="1050720974">
+													<Language>SFX</Language>
+													<AudioFile>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_17.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Seagull_Single_17" ID="{22995218-EE4D-4869-AB5A-3BA80CC3D49B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Seagull_Single_12" ID="{B4E33BDE-0FF9-4133-AFF6-01CCC1CEE47B}" ShortID="394795418">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Seagull_Single_12" ID="{4F3C8BAC-662E-441A-BDD4-EC7B6949F999}" ShortID="242943397">
+													<Language>SFX</Language>
+													<AudioFile>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_12.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Seagull_Single_12" ID="{4F3C8BAC-662E-441A-BDD4-EC7B6949F999}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Seagull_Single_25" ID="{04F70E8E-45ED-456E-AE6E-4F184D6D5B68}" ShortID="950507240">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Seagull_Single_25" ID="{A2EAE391-3EEC-4D6E-841A-D306BFDB5802}" ShortID="647423539">
+													<Language>SFX</Language>
+													<AudioFile>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_25.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Seagull_Single_25" ID="{A2EAE391-3EEC-4D6E-841A-D306BFDB5802}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Seagull_Single_11" ID="{29D14B1D-3E1D-411F-8FBA-05A466E0F415}" ShortID="288162324">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Seagull_Single_11" ID="{96BF5BA3-5E8E-4C56-9405-3D29882A70AE}" ShortID="510828152">
+													<Language>SFX</Language>
+													<AudioFile>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_11.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Seagull_Single_11" ID="{96BF5BA3-5E8E-4C56-9405-3D29882A70AE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Seagull_Single_19" ID="{7FC0EE48-8964-456F-953F-41539D59176C}" ShortID="145663340">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Seagull_Single_19" ID="{72D2AF7B-ABF5-4645-BE53-7A39E681C8BE}" ShortID="1037908377">
+													<Language>SFX</Language>
+													<AudioFile>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_19.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Seagull_Single_19" ID="{72D2AF7B-ABF5-4645-BE53-7A39E681C8BE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{F9FAB9D0-8EA5-4B19-8A50-DE2E2001E741}">
+											<PropertyList>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="Parapet_sfx_Seagull_Path" ID="{1FA9FE74-2310-4DB8-BAB7-579AE789BBC2}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Parapet_sfx_Seagull_Path_01" ID="{E5966838-2BCB-4325-87F5-0A579119AC67}">
+													<PointList>
+														<Point>
+															<XPos>-34.10475</XPos>
+															<YPos>45.90361</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Parapet_sfx_Seagull_Path_02" ID="{A26FB276-A74C-4094-A833-1DD80DDDA23D}">
+													<PointList>
+														<Point>
+															<XPos>44.09257</XPos>
+															<YPos>37.46988</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Parapet_sfx_Seagull_Path_03" ID="{75CBF5A6-27B6-49A2-8A3A-173B51F95373}">
+													<PointList>
+														<Point>
+															<XPos>-57.97808</XPos>
+															<YPos>1.56627</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Parapet_sfx_Seagull_Path_04" ID="{0282C4AA-B331-4FAF-B367-508385B41C86}">
+													<PointList>
+														<Point>
+															<XPos>58.70889</XPos>
+															<YPos>-3.73494</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Parapet_sfx_Seagull_Path_05" ID="{C4C35BDF-B13F-4D17-BA55-6A80DD3C5ECE}">
+													<PointList>
+														<Point>
+															<XPos>-54.81121</XPos>
+															<YPos>-54.09639</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Parapet_sfx_Seagull_Path_06" ID="{2B26B40C-105A-4D3D-8E7B-FAB8FF571548}">
+													<PointList>
+														<Point>
+															<XPos>48.96468</XPos>
+															<YPos>-57.95181</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Parapet_sfx_Seagull_Path_07" ID="{3AD0F457-ED02-4F69-8A2B-39A404C0E273}">
+													<PointList>
+														<Point>
+															<XPos>1.70524</XPos>
+															<YPos>-65.42169</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Parapet_sfx_Seagull_Path_08" ID="{19E6C317-6714-42AA-84C1-EB6DF7AEBF3F}">
+													<PointList>
+														<Point>
+															<XPos>55.78563</XPos>
+															<YPos>34.81928</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Parapet_sfx_Seagull_Path_09" ID="{F968E392-4912-4544-96E1-7B38C9BD1B03}">
+													<PointList>
+														<Point>
+															<XPos>-65.52984</XPos>
+															<YPos>48.79518</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Parapet_sfx_Seagull_Path_10" ID="{64665078-EE92-4127-99A6-251141600A6E}">
+													<PointList>
+														<Point>
+															<XPos>-79.17174</XPos>
+															<YPos>-61.08434</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Parapet_sfx_Seagull_Path_11" ID="{F2EC6465-FD73-43B6-9B17-393EC831B569}">
+													<PointList>
+														<Point>
+															<XPos>23.14251</XPos>
+															<YPos>24.93976</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Parapet_sfx_Seagull_Path_12" ID="{1A031E5B-5CB8-4052-A982-2852C61168A7}">
+													<PointList>
+														<Point>
+															<XPos>56.76005</XPos>
+															<YPos>-14.57831</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Parapet_sfx_Seagull_Path_13" ID="{D0FD8013-6007-414C-A805-77B72AC618BC}">
+													<PointList>
+														<Point>
+															<XPos>-49.20828</XPos>
+															<YPos>15.06024</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Parapet_sfx_Seagull_Path_14" ID="{6823D042-B159-4F5E-814E-E2B52BD953D2}">
+													<PointList>
+														<Point>
+															<XPos>48.72107</XPos>
+															<YPos>-42.28916</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Parapet_sfx_Seagull_Path_15" ID="{85832047-EAC6-4D21-B4E6-C23A173EFA4C}">
+													<PointList>
+														<Point>
+															<XPos>-49.45189</XPos>
+															<YPos>-60.36145</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Parapet_sfx_Seagull_Path_16" ID="{CD71117F-2AE4-48F7-93E2-8630951FE182}">
+													<PointList>
+														<Point>
+															<XPos>-58.9525</XPos>
+															<YPos>3.01205</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Parapet_sfx_Seagull_multi" ID="{5502FF2B-C36A-4845-AF21-B15C810B8894}" ShortID="626447056">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Parapet_sfx_seagull_multi_01" ID="{86D5425B-4D45-4D7D-A7F0-48B732DD1D0F}" ShortID="688725443">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Parapet_sfx_seagull_multi_01" ID="{EAA5553D-C611-40E4-BE36-DFA193FDAB05}" ShortID="51974208">
+													<Language>SFX</Language>
+													<AudioFile>Parapet_sfx_Seagull_multi\Parapet_sfx_seagull_multi_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Parapet_sfx_seagull_multi_01" ID="{EAA5553D-C611-40E4-BE36-DFA193FDAB05}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Parapet_sfx_seagull_multi_02" ID="{D50CE4BD-3C56-4A81-A2C8-0CFBDBB53C98}" ShortID="1039010108">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Parapet_sfx_seagull_multi_02" ID="{4AF13AFB-F8D1-43E5-B45A-36B1702935D3}" ShortID="485760085">
+													<Language>SFX</Language>
+													<AudioFile>Parapet_sfx_Seagull_multi\Parapet_sfx_seagull_multi_02.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Parapet_sfx_seagull_multi_02" ID="{4AF13AFB-F8D1-43E5-B45A-36B1702935D3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Parapet_sfx_seagull_multi_03" ID="{6BE3AEF1-9022-4012-823F-C4DE6A4A8704}" ShortID="675198924">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Parapet_sfx_seagull_multi_03" ID="{E3FC5D09-4AF1-4778-AADC-A4BE7A7DDF38}" ShortID="777388354">
+													<Language>SFX</Language>
+													<AudioFile>Parapet_sfx_Seagull_multi\Parapet_sfx_seagull_multi_03.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Parapet_sfx_seagull_multi_03" ID="{E3FC5D09-4AF1-4778-AADC-A4BE7A7DDF38}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Parapet_sfx_seagull_multi_04" ID="{99C17556-53E8-4F5B-A41D-0679B397FAAB}" ShortID="775402531">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Parapet_sfx_seagull_multi_04" ID="{D2C0DF00-3DB7-4C79-930E-D25B787EBEBA}" ShortID="841498850">
+													<Language>SFX</Language>
+													<AudioFile>Parapet_sfx_Seagull_multi\Parapet_sfx_seagull_multi_04.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Parapet_sfx_seagull_multi_04" ID="{D2C0DF00-3DB7-4C79-930E-D25B787EBEBA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Parapet_sfx_seagull_multi_05" ID="{A9CC0A2C-D2C6-4452-B893-1ECBA50702C5}" ShortID="17271702">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Parapet_sfx_seagull_multi_05" ID="{03AD0EF2-37CC-4F0E-835F-E5E7450A788B}" ShortID="94333187">
+													<Language>SFX</Language>
+													<AudioFile>Parapet_sfx_Seagull_multi\Parapet_sfx_seagull_multi_05.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Parapet_sfx_seagull_multi_05" ID="{03AD0EF2-37CC-4F0E-835F-E5E7450A788B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Parapet_sfx_seagull_multi_06" ID="{A99250B8-4664-42B8-9C06-7022A6A80E6B}" ShortID="978682391">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Parapet_sfx_seagull_multi_06" ID="{6B376A3F-1A13-441F-956F-CFEDBE3F7718}" ShortID="799055123">
+													<Language>SFX</Language>
+													<AudioFile>Parapet_sfx_Seagull_multi\Parapet_sfx_seagull_multi_06.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Parapet_sfx_seagull_multi_06" ID="{6B376A3F-1A13-441F-956F-CFEDBE3F7718}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Parapet_sfx_seagull_multi_07" ID="{0EFF34E9-94DB-499B-8875-83FB8F39E2A8}" ShortID="855995368">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Parapet_sfx_seagull_multi_07" ID="{70B17FF2-DE2E-4913-A426-7C577CCBB6AF}" ShortID="62376138">
+													<Language>SFX</Language>
+													<AudioFile>Parapet_sfx_Seagull_multi\Parapet_sfx_seagull_multi_07.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Parapet_sfx_seagull_multi_07" ID="{70B17FF2-DE2E-4913-A426-7C577CCBB6AF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<PositioningInfo>
+								<Position Name="" ID="{0A6431E2-6C10-4F32-AD17-620926297370}">
+									<PropertyList>
+										<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+									</PropertyList>
+									<ChildrenList>
+										<Path2D Name="Parapet_sfx_seagull_Path" ID="{D61DFCE6-7530-4448-BB19-D379DED943B3}">
+											<PointList>
+												<Point>
+													<XPos>0</XPos>
+													<YPos>50</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="Parapet_sfx_seagull_Path_01" ID="{306F1F7D-974F-47A9-816E-222E91459D91}">
+											<PointList>
+												<Point>
+													<XPos>-28.25822</XPos>
+													<YPos>36.74699</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="Parapet_sfx_seagull_Path_02" ID="{BEA258AD-C982-41F8-B044-675576C39C36}">
+											<PointList>
+												<Point>
+													<XPos>-57.49086</XPos>
+													<YPos>2.28916</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="Parapet_sfx_seagull_Path_03" ID="{EDDEAEBE-9D8D-44C8-89CC-07606F7046E4}">
+											<PointList>
+												<Point>
+													<XPos>-37.27162</XPos>
+													<YPos>-44.93976</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="Parapet_sfx_seagull_Path_04" ID="{3C159242-7954-4CBA-8F2C-B40A429302E0}">
+											<PointList>
+												<Point>
+													<XPos>0.48721</XPos>
+													<YPos>-74.57831</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="Parapet_sfx_seagull_Path_05" ID="{0FFD6083-0E52-4E07-A55B-E8F79B161BD0}">
+											<PointList>
+												<Point>
+													<XPos>44.33618</XPos>
+													<YPos>-51.44578</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="Parapet_sfx_seagull_Path_06" ID="{2B14C22B-72DE-467F-BDB1-944200559DEA}">
+											<PointList>
+												<Point>
+													<XPos>66.99147</XPos>
+													<YPos>-0.12048</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="Parapet_sfx_seagull_Path_07" ID="{1D78E720-7007-421B-881A-A2555C9AEE6F}">
+											<PointList>
+												<Point>
+													<XPos>43.36175</XPos>
+													<YPos>26.62651</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="Parapet_sfx_seagull_Path_08" ID="{1A91EA9D-0411-46C7-A4AC-63F1D9499B81}">
+											<PointList>
+												<Point>
+													<XPos>-50.42631</XPos>
+													<YPos>15.06024</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="Parapet_sfx_seagull_Path_09" ID="{0A61DA9D-3B99-49D6-8ED2-EE110FFDC8A3}">
+											<PointList>
+												<Point>
+													<XPos>74.54324</XPos>
+													<YPos>6.86747</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="Parapet_sfx_seagull_Path_10" ID="{4C9CFE41-D959-4955-A98B-91478B1E4870}">
+											<PointList>
+												<Point>
+													<XPos>-64.31181</XPos>
+													<YPos>-8.79518</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="Parapet_sfx_seagull_Path_11" ID="{F7678A69-E0DB-4380-8527-F17E5621B609}">
+											<PointList>
+												<Point>
+													<XPos>71.13276</XPos>
+													<YPos>-10.48193</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="Parapet_sfx_seagull_Path_12" ID="{4A921FAF-6A77-4E78-8384-C9A3336A044E}">
+											<PointList>
+												<Point>
+													<XPos>73.32521</XPos>
+													<YPos>38.43373</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="Parapet_sfx_seagull_Path_13" ID="{A82D3206-C8CB-4CF3-9F1C-E3C2D0C6FAC2}">
+											<PointList>
+												<Point>
+													<XPos>-64.55542</XPos>
+													<YPos>58.19277</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="Parapet_sfx_seagull_Path_14" ID="{C278B40E-F10C-42AB-9BE8-C5F3E84B27D9}">
+											<PointList>
+												<Point>
+													<XPos>41.16931</XPos>
+													<YPos>-61.80723</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="Parapet_sfx_seagull_Path_15" ID="{A7B9651C-B530-4393-A833-52473030853A}">
+											<PointList>
+												<Point>
+													<XPos>-30.45067</XPos>
+													<YPos>-55.3012</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="Parapet_sfx_seagull_Path_16" ID="{99A08344-807A-4ADD-99C8-CB443BB4D313}">
+											<PointList>
+												<Point>
+													<XPos>-57.49086</XPos>
+													<YPos>-37.71084</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="Parapet_sfx_seagull_Path_17" ID="{7519A0D9-D411-439F-93DF-3DC09D473CE4}">
+											<PointList>
+												<Point>
+													<XPos>70.15834</XPos>
+													<YPos>14.09639</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="Parapet_sfx_seagull_Path_18" ID="{5937CC81-B68D-40DB-8ECE-A0694EE5B585}">
+											<PointList>
+												<Point>
+													<XPos>86.2363</XPos>
+													<YPos>-57.71084</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="Parapet_sfx_seagull_Path_19" ID="{DFABAA20-B214-430B-9262-0C29ED2BAD2C}">
+											<PointList>
+												<Point>
+													<XPos>-88.18514</XPos>
+													<YPos>59.63855</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="Parapet_sfx_seagull_Path_20" ID="{1F40AB2A-0126-4B32-8D9B-547F56AD17F6}">
+											<PointList>
+												<Point>
+													<XPos>100</XPos>
+													<YPos>60.60241</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="Parapet_sfx_seagull_Path_21" ID="{A862A7CE-C8F6-403A-A643-DD04AA77FE1D}">
+											<PointList>
+												<Point>
+													<XPos>-88.42875</XPos>
+													<YPos>-67.83133</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+									</ChildrenList>
+								</Position>
+							</PositioningInfo>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Parapet_sfx_Seagull_multi" ID="{5502FF2B-C36A-4845-AF21-B15C810B8894}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Parapet_sfx_Seagull_single" ID="{DC42AD33-AF4F-4405-97C9-E7E19E22247C}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Seagul_Burst" ID="{F9CF2C2D-451D-41CC-BA1E-FB371E8E66CA}"/>
+										<ItemList>
+											<ItemRef Name="Parapet_sfx_Seagull_multi" ID="{5502FF2B-C36A-4845-AF21-B15C810B8894}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Seagul_Single" ID="{BC87925E-8F6E-462C-BA32-D92B6DC00C09}"/>
+										<ItemList>
+											<ItemRef Name="Parapet_sfx_Seagull_single" ID="{DC42AD33-AF4F-4405-97C9-E7E19E22247C}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>

@@ -1,6 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{1F54CBE6-2F89-4F7A-8329-38CCD8B74888}" SchemaVersion="89">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{1F54CBE6-2F89-4F7A-8329-38CCD8B74888}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{1F54CBE6-2F89-4F7A-8329-38CCD8B74888}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Parapet_sfx_seagul" ID="{7984F6A9-8531-47CF-862B-11C3D7B870D1}">
+					<ChildrenList>
+						<Action Name="" ID="{92CBD7CC-B747-4496-A636-BC7AADE34232}" ShortID="85610785">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Parapet_sfx_seagull" ID="{BCBB2775-792B-4DFE-9AE6-86CBF89AEFA1}" WorkUnitID="{C875FD9F-D567-46A3-AFDF-F034770F11DC}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Parapet_sfx_ambiance" ID="{0F376733-C2CD-4B4E-9E95-065708DD271C}">
+					<ChildrenList>
+						<Action Name="" ID="{A6E14B6A-0219-43E7-BDE3-8968AEC5EDF5}" ShortID="234020240">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Parapet_sfx_Ambiance_Loop" ID="{5FE9C025-499B-4910-9CCA-7567EB4C6A87}" WorkUnitID="{C875FD9F-D567-46A3-AFDF-F034770F11DC}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

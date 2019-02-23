@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{997F5B51-2756-46AF-9184-BCACDF7666AE}" SchemaVersion="89">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{997F5B51-2756-46AF-9184-BCACDF7666AE}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{997F5B51-2756-46AF-9184-BCACDF7666AE}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Seagul" ID="{FC9F1E7C-C774-4BB1-AB58-FC1EFFB4B6A9}">
+					<ChildrenList>
+						<Switch Name="Seagul_Burst" ID="{F9CF2C2D-451D-41CC-BA1E-FB371E8E66CA}"/>
+						<Switch Name="Seagul_Single" ID="{BC87925E-8F6E-462C-BA32-D92B6DC00C09}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</Switches>
 </WwiseDocument>

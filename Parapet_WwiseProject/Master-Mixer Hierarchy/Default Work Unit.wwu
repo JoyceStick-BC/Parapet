@@ -9,6 +9,27 @@
 							<ObjectRef Name="System" ID="{8F60BF7C-00A4-40A2-A118-9679E782EDDA}" WorkUnitID="{1B9ED191-65C2-483C-9EF9-F13643021507}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<AuxBus Name="Verb" ID="{4E8257E3-0EFC-482C-87FB-B95A667AC9B7}"/>
+						<Bus Name="SFX" ID="{58846A0B-1A67-4E80-B12F-B0CA438EE8B1}">
+							<ChildrenList>
+								<Bus Name="Seagul" ID="{BDA30D67-9F11-4422-AF5D-A09C60DA0A3E}">
+									<PropertyList>
+										<Property Name="BusVolume" Type="Real64">
+											<ValueList>
+												<Value>-14</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="Verb" ID="{4E8257E3-0EFC-482C-87FB-B95A667AC9B7}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+										</Reference>
+									</ReferenceList>
+								</Bus>
+							</ChildrenList>
+						</Bus>
+					</ChildrenList>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>

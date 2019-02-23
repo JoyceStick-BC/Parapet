@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="11" SoundbankVersion="132">
+	<RootPaths>
+		<ProjectRoot>C:\Users\JoyceStick\Documents\JoyceStick\Parapet\Parapet_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\JoyceStick\Documents\JoyceStick\Parapet\Parapet_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\JoyceStick\Documents\JoyceStick\Parapet\Parapet_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\JoyceStick\Documents\JoyceStick\Parapet\Parapet_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="74477125" Name="Parapet_sfx_ambiance" ObjectPath="\Events\Default Work Unit\Parapet_sfx_ambiance"/>
+				<Event Id="2487091518" Name="Parapet_sfx_seagul" ObjectPath="\Events\Default Work Unit\Parapet_sfx_seagul" MaxAttenuation="100.000000"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="12073382" Language="SFX">
+					<ShortName>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_06.wav</ShortName>
+					<Path>SFX\Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_06_56D34C19.wem</Path>
+				</File>
+				<File Id="51974208" Language="SFX">
+					<ShortName>Parapet_sfx_Seagull_multi\Parapet_sfx_seagull_multi_01.wav</ShortName>
+					<Path>SFX\Parapet_sfx_Seagull_multi\Parapet_sfx_seagull_multi_01_56D34C19.wem</Path>
+				</File>
+				<File Id="56283853" Language="SFX">
+					<ShortName>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_20.wav</ShortName>
+					<Path>SFX\Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_20_56D34C19.wem</Path>
+				</File>
+				<File Id="62376138" Language="SFX">
+					<ShortName>Parapet_sfx_Seagull_multi\Parapet_sfx_seagull_multi_07.wav</ShortName>
+					<Path>SFX\Parapet_sfx_Seagull_multi\Parapet_sfx_seagull_multi_07_56D34C19.wem</Path>
+				</File>
+				<File Id="72628124" Language="SFX">
+					<ShortName>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_15.wav</ShortName>
+					<Path>SFX\Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_15_56D34C19.wem</Path>
+				</File>
+				<File Id="94333187" Language="SFX">
+					<ShortName>Parapet_sfx_Seagull_multi\Parapet_sfx_seagull_multi_05.wav</ShortName>
+					<Path>SFX\Parapet_sfx_Seagull_multi\Parapet_sfx_seagull_multi_05_56D34C19.wem</Path>
+				</File>
+				<File Id="108793063" Language="SFX">
+					<ShortName>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_08.wav</ShortName>
+					<Path>SFX\Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_08_56D34C19.wem</Path>
+				</File>
+				<File Id="143905231" Language="SFX">
+					<ShortName>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_07.wav</ShortName>
+					<Path>SFX\Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_07_56D34C19.wem</Path>
+				</File>
+				<File Id="147345636" Language="SFX">
+					<ShortName>Parapet_sfx\Parapet_sfx_Ambiance_Loop.wav</ShortName>
+					<Path>SFX\Parapet_sfx\Parapet_sfx_Ambiance_Loop_8956FC97.wem</Path>
+				</File>
+				<File Id="189502074" Language="SFX">
+					<ShortName>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_04.wav</ShortName>
+					<Path>SFX\Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_04_56D34C19.wem</Path>
+				</File>
+				<File Id="219928311" Language="SFX">
+					<ShortName>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_24.wav</ShortName>
+					<Path>SFX\Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_24_56D34C19.wem</Path>
+				</File>
+				<File Id="242943397" Language="SFX">
+					<ShortName>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_12.wav</ShortName>
+					<Path>SFX\Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_12_56D34C19.wem</Path>
+				</File>
+				<File Id="302519786" Language="SFX">
+					<ShortName>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_18.wav</ShortName>
+					<Path>SFX\Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_18_56D34C19.wem</Path>
+				</File>
+				<File Id="345190887" Language="SFX">
+					<ShortName>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_22.wav</ShortName>
+					<Path>SFX\Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_22_56D34C19.wem</Path>
+				</File>
+				<File Id="434835537" Language="SFX">
+					<ShortName>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_13.wav</ShortName>
+					<Path>SFX\Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_13_56D34C19.wem</Path>
+				</File>
+				<File Id="471365296" Language="SFX">
+					<ShortName>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_29.wav</ShortName>
+					<Path>SFX\Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_29_56D34C19.wem</Path>
+				</File>
+				<File Id="485760085" Language="SFX">
+					<ShortName>Parapet_sfx_Seagull_multi\Parapet_sfx_seagull_multi_02.wav</ShortName>
+					<Path>SFX\Parapet_sfx_Seagull_multi\Parapet_sfx_seagull_multi_02_56D34C19.wem</Path>
+				</File>
+				<File Id="510828152" Language="SFX">
+					<ShortName>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_11.wav</ShortName>
+					<Path>SFX\Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_11_56D34C19.wem</Path>
+				</File>
+				<File Id="523356765" Language="SFX">
+					<ShortName>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_14.wav</ShortName>
+					<Path>SFX\Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_14_56D34C19.wem</Path>
+				</File>
+				<File Id="566240432" Language="SFX">
+					<ShortName>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_05.wav</ShortName>
+					<Path>SFX\Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_05_56D34C19.wem</Path>
+				</File>
+				<File Id="608342837" Language="SFX">
+					<ShortName>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_01.wav</ShortName>
+					<Path>SFX\Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_01_56D34C19.wem</Path>
+				</File>
+				<File Id="621599710" Language="SFX">
+					<ShortName>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_21.wav</ShortName>
+					<Path>SFX\Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_21_56D34C19.wem</Path>
+				</File>
+				<File Id="635563570" Language="SFX">
+					<ShortName>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_30.wav</ShortName>
+					<Path>SFX\Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_30_56D34C19.wem</Path>
+				</File>
+				<File Id="647423539" Language="SFX">
+					<ShortName>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_25.wav</ShortName>
+					<Path>SFX\Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_25_56D34C19.wem</Path>
+				</File>
+				<File Id="777388354" Language="SFX">
+					<ShortName>Parapet_sfx_Seagull_multi\Parapet_sfx_seagull_multi_03.wav</ShortName>
+					<Path>SFX\Parapet_sfx_Seagull_multi\Parapet_sfx_seagull_multi_03_56D34C19.wem</Path>
+				</File>
+				<File Id="787110918" Language="SFX">
+					<ShortName>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_28.wav</ShortName>
+					<Path>SFX\Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_28_56D34C19.wem</Path>
+				</File>
+				<File Id="799055123" Language="SFX">
+					<ShortName>Parapet_sfx_Seagull_multi\Parapet_sfx_seagull_multi_06.wav</ShortName>
+					<Path>SFX\Parapet_sfx_Seagull_multi\Parapet_sfx_seagull_multi_06_56D34C19.wem</Path>
+				</File>
+				<File Id="816674011" Language="SFX">
+					<ShortName>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_03.wav</ShortName>
+					<Path>SFX\Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_03_56D34C19.wem</Path>
+				</File>
+				<File Id="836302210" Language="SFX">
+					<ShortName>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_10.wav</ShortName>
+					<Path>SFX\Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_10_56D34C19.wem</Path>
+				</File>
+				<File Id="841498850" Language="SFX">
+					<ShortName>Parapet_sfx_Seagull_multi\Parapet_sfx_seagull_multi_04.wav</ShortName>
+					<Path>SFX\Parapet_sfx_Seagull_multi\Parapet_sfx_seagull_multi_04_56D34C19.wem</Path>
+				</File>
+				<File Id="887557441" Language="SFX">
+					<ShortName>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_09.wav</ShortName>
+					<Path>SFX\Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_09_56D34C19.wem</Path>
+				</File>
+				<File Id="888795400" Language="SFX">
+					<ShortName>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_23.wav</ShortName>
+					<Path>SFX\Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_23_56D34C19.wem</Path>
+				</File>
+				<File Id="1009669621" Language="SFX">
+					<ShortName>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_26.wav</ShortName>
+					<Path>SFX\Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_26_56D34C19.wem</Path>
+				</File>
+				<File Id="1013528602" Language="SFX">
+					<ShortName>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_27.wav</ShortName>
+					<Path>SFX\Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_27_56D34C19.wem</Path>
+				</File>
+				<File Id="1037908377" Language="SFX">
+					<ShortName>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_19.wav</ShortName>
+					<Path>SFX\Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_19_56D34C19.wem</Path>
+				</File>
+				<File Id="1050720974" Language="SFX">
+					<ShortName>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_17.wav</ShortName>
+					<Path>SFX\Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_17_56D34C19.wem</Path>
+				</File>
+				<File Id="1057876071" Language="SFX">
+					<ShortName>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_16.wav</ShortName>
+					<Path>SFX\Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_16_56D34C19.wem</Path>
+				</File>
+				<File Id="1061475821" Language="SFX">
+					<ShortName>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_02.wav</ShortName>
+					<Path>SFX\Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_02_56D34C19.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
