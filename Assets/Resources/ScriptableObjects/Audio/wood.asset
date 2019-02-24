@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Name: wood
   m_EditorClassIdentifier: 
   objectsMaterial: 1
-  objectHardness: 0
-  switchID: 0
+  objectToInstantiate: {fileID: 123458, guid: cd4ff35fbdd2e344f9f46c1da44572da, type: 2}
+  objectHardness: 2

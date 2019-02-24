@@ -31,23 +31,20 @@ public class CollisionManager : MonoBehaviour {
     private void InitializeMaterials ()
     {
         allMaterialsInGame = FindObjectsOfType<MaterialHolder>();
-        Debug.Log(allMaterialsInGame.Length);
         foreach(MaterialHolder m in allMaterialsInGame)
         {
             tempMatInfo = m.materialInfo;
-            Debug.Log("Parapet_sfx_" + tempMatInfo.objectsMaterial.ToString());
             switch (tempMatInfo.objectsMaterial)
             {
-                //case (collisionMaterials.metal):
-                //    m.objectHardness = 3;
-                //    //m.objectID = AkSoundEngine.GetIDFromString("Parapet_sfx_" + m.objectsMaterial.ToString());
-                //    break;
-                //case (collisionMaterials.wood):
-                //    m.objectHardness = 2;
-                //    break;
-                //case (collisionMaterials.plastic):
-                //    m.objectHardness = 1;
-                //    break;
+                case (collisionMaterials.metal):
+                    tempMatInfo.objectHardness = 3;
+                    break;
+                case (collisionMaterials.wood):
+                    tempMatInfo.objectHardness = 2;
+                    break;
+                case (collisionMaterials.plastic):
+                    tempMatInfo.objectHardness = 1;
+                    break;
 
             }
         }
@@ -58,4 +55,5 @@ public class CollisionManager : MonoBehaviour {
         collisionSwitch = !collisionSwitch;
         return collisionSwitch;
     }
+
 }
