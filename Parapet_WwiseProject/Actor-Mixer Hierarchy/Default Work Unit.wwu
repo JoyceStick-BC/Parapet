@@ -1225,6 +1225,275 @@
 								</GroupingList>
 							</GroupingInfo>
 						</SwitchContainer>
+						<BlendContainer Name="Parapet_sfx_flag" ID="{04A197E2-F089-4146-8A76-1AA2B525567A}" ShortID="566454734">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Parapet_At_mainFlag" ID="{08896994-0FC4-4607-B052-B5F867A761A7}" WorkUnitID="{417C7A31-DFA2-4567-B6FE-B70E2C7D4DD7}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="MXG_Para_sfx_flag_amb" ID="{F67503DA-E38E-448C-AC2D-9946FD75A7FE}" ShortID="412938925">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MXG_Para_sfx_flag_amb" ID="{A476F370-9328-45DD-A887-FACF90B85310}" ShortID="671009346">
+											<Language>SFX</Language>
+											<AudioFile>Parapet_sfx__flag\MXG_Para_sfx_flag_amb.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MXG_Para_sfx_flag_amb" ID="{A476F370-9328-45DD-A887-FACF90B85310}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MXG_Para_sfx_flag_flap" ID="{F4288505-6576-4C64-8E2D-973340B5E35F}" ShortID="729997290">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MXG_Para_sfx_flag_flap" ID="{1D1D5FDE-3645-498B-931F-83063038542D}" ShortID="261458065">
+											<Language>SFX</Language>
+											<AudioFile>Parapet_sfx__flag\MXG_Para_sfx_flag_flap.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MXG_Para_sfx_flag_flap" ID="{1D1D5FDE-3645-498B-931F-83063038542D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</BlendContainer>
+						<SwitchContainer Name="Parapet_sfx_col" ID="{E229C21F-2D66-4CA4-AA42-BC4E9642DD29}" ShortID="560562024">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="MXG_Para_sfx_col_water" ID="{A455209D-C871-43B5-932B-DFA94FF07997}" ShortID="794398256">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MXG_Para_sfx_col_water" ID="{1303F75E-976A-4A29-BEEE-D6C98ACC1020}" ShortID="571493751">
+											<Language>SFX</Language>
+											<AudioFile>Parapet_sfx_col\MXG_Para_sfx_col_water.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MXG_Para_sfx_col_water" ID="{1303F75E-976A-4A29-BEEE-D6C98ACC1020}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<RandomSequenceContainer Name="MXG_Para_sfx_col_ball_Single" ID="{B8E92CC5-813A-46B0-9839-95BD0AEF2717}" ShortID="341775189">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="MXG_Para_sfx_col_ball_Single_02" ID="{38209A70-2538-4587-9363-FC746127FD36}" ShortID="635045573">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="MXG_Para_sfx_col_ball_Single_02" ID="{B7773C40-D6FD-42F7-938C-1704579DC55B}" ShortID="10335567">
+													<Language>SFX</Language>
+													<AudioFile>Parapet_sfx_col\MXG_Para_sfx_col_ball_Single_02.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="MXG_Para_sfx_col_ball_Single_02" ID="{B7773C40-D6FD-42F7-938C-1704579DC55B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="MXG_Para_sfx_col_ball_Single_01" ID="{B6C2B467-1920-4978-9DE5-773C8A2C75BF}" ShortID="563015154">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="MXG_Para_sfx_col_ball_Single_01" ID="{9864A555-7C17-408E-B062-4BC252CDC2AE}" ShortID="64239771">
+													<Language>SFX</Language>
+													<AudioFile>Parapet_sfx_col\MXG_Para_sfx_col_ball_Single_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="MXG_Para_sfx_col_ball_Single_01" ID="{9864A555-7C17-408E-B062-4BC252CDC2AE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="MXG_Para_sfx_col_water" ID="{A455209D-C871-43B5-932B-DFA94FF07997}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="MXG_Para_sfx_col_ball_Single" ID="{B8E92CC5-813A-46B0-9839-95BD0AEF2717}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+							</GroupingInfo>
+						</SwitchContainer>
+						<RandomSequenceContainer Name="Parapet_sfx_mort" ID="{8CA3D7F3-AF6E-4D5C-A19A-EA1AE15DBE1F}" ShortID="559646284">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="MXG_Para_sfx_mort_fire" ID="{52A69647-6015-4048-95B5-963ECBE0590C}" ShortID="36308485">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MXG_Para_sfx_mort_fire" ID="{4B10AF37-BC1D-4EF3-9D77-8DC3FAEE64AC}" ShortID="44358176">
+											<Language>SFX</Language>
+											<AudioFile>Parapet_sfx_mort\MXG_Para_sfx_mort_fire.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MXG_Para_sfx_mort_fire" ID="{4B10AF37-BC1D-4EF3-9D77-8DC3FAEE64AC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Parapet_sfx_puz" ID="{1EBA9142-5C24-40C9-99BE-FE1F30594F81}" ShortID="50673">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="MXG_Para_sfx_puz_completed" ID="{9C8D5858-6ECB-4100-875E-CCF754233123}" ShortID="173900020">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MXG_Para_sfx_puz_completed" ID="{2A952213-81B9-4939-9C14-8F88429D7730}" ShortID="73302493">
+											<Language>SFX</Language>
+											<AudioFile>Parapet_sfx_puz\MXG_Para_sfx_puz_completed.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MXG_Para_sfx_puz_completed" ID="{2A952213-81B9-4939-9C14-8F88429D7730}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MXG_Para_sfx_puz_correctPiece" ID="{65379DC9-D54D-4D7E-AE59-419E812D2340}" ShortID="599597544">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MXG_Para_sfx_puz_correctPiece" ID="{AAFFEF01-3628-42D6-91C6-C71720709B9B}" ShortID="957558420">
+											<Language>SFX</Language>
+											<AudioFile>Parapet_sfx_puz\MXG_Para_sfx_puz_correctPiece.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MXG_Para_sfx_puz_correctPiece" ID="{AAFFEF01-3628-42D6-91C6-C71720709B9B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<Sound Name="MXG_Para_sfx_flag_multi" ID="{133E4B9D-5B62-4569-8C01-4081724471CE}" ShortID="209643612">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Parapet_At_mainFlag" ID="{08896994-0FC4-4607-B052-B5F867A761A7}" WorkUnitID="{417C7A31-DFA2-4567-B6FE-B70E2C7D4DD7}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="MXG_Para_sfx_flag_multi" ID="{6622A696-A17B-4E0A-B0E2-F5AB8313C71C}" ShortID="137454270">
+									<Language>SFX</Language>
+									<AudioFile>Parapet_sfx__flag\MXG_Para_sfx_flag_multi.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{4CE3722E-862D-42C4-A243-125EA00C031A}"/>
+							</PositioningInfo>
+							<ActiveSourceList>
+								<ActiveSource Name="MXG_Para_sfx_flag_multi" ID="{6622A696-A17B-4E0A-B0E2-F5AB8313C71C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
