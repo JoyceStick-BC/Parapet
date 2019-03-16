@@ -58,4 +58,30 @@ public class AudioManager : MonoBehaviour {
         if (Random.Range(0, 100) > 70) AkSoundEngine.SetSwitch("Seagul", "Seagul_Burst", gameObject);
         else AkSoundEngine.SetSwitch("Seagul", "Seagul_Single", gameObject);
     }
+
+
+    public void sfx_MultipleImpacts (GameObject collisionObj)
+    {
+        AkSoundEngine.SetSwitch("Seagul", "Seagul_Burst", collisionObj);
+    }
+    public void sfx_SingleImpacts(GameObject collisionObj)
+    {
+        AkSoundEngine.SetSwitch("Seagul", "Seagul_Single", collisionObj);
+    }
+
+    public void sfx_SetMaterialSwitch (string switchName, string switchGroupName, GameObject collisionObj)
+    {
+        AkSoundEngine.SetSwitch(switchGroupName, switchName, collisionObj);
+    }
+
+    public void DestroyAfter5Sec (GameObject objectToDestroy)
+    {
+        StartCoroutine(DestroyAfter5Corountine(objectToDestroy));
+    }
+    IEnumerator DestroyAfter5Corountine(GameObject objectToDestroy)
+    {
+        yield return new WaitForSecondsRealtime(5);
+        Debug.Log("Destroy");
+        Destroy(objectToDestroy);
+    }
 }

@@ -9,6 +9,13 @@
 						<Switch Name="Seagul_Single" ID="{BC87925E-8F6E-462C-BA32-D92B6DC00C09}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="Materials" ID="{805FB2CD-11A3-4B97-9449-A8D3854E4179}">
+					<ChildrenList>
+						<Switch Name="Materials_plastic" ID="{B8633A07-4062-4D32-8262-536DB88161AD}"/>
+						<Switch Name="Materials_wood" ID="{7481225B-7DA4-4722-BFCB-8B41F169557B}"/>
+						<Switch Name="Materials_metal" ID="{20AE92C7-451E-4EE7-BB6B-F8F83A0CFAE9}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>
