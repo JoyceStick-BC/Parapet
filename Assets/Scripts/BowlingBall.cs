@@ -6,7 +6,7 @@ using VRTK;
 public class BowlingBall : MonoBehaviour {
 
     private Transform t;
-    private
+    private bool grabbed = false;
 
 
 	// Use this for initialization
@@ -23,11 +23,15 @@ public class BowlingBall : MonoBehaviour {
 
     private void BowlingBallGrab(object sender, InteractableObjectEventArgs e)
     {
-
+        grabbed = true;
+        Instantiate(gameObject);
     }
 
     // Update is called once per frame
     void Update () {
-        gameObject.transform.position = t.position;
+        if (!grabbed)
+        {
+            gameObject.transform.position = t.position;
+        }
 	}
 }
