@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2015
+# Visual Studio 2017
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parapet", "Parapet.csproj", "{ED6A561E-6FB6-BEB8-EAD8-AF2BFF46041F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parapet.Plugins", "Parapet.Plugins.csproj", "{34C57BEB-5626-C8CB-902A-838E30241742}"
