@@ -35,7 +35,7 @@ public class BowlingBall : MonoBehaviour {
     void Update () {
         if (grabbed && !spawned)
         {
-            VRTK_Logger.Info("Can spawn");
+            //VRTK_Logger.Info("Can spawn");
             if (Time.time - elapsed > 3)
             {
                 VRTK_Logger.Info("Spawned" + spawn.transform.position.x + " y: " + spawn.transform.position.y + " z: " + spawn.transform.position.z);
