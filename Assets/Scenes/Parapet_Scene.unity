@@ -4420,19 +4420,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6efe37423dd95bb49ad017ac4061458a, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.53058785
+      value: -0.4650391
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6efe37423dd95bb49ad017ac4061458a, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.4674148
+      value: 0.5326713
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6efe37423dd95bb49ad017ac4061458a, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.4674147
+      value: 0.5326713
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6efe37423dd95bb49ad017ac4061458a, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.5305878
+      value: 0.4650391
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6efe37423dd95bb49ad017ac4061458a, type: 3}
       propertyPath: m_RootOrder
@@ -4474,6 +4474,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 37bd995f65f275e4f9b6eecebeed2dc9, type: 2}
+    - target: {fileID: 400000, guid: 6efe37423dd95bb49ad017ac4061458a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6efe37423dd95bb49ad017ac4061458a, type: 3}
   m_IsPrefabParent: 0
@@ -6155,13 +6159,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1234003674}
-  m_LocalRotation: {x: -0.38268343, y: 0, z: 0, w: 0.92387956}
+  m_LocalRotation: {x: -0.27059805, y: 0.6532815, z: 0.27059805, w: 0.6532815}
   m_LocalPosition: {x: 0.6, y: 0.85, z: -0.493}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 39
-  m_LocalEulerAnglesHint: {x: -45, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -45, y: 90, z: 0}
 --- !u!54 &1234003679
 Rigidbody:
   m_ObjectHideFlags: 0
