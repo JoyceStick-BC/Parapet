@@ -4,13 +4,14 @@ using UnityEngine;
 using VRTK;
 
 public class BowlingBall : MonoBehaviour {
-    public GameObject spawn = GameObject.Find("Sphere (1)");
+    public GameObject spawn;
     private Transform t;
     private bool grabbed = false;
     private float elapsed = 1;
     private bool spawned = false;
 	// Use this for initialization
 	void Start () {
+        spawn = GameObject.Find("Sphere (1)");
         t = gameObject.transform;
 
         if (GetComponent<VRTK_InteractableObject>() == null)
