@@ -23,9 +23,10 @@ public class CannonLaunch : MonoBehaviour {
     private void Mortar_InteractableObjectUsed(object sender, InteractableObjectEventArgs e)
     {
         GameObject cannonballCopy = Instantiate(cannonball, shotPos.position, shotPos.rotation) as GameObject;
+        //GameObject cannonballCopy = Instantiate(cannonball, shotPos.position, cannonball.transform.rotation) as GameObject;
         cannonballRB = cannonballCopy.GetComponent<Rigidbody>();
         //cannonballRB.AddForce(shotPos.forward * firepower);
-        cannonballRB.AddForce(0,firepower,firepower,ForceMode.Impulse);
+        cannonballRB.AddForce(firepower, firepower, 0,ForceMode.Impulse);
         Instantiate(explosion, shotPos.position, shotPos.rotation);
     }
 
