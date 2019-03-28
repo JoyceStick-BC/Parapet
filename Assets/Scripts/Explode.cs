@@ -61,6 +61,7 @@ public class Explode : MonoBehaviour {
             Instantiate(explosion, NelsonMiddle.transform.position, NelsonMiddle.transform.rotation);
             Instantiate(explosion, NelsonTop.transform.position, NelsonTop.transform.rotation);
             exploded = true;
+            AudioManager.Instance.PlayTowerDestruction(gameObject);
         }
        
     }

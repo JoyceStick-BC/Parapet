@@ -28,6 +28,7 @@ public class BowlingBall : MonoBehaviour {
         {
             elapsed = Time.time;
         }
+        AudioManager.Instance.BowlingBowlGrab();
         grabbed = true;
         gameObject.GetComponent<Rigidbody>().useGravity = true;
     }
@@ -48,6 +49,7 @@ public class BowlingBall : MonoBehaviour {
                 clone.GetComponent<BowlingBall>().spawn = spawn;
                 //clone.transform.position = t.position;
                 spawned = true;
+                AudioManager.Instance.BowlingBowlSpawn();
                 //gameObject.GetComponent<MeshCollider>().isTrigger = false;
             }
         }

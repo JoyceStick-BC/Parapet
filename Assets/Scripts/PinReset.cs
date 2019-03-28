@@ -34,6 +34,7 @@ public class PinReset : MonoBehaviour {
             clone.GetComponent<MeshRenderer>().enabled = true;
             clone.GetComponent<MeshCollider>().enabled = true;
             pins[i] = clone;
+            AudioManager.Instance.PinResetSound();
         }
 
     }

@@ -11,10 +11,11 @@ public class AudioManager : MonoBehaviour {
     {
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
+        AudioInitialisation();
     }
     private void Start()
     {
-        AudioInitialisation();
+        
     }
 
     private void AudioInitialisation ()
@@ -83,5 +84,45 @@ public class AudioManager : MonoBehaviour {
         yield return new WaitForSecondsRealtime(5);
         Debug.Log("Destroy");
         Destroy(objectToDestroy);
+    }
+
+    public void PlayMortar (GameObject mortarObj)
+    {
+        AkSoundEngine.PostEvent("Play_Parapet_sfx_mort", mortarObj);
+    }
+    public void PlayMainFlag(GameObject mainFlagObj)
+    {
+        AkSoundEngine.PostEvent("Play_Parapet_sfx_mainFlag", mainFlagObj);
+    }
+    public void PlaySecondaryFlags(GameObject lineOfFlagsObj)
+    {
+        AkSoundEngine.PostEvent("Play_MXG_Para_sfx_flag_multi", lineOfFlagsObj);
+    }
+
+    public void PlayTowerDestruction (GameObject tower)
+    {
+        AkSoundEngine.PostEvent("Play_Parapet_TowerExplosion", tower);
+    }
+
+    public void PlayPuzzleSnapSound (GameObject puzzlePiece)
+    {
+        AkSoundEngine.PostEvent("Play_Parapet_sfx_puzzlePiece", puzzlePiece);
+    }
+
+    public void PinResetSound ()
+    {
+        //AkSoundEngine.PostEvent();
+    }
+
+    //Find Bowling Bowl so that it plays in 3D
+    //Add a collision for bowl in water
+    public void BowlingBowlSpawn ()
+    {
+        //AkSoundEngine.PostEvent();
+    }
+
+    public void BowlingBowlGrab ()
+    {
+        //AkSoundEngine.PostEvent();
     }
 }

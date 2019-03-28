@@ -5,8 +5,13 @@
 			<ChildrenList>
 				<SoundBank Name="Main" ID="{EB69050C-DC0B-4398-8A89-FBF1B36E90D1}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Parapet_sfx_seagul" ID="{7984F6A9-8531-47CF-862B-11C3D7B870D1}" WorkUnitID="{1F54CBE6-2F89-4F7A-8329-38CCD8B74888}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Parapet_sfx_ambiance" ID="{0F376733-C2CD-4B4E-9E95-065708DD271C}" WorkUnitID="{1F54CBE6-2F89-4F7A-8329-38CCD8B74888}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Parapet_sfx_puz" ID="{898708FE-0FD9-4427-BBB2-A1E4F8AD672C}" WorkUnitID="{1F54CBE6-2F89-4F7A-8329-38CCD8B74888}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Parapet_sfx_seagul" ID="{420730D9-9D97-44B0-B08B-A3EB5DBA8CC7}" WorkUnitID="{1F54CBE6-2F89-4F7A-8329-38CCD8B74888}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Parapet_sfx_ambiance" ID="{2A637FEC-6C39-45F0-9D1F-A3DEEB8D8E83}" WorkUnitID="{1F54CBE6-2F89-4F7A-8329-38CCD8B74888}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Parapet_sfx_mort" ID="{BBEAEDD1-833B-476C-B643-5868AC65F702}" WorkUnitID="{1F54CBE6-2F89-4F7A-8329-38CCD8B74888}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Parapet_sfx_mainFlag" ID="{A75ED773-B5C5-47BB-83D9-F6D3D4204BFA}" WorkUnitID="{1F54CBE6-2F89-4F7A-8329-38CCD8B74888}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Parapet_sfx_col" ID="{21EA0CCC-F311-498D-B0EA-4A371E0D1D9A}" WorkUnitID="{1F54CBE6-2F89-4F7A-8329-38CCD8B74888}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_MXG_Para_sfx_flag_multi" ID="{CA1305A1-12E6-4C2C-A589-F6B1349FC936}" WorkUnitID="{1F54CBE6-2F89-4F7A-8329-38CCD8B74888}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

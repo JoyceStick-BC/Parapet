@@ -15,10 +15,27 @@ namespace AK
     {
         static const AkUniqueID PARAPET_SFX_AMBIANCE = 74477125U;
         static const AkUniqueID PARAPET_SFX_SEAGUL = 2487091518U;
+        static const AkUniqueID PLAY_MXG_PARA_SFX_FLAG_MULTI = 3884044616U;
+        static const AkUniqueID PLAY_PARAPET_SFX_COL = 1716169500U;
+        static const AkUniqueID PLAY_PARAPET_SFX_MAINFLAG = 723477451U;
+        static const AkUniqueID PLAY_PARAPET_SFX_MORT = 2805515628U;
+        static const AkUniqueID PLAY_PARAPET_SFX_PUZ = 1349872047U;
     } // namespace EVENTS
 
     namespace SWITCHES
     {
+        namespace MATERIALS
+        {
+            static const AkUniqueID GROUP = 4050929301U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID MATERIALS_METAL = 575716857U;
+                static const AkUniqueID MATERIALS_PLASTIC = 2811705976U;
+                static const AkUniqueID MATERIALS_WOOD = 1424921799U;
+            } // namespace SWITCH
+        } // namespace MATERIALS
+
         namespace SEAGUL
         {
             static const AkUniqueID GROUP = 3014379214U;

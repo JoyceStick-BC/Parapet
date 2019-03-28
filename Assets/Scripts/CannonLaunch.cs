@@ -28,6 +28,7 @@ public class CannonLaunch : MonoBehaviour {
         //cannonballRB.AddForce(shotPos.forward * firepower);
         cannonballRB.AddForce(firepower, firepower, 0,ForceMode.Impulse);
         Instantiate(explosion, shotPos.position, shotPos.rotation);
+        AudioManager.Instance.PlayMortar(gameObject);
     }
 
     // Update is called once per frame

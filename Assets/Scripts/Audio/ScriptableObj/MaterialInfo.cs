@@ -19,7 +19,7 @@ public class MaterialInfo : ScriptableObject {
                 objectToPlayFrom = Instantiate(objectToInstantiate);
                 objectToPlayFrom.transform.position = collision.contacts[0].point;
                 AudioManager.Instance.sfx_MultipleImpacts(objectToPlayFrom);
-                AudioManager.Instance.DestroyAfter5Sec(objectToPlayFrom);
+                //AudioManager.Instance.DestroyAfter5Sec(objectToPlayFrom);
             }
             //else AudioManager.Instance
         }
