@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{980F8A5E-46F3-4CEF-8A35-F51149C93637}" SchemaVersion="89">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{980F8A5E-46F3-4CEF-8A35-F51149C93637}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{980F8A5E-46F3-4CEF-8A35-F51149C93637}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="ballAngularV" ID="{2383C04F-5F87-458D-8B51-22EF8D94AF2D}"/>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

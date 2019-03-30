@@ -3,34 +3,226 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{1F54CBE6-2F89-4F7A-8329-38CCD8B74888}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Parapet_sfx_seagul" ID="{7984F6A9-8531-47CF-862B-11C3D7B870D1}">
+				<Folder Name="Main" ID="{190245CE-684E-4F3A-B18A-F0EF189632D7}" ShortID="503974773">
 					<ChildrenList>
-						<Action Name="" ID="{92CBD7CC-B747-4496-A636-BC7AADE34232}" ShortID="85610785">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Parapet_sfx_seagull" ID="{BCBB2775-792B-4DFE-9AE6-86CBF89AEFA1}" WorkUnitID="{C875FD9F-D567-46A3-AFDF-F034770F11DC}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Event Name="Parapet_sfx_ambiance" ID="{0F376733-C2CD-4B4E-9E95-065708DD271C}">
+							<ChildrenList>
+								<Action Name="" ID="{A6E14B6A-0219-43E7-BDE3-8968AEC5EDF5}" ShortID="234020240">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Parapet_sfx_Ambiance_Loop" ID="{5FE9C025-499B-4910-9CCA-7567EB4C6A87}" WorkUnitID="{C875FD9F-D567-46A3-AFDF-F034770F11DC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Parapet_sfx_seagul" ID="{7984F6A9-8531-47CF-862B-11C3D7B870D1}">
+							<ChildrenList>
+								<Action Name="" ID="{92CBD7CC-B747-4496-A636-BC7AADE34232}" ShortID="85610785">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Parapet_sfx_seagull" ID="{BCBB2775-792B-4DFE-9AE6-86CBF89AEFA1}" WorkUnitID="{C875FD9F-D567-46A3-AFDF-F034770F11DC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_JackInTheBox" ID="{1F5D9AD1-6688-4CC7-A0BE-72207BCEC966}">
+							<ChildrenList>
+								<Action Name="" ID="{C595AE0E-0AEE-4264-93F0-8EEF0092C046}" ShortID="1052217483">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="JackInTheBox" ID="{E110E0E9-3B4A-4D2F-B3E4-2F2D0913D54D}" WorkUnitID="{1DA2453A-CBE1-42CF-8178-628EED37E34B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_BallGrab" ID="{0893E8D9-15B5-476A-B62C-064601DD761D}">
+							<ChildrenList>
+								<Action Name="" ID="{0A89F499-0F16-484E-95F8-D2C6712B3083}" ShortID="558222928">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="BallGrab" ID="{0F996317-3542-4E9B-B43F-430637483DDB}" WorkUnitID="{1DA2453A-CBE1-42CF-8178-628EED37E34B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_BallRespawn" ID="{7A3F87F7-51E0-4793-AD49-2164D8DE2A5E}">
+							<ChildrenList>
+								<Action Name="" ID="{9DCAC442-DC7D-45C7-9359-6087F964259F}" ShortID="821237910">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="BallRespawn" ID="{C2D392EB-E52A-4331-A17F-EFCF7C4A1353}" WorkUnitID="{1DA2453A-CBE1-42CF-8178-628EED37E34B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Parapet_TowerExplosion" ID="{B7652982-4D5C-42D2-A32F-6D698C05437A}">
+							<ChildrenList>
+								<Action Name="" ID="{ED7AE176-AFE4-4C19-B903-CE939E062450}" ShortID="579814930">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ExplosionTower" ID="{C871E1B1-09E2-4291-8B56-F8DA7CBA36BF}" WorkUnitID="{1DA2453A-CBE1-42CF-8178-628EED37E34B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_MXG_Para_sfx_flag_multi" ID="{7B5C39E9-DC2D-4974-B63D-227AE6AF5E14}">
+							<ChildrenList>
+								<Action Name="" ID="{50986138-7D15-47BB-AE1A-753FC38D9366}" ShortID="377367173">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MXG_Para_sfx_flag_multi" ID="{133E4B9D-5B62-4569-8C01-4081724471CE}" WorkUnitID="{C875FD9F-D567-46A3-AFDF-F034770F11DC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
-				<Event Name="Parapet_sfx_ambiance" ID="{0F376733-C2CD-4B4E-9E95-065708DD271C}">
+				</Folder>
+				<Folder Name="Main_02" ID="{709A6191-B964-44B1-9B05-E0687340648C}" ShortID="832627037">
 					<ChildrenList>
-						<Action Name="" ID="{A6E14B6A-0219-43E7-BDE3-8968AEC5EDF5}" ShortID="234020240">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Parapet_sfx_Ambiance_Loop" ID="{5FE9C025-499B-4910-9CCA-7567EB4C6A87}" WorkUnitID="{C875FD9F-D567-46A3-AFDF-F034770F11DC}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Event Name="Play_Parapet_sfx_mort" ID="{752A1BF2-7DAD-4644-BB95-34755A63B9E8}">
+							<ChildrenList>
+								<Action Name="" ID="{257C6A77-234C-4095-889E-F76B14A8C4E3}" ShortID="573985208">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Parapet_sfx_mort" ID="{8CA3D7F3-AF6E-4D5C-A19A-EA1AE15DBE1F}" WorkUnitID="{C875FD9F-D567-46A3-AFDF-F034770F11DC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Roll" ID="{81AD344B-FDEA-4630-9C5C-D21DA9CF7F22}">
+							<ChildrenList>
+								<Action Name="" ID="{2960D84A-C608-4ED0-B01A-CAA49818D366}" ShortID="743647135">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MXG_Para_sfx_roll" ID="{05F90900-2CA4-4984-B434-7353E1D8F134}" WorkUnitID="{1DA2453A-CBE1-42CF-8178-628EED37E34B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Parapet_sfx_puzzlePiece" ID="{432003B8-CE6A-4E15-9223-56EA1B293242}">
+							<ChildrenList>
+								<Action Name="" ID="{E883C004-9319-4926-8437-BB867902FE98}" ShortID="541808165">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Parapet_sfx_puz_Single" ID="{66A20E7C-B398-42A3-8C89-0DFD50E19BB9}" WorkUnitID="{C875FD9F-D567-46A3-AFDF-F034770F11DC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Pin_Switch" ID="{C92EBA2C-38D9-4AFE-87E7-06E9A2B1BC42}">
+							<ChildrenList>
+								<Action Name="" ID="{F4BFEAEC-6277-4F5E-8EDF-33AADDBBB652}" ShortID="1034674170">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Pin_Switch" ID="{1B5A51FE-3B14-424E-A85A-D2292106B16C}" WorkUnitID="{1DA2453A-CBE1-42CF-8178-628EED37E34B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Parapet_sfx_col" ID="{9494CF96-0EC5-4777-883B-0CCB62828BA0}">
+							<ChildrenList>
+								<Action Name="" ID="{9A14C450-6BA1-4FA6-BCB0-EBFDB91E7386}" ShortID="755132858">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Parapet_sfx_col" ID="{E229C21F-2D66-4CA4-AA42-BC4E9642DD29}" WorkUnitID="{C875FD9F-D567-46A3-AFDF-F034770F11DC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Parapet_sfx_mainFlag" ID="{6668CDF8-AB2B-45E8-B04F-FE60EB8AD436}">
+							<ChildrenList>
+								<Action Name="" ID="{3A34896E-66E2-4725-87BE-861B7C3D9C27}" ShortID="798153059">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Parapet_sfx_flag" ID="{04A197E2-F089-4146-8A76-1AA2B525567A}" WorkUnitID="{C875FD9F-D567-46A3-AFDF-F034770F11DC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Parapet_sfx_puzzleComplete" ID="{80991F6A-210B-493A-AAB5-9DF33387757A}">
+							<ChildrenList>
+								<Action Name="" ID="{5EBF4AB8-8EF5-43FD-9C38-5C5988E0F7BA}" ShortID="534302135">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Parapet_sfx_puz_complete" ID="{1EBA9142-5C24-40C9-99BE-FE1F30594F81}" WorkUnitID="{C875FD9F-D567-46A3-AFDF-F034770F11DC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Roll" ID="{004CC40C-21C5-41E9-BFF8-DBF741F3A1AA}">
+							<ChildrenList>
+								<Action Name="" ID="{A081035A-2E63-42FA-82C5-2AB03ACEC801}" ShortID="1056867308">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="0"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MXG_Para_sfx_roll" ID="{05F90900-2CA4-4984-B434-7353E1D8F134}" WorkUnitID="{1DA2453A-CBE1-42CF-8178-628EED37E34B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

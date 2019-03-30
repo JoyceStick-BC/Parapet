@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{56586F8D-B793-409B-BB67-453DE3DDBF15}" SchemaVersion="89">
 	<Effects>
-		<WorkUnit Name="Default Work Unit" ID="{56586F8D-B793-409B-BB67-453DE3DDBF15}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{56586F8D-B793-409B-BB67-453DE3DDBF15}" PersistMode="Standalone">
+			<ChildrenList>
+				<Effect Name="Base" ID="{6E8648FB-80F6-4493-9DF2-45F79030A37C}" PluginName="Resonance Audio Renderer" CompanyID="272" PluginID="100" PluginType="3"/>
+				<Effect Name="BaseMixerrPlugin" ID="{43ED47A7-0ABB-4461-A6DE-67CA4306DCE0}" PluginName="Resonance Audio Room Effects" CompanyID="272" PluginID="200" PluginType="6"/>
+			</ChildrenList>
+		</WorkUnit>
 	</Effects>
 </WwiseDocument>

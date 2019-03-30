@@ -5,8 +5,16 @@
 			<ChildrenList>
 				<SoundBank Name="Main" ID="{EB69050C-DC0B-4398-8A89-FBF1B36E90D1}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Parapet_sfx_seagul" ID="{7984F6A9-8531-47CF-862B-11C3D7B870D1}" WorkUnitID="{1F54CBE6-2F89-4F7A-8329-38CCD8B74888}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Parapet_sfx_ambiance" ID="{0F376733-C2CD-4B4E-9E95-065708DD271C}" WorkUnitID="{1F54CBE6-2F89-4F7A-8329-38CCD8B74888}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Main" ID="{190245CE-684E-4F3A-B18A-F0EF189632D7}" WorkUnitID="{1F54CBE6-2F89-4F7A-8329-38CCD8B74888}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Main_02" ID="{52F519C8-5045-4615-8DEA-B1ADD5847915}">
+					<ObjectInclusionList>
+						<ObjectRef Name="BaseMixerrPlugin" ID="{43ED47A7-0ABB-4461-A6DE-67CA4306DCE0}" WorkUnitID="{56586F8D-B793-409B-BB67-453DE3DDBF15}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Base" ID="{6E8648FB-80F6-4493-9DF2-45F79030A37C}" WorkUnitID="{56586F8D-B793-409B-BB67-453DE3DDBF15}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Main_02" ID="{709A6191-B964-44B1-9B05-E0687340648C}" WorkUnitID="{1F54CBE6-2F89-4F7A-8329-38CCD8B74888}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

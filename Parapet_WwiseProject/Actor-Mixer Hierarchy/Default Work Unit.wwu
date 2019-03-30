@@ -36,6 +36,7 @@
 							<PropertyList>
 								<Property Name="3DPosition" Type="int16" Value="2"/>
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -1228,6 +1229,7 @@
 						<BlendContainer Name="Parapet_sfx_flag" ID="{04A197E2-F089-4146-8A76-1AA2B525567A}" ShortID="566454734">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -1237,7 +1239,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+									<ObjectRef Name="SpatialBUS" ID="{5FD26E46-0FCB-45D5-8FDA-3F28262EE3E6}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -1409,7 +1411,7 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="Parapet_sfx_puz" ID="{1EBA9142-5C24-40C9-99BE-FE1F30594F81}" ShortID="50673">
+						<RandomSequenceContainer Name="Parapet_sfx_puz_complete" ID="{1EBA9142-5C24-40C9-99BE-FE1F30594F81}" ShortID="50673">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
@@ -1420,13 +1422,6 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="MXG_Para_sfx_puz_completed" ID="{9C8D5858-6ECB-4100-875E-CCF754233123}" ShortID="173900020">
-									<PropertyList>
-										<Property Name="Inclusion" Type="bool">
-											<ValueList>
-												<Value>False</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
@@ -1446,6 +1441,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="MXG_Para_sfx_puz_correctPiece" ID="{65379DC9-D54D-4D7E-AE59-419E812D2340}" ShortID="599597544">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
@@ -1494,6 +1496,69 @@
 								<ActiveSource Name="MXG_Para_sfx_flag_multi" ID="{6622A696-A17B-4E0A-B0E2-F5AB8313C71C}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<RandomSequenceContainer Name="Parapet_sfx_puz_Single" ID="{66A20E7C-B398-42A3-8C89-0DFD50E19BB9}" ShortID="217850410">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="MXG_Para_sfx_puz_completed" ID="{E0997EA4-4238-465D-A379-789A706A22DB}" ShortID="370673437">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MXG_Para_sfx_puz_completed" ID="{AEE9D07C-7FD8-429A-B32F-3FE2686A6AA0}" ShortID="23805495">
+											<Language>SFX</Language>
+											<AudioFile>Parapet_sfx_puz\MXG_Para_sfx_puz_completed.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="73302493"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MXG_Para_sfx_puz_completed" ID="{AEE9D07C-7FD8-429A-B32F-3FE2686A6AA0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MXG_Para_sfx_puz_correctPiece" ID="{175424C5-82FC-424C-884D-BA97459A668A}" ShortID="85395733">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MXG_Para_sfx_puz_correctPiece" ID="{025FC2B3-911A-48B4-B87D-B938215EA302}" ShortID="242218448">
+											<Language>SFX</Language>
+											<AudioFile>Parapet_sfx_puz\MXG_Para_sfx_puz_correctPiece.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="957558420"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MXG_Para_sfx_puz_correctPiece" ID="{025FC2B3-911A-48B4-B87D-B938215EA302}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

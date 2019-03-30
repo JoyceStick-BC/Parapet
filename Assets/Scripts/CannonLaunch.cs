@@ -22,6 +22,7 @@ public class CannonLaunch : MonoBehaviour {
     }
     private void Mortar_InteractableObjectUsed(object sender, InteractableObjectEventArgs e)
     {
+        AudioManager.Instance.PlayMortar(gameObject);
         GameObject cannonballCopy = Instantiate(cannonball, shotPos.position, shotPos.rotation) as GameObject;
         //GameObject cannonballCopy = Instantiate(cannonball, shotPos.position, cannonball.transform.rotation) as GameObject;
         cannonballRB = cannonballCopy.GetComponent<Rigidbody>();

@@ -241,6 +241,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\PuzzleScripts\A1.cs" />
+    <Compile Include="Assets\ResonanceAudio\Scripts\WwiseResonanceAudio.cs" />
+    <Compile Include="Assets\ResonanceAudio\Scripts\WwiseResonanceAudioRoom.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
@@ -251,12 +253,13 @@
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
     <Compile Include="Assets\Scripts\Audio\AudioManager.cs" />
     <Compile Include="Assets\Scripts\Audio\CollisionManager.cs" />
+    <Compile Include="Assets\Scripts\Audio\FlagAudio.cs" />
     <Compile Include="Assets\Scripts\Audio\MaterialHolder.cs" />
     <Compile Include="Assets\Scripts\Audio\ScriptableObj\MaterialInfo.cs" />
     <Compile Include="Assets\Scripts\BowlingBall.cs" />
     <Compile Include="Assets\Scripts\CannonLaunch.cs" />
     <Compile Include="Assets\Scripts\Explode.cs" />
-    <Compile Include="Assets\Scripts\JackInTheBox.cs" />
+    <Compile Include="Assets\Scripts\Jackrotate.cs" />
     <Compile Include="Assets\Scripts\PinReset.cs" />
     <Compile Include="Assets\Scripts\Snapped.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_GazeTracker.cs" />
@@ -818,6 +821,7 @@
     <None Include="Assets\Standard Assets\Cameras\CameraGuidelines.txt" />
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
     <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Readme.txt" />
     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\BlendModesOverlay.shader" />
     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\BlurEffectConeTaps.shader" />
     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\CameraMotionBlur.shader" />

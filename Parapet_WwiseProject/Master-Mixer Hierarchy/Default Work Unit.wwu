@@ -12,6 +12,32 @@
 					<ChildrenList>
 						<AuxBus Name="Verb" ID="{4E8257E3-0EFC-482C-87FB-B95A667AC9B7}"/>
 						<Bus Name="SFX" ID="{58846A0B-1A67-4E80-B12F-B0CA438EE8B1}">
+							<PropertyList>
+								<Property Name="BusChannelConfig" Type="int32">
+									<ValueList>
+										<Value>12546</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+						</Bus>
+						<Bus Name="SpatialBUS" ID="{5FD26E46-0FCB-45D5-8FDA-3F28262EE3E6}">
+							<PropertyList>
+								<Property Name="BusChannelConfig" Type="int32">
+									<ValueList>
+										<Value>528</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Effect0" PluginName="Resonance Audio Renderer" CompanyID="272" PluginID="100" PluginType="3">
+									<ObjectRef Name="Base" ID="{6E8648FB-80F6-4493-9DF2-45F79030A37C}" WorkUnitID="{56586F8D-B793-409B-BB67-453DE3DDBF15}"/>
+								</Reference>
+								<Reference Name="Mixer">
+									<Custom>
+										<Effect Name="Resonance Audio Room Effects (Custom)" ID="{6D7C301D-9DA1-4077-BB8A-31021188C1BB}" ShortID="996803124" PluginName="Resonance Audio Room Effects" CompanyID="272" PluginID="200" PluginType="6"/>
+									</Custom>
+								</Reference>
+							</ReferenceList>
 							<ChildrenList>
 								<Bus Name="Seagul" ID="{BDA30D67-9F11-4422-AF5D-A09C60DA0A3E}">
 									<PropertyList>
@@ -22,12 +48,46 @@
 										</Property>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="AttachableMixerInput">
+											<Custom>
+												<Effect Name="Resonance Audio Room Effects (Attached)" ID="{15E97FD4-3A1F-4E56-A927-F6C941E4D7DD}" ShortID="473455985" PluginName="AttachableMixerInput" CompanyID="272" PluginID="201" PluginType="3"/>
+											</Custom>
+										</Reference>
 										<Reference Name="UserAuxSend0">
 											<ObjectRef Name="Verb" ID="{4E8257E3-0EFC-482C-87FB-B95A667AC9B7}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
 										</Reference>
 									</ReferenceList>
 								</Bus>
+								<AuxBus Name="SpatialVerb" ID="{0F9E20C6-A7D2-48B2-AEAA-5323EAD0628C}">
+									<ReferenceList>
+										<Reference Name="AttachableMixerInput">
+											<Custom>
+												<Effect Name="Resonance Audio Room Effects (Attached)" ID="{69B80049-7B9B-4A65-B28C-07EDC2BA5B50}" ShortID="644520464" PluginName="AttachableMixerInput" CompanyID="272" PluginID="201" PluginType="3"/>
+											</Custom>
+										</Reference>
+										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<ObjectRef Name="Have_U_Ever_Been_Outside" ID="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+									</ReferenceList>
+								</AuxBus>
 							</ChildrenList>
+						</Bus>
+						<Bus Name="RoomEffect" ID="{30CD8362-4C52-4670-9C28-0866ADBEBE6E}">
+							<PropertyList>
+								<Property Name="BusChannelConfig" Type="int32">
+									<ValueList>
+										<Value>12546</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Mixer" PluginName="Resonance Audio Room Effects" CompanyID="272" PluginID="200" PluginType="6">
+									<ObjectRef Name="BaseMixerrPlugin" ID="{43ED47A7-0ABB-4461-A6DE-67CA4306DCE0}" WorkUnitID="{56586F8D-B793-409B-BB67-453DE3DDBF15}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="SpatialVerb" ID="{0F9E20C6-A7D2-48B2-AEAA-5323EAD0628C}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+								</Reference>
+							</ReferenceList>
 						</Bus>
 					</ChildrenList>
 				</Bus>

@@ -23,6 +23,7 @@ public class Snapped : MonoBehaviour {
                 Destroy(gameObject.GetComponent<Rigidbody>());
                 Destroy(gameObject.GetComponent<MeshCollider>());
                 done = true;
+                AudioManager.Instance.PlayPuzzleSnapSound(gameObject);
             }
         }
 	}

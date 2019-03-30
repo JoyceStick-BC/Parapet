@@ -7,14 +7,20 @@ public class AudioManager : MonoBehaviour {
 
     private uint bankID;
 
+    public enum flags
+    {
+        tentFlag,
+        mainFlag
+    }
     private void Awake()
     {
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
+        AudioInitialisation();
     }
     private void Start()
     {
-        AudioInitialisation();
+        AkSoundEngine.RegisterPluginDLL
     }
 
     private void AudioInitialisation ()
@@ -28,6 +34,7 @@ public class AudioManager : MonoBehaviour {
     private void sfx_mainBankLoader()
     {
         AkSoundEngine.LoadBank("Main", AkSoundEngine.AK_DEFAULT_POOL_ID, out bankID);
+        AkSoundEngine.LoadBank("Main_02", AkSoundEngine.AK_DEFAULT_POOL_ID, out bankID);
     }
 
     public void MX_Start()
@@ -83,5 +90,73 @@ public class AudioManager : MonoBehaviour {
         yield return new WaitForSecondsRealtime(5);
         Debug.Log("Destroy");
         Destroy(objectToDestroy);
+    }
+
+    public void PlayMortar (GameObject mortarObj)
+    {
+        AkSoundEngine.PostEvent("Play_Parapet_sfx_mort", mortarObj);
+    }
+    public void PlayMainFlag(GameObject mainFlagObj)
+    {
+        AkSoundEngine.PostEvent("Play_Parapet_sfx_mainFlag", mainFlagObj);
+    }
+    public void PlaySecondaryFlags(GameObject lineOfFlagsObj)
+    {
+        AkSoundEngine.PostEvent("Play_MXG_Para_sfx_flag_multi", lineOfFlagsObj);
+    }
+
+    public void PlayTowerDestruction (GameObject tower)
+    {
+        AkSoundEngine.PostEvent("Play_Parapet_TowerExplosion", tower);
+    }
+
+    public void PlayPuzzleSnapSound (GameObject puzzlePiece)
+    {
+        AkSoundEngine.PostEvent("Play_Parapet_sfx_puzzlePiece", puzzlePiece);
+    }
+    public void PlayPuzzleCompleteSound(GameObject puzzlePiece)
+    {
+        AkSoundEngine.PostEvent("Play_Parapet_sfx_puzzleComplete", puzzlePiece);
+    }
+
+    public void PinResetSound ()
+    {
+        //AkSoundEngine.PostEvent("", );
+    }
+
+    //Find Bowling Bowl so that it plays in 3D
+    //Add a collision for bowl in water
+    public void BowlingBowlSpawn (GameObject spawnBowl)
+    {
+        AkSoundEngine.PostEvent("Play_BallRespawn", gameObject);
+    }
+
+    public void BowlingBowlGrab (GameObject ball)
+    {
+        AkSoundEngine.PostEvent("Play_BallGrab", ball );
+    }
+
+    public void JackInTheBox (GameObject jackObj)
+    {
+        AkSoundEngine.PostEvent("Play_JackInTheBox", jackObj);
+    }
+
+    public void PlayTentFlag(GameObject tentFlag)
+    {
+        //AkSoundEngine.PostEvent("Play_Parapet_sfx_tentFlag", tentFlag);
+    }
+
+    public void UpdateBallAngularRTPC (float angularV, GameObject ball)
+    {
+        AkSoundEngine.SetRTPCValue("ballAngularV", angularV, ball);
+    }
+
+    public void PlayRollingBall(GameObject ball)
+    {
+        AkSoundEngine.PostEvent("Play_Roll", ball);
+    }
+    public void StopRollingBall(GameObject ball)
+    {
+        AkSoundEngine.PostEvent("Stop_Roll", ball);
     }
 }

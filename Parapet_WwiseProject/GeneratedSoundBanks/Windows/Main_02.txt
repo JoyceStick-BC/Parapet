@@ -1,0 +1,25 @@
+Event	ID	Name			Wwise Object Path	Notes
+	723477451	Play_Parapet_sfx_mainFlag			\Default Work Unit\Main_02\Play_Parapet_sfx_mainFlag	
+	1244549788	Play_Parapet_sfx_puzzlePiece			\Default Work Unit\Main_02\Play_Parapet_sfx_puzzlePiece	
+	1716169500	Play_Parapet_sfx_col			\Default Work Unit\Main_02\Play_Parapet_sfx_col	
+	2176059386	Play_Pin_Switch			\Default Work Unit\Main_02\Play_Pin_Switch	
+	2719919427	Play_Roll			\Default Work Unit\Main_02\Play_Roll	
+	2805515628	Play_Parapet_sfx_mort			\Default Work Unit\Main_02\Play_Parapet_sfx_mort	
+	3220749505	Stop_Roll			\Default Work Unit\Main_02\Stop_Roll	
+	3425437051	Play_Parapet_sfx_puzzleComplete			\Default Work Unit\Main_02\Play_Parapet_sfx_puzzleComplete	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	2490206334	ballAngularV			\Default Work Unit\ballAngularV	
+
+Effect plug-ins	ID	Name	Type				Notes
+	1291433366	Base	Resonance Audio Renderer			
+	1465383648	BaseMixerrPlugin	Resonance Audio Room Effects			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	44358176	MXG_Para_sfx_mort_fire	D:\Github\Parapet\Parapet_WwiseProject\.cache\Windows\SFX\Parapet_sfx_mort\MXG_Para_sfx_mort_fire_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Parapet_sfx\Parapet_sfx_mort\MXG_Para_sfx_mort_fire		787316
+	73302493	MXG_Para_sfx_puz_completed	D:\Github\Parapet\Parapet_WwiseProject\.cache\Windows\SFX\Parapet_sfx_puz\MXG_Para_sfx_puz_completed_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Parapet_sfx\Parapet_sfx_puz_complete\MXG_Para_sfx_puz_completed		835848
+	261458065	MXG_Para_sfx_flag_flap	D:\Github\Parapet\Parapet_WwiseProject\.cache\Windows\SFX\Parapet_sfx__flag\MXG_Para_sfx_flag_flap_8956FC97.wem		\Actor-Mixer Hierarchy\Default Work Unit\Parapet_sfx\Parapet_sfx_flag\MXG_Para_sfx_flag_flap		3744064
+	461999483	MXG_Para_sfx_roll	D:\Github\Parapet\Parapet_WwiseProject\.cache\Windows\SFX\AdditionalSounds\Roll\MXG_Para_sfx_roll_8956FC97.wem		\Actor-Mixer Hierarchy\Transfer\AdditionalSounds\MXG_Para_sfx_roll		1249196
+	671009346	MXG_Para_sfx_flag_amb	D:\Github\Parapet\Parapet_WwiseProject\.cache\Windows\SFX\Parapet_sfx__flag\MXG_Para_sfx_flag_amb_8956FC97.wem		\Actor-Mixer Hierarchy\Default Work Unit\Parapet_sfx\Parapet_sfx_flag\MXG_Para_sfx_flag_amb		5280064
+	957558420	MXG_Para_sfx_puz_correctPiece	D:\Github\Parapet\Parapet_WwiseProject\.cache\Windows\SFX\Parapet_sfx_puz\MXG_Para_sfx_puz_correctPiece_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Parapet_sfx\Parapet_sfx_puz_Single\MXG_Para_sfx_puz_correctPiece		591516
+

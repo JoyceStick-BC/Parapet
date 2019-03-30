@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="11" SoundbankVersion="132">
 	<RootPaths>
-		<ProjectRoot>C:\Users\JoyceStick\Documents\JoyceStick\Parapet\Parapet_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\JoyceStick\Documents\JoyceStick\Parapet\Parapet_WwiseProject\.cache\Mac\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\JoyceStick\Documents\JoyceStick\Parapet\Parapet_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ProjectRoot>D:\Github\Parapet\Parapet_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Github\Parapet\Parapet_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\JoyceStick\Documents\JoyceStick\Parapet\Parapet_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>D:\Github\Parapet\Parapet_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -21,8 +21,13 @@
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="74477125" Name="Parapet_sfx_ambiance" ObjectPath="\Events\Default Work Unit\Parapet_sfx_ambiance"/>
-				<Event Id="2487091518" Name="Parapet_sfx_seagul" ObjectPath="\Events\Default Work Unit\Parapet_sfx_seagul" MaxAttenuation="100.000000"/>
+				<Event Id="74477125" Name="Parapet_sfx_ambiance" ObjectPath="\Events\Default Work Unit\Main\Parapet_sfx_ambiance"/>
+				<Event Id="2487091518" Name="Parapet_sfx_seagul" ObjectPath="\Events\Default Work Unit\Main\Parapet_sfx_seagul" MaxAttenuation="100.000000"/>
+				<Event Id="3843796471" Name="Play_BallGrab" ObjectPath="\Events\Default Work Unit\Main\Play_BallGrab"/>
+				<Event Id="2087451311" Name="Play_BallRespawn" ObjectPath="\Events\Default Work Unit\Main\Play_BallRespawn"/>
+				<Event Id="4252188990" Name="Play_JackInTheBox" ObjectPath="\Events\Default Work Unit\Main\Play_JackInTheBox" MaxAttenuation="100.000000"/>
+				<Event Id="3884044616" Name="Play_MXG_Para_sfx_flag_multi" ObjectPath="\Events\Default Work Unit\Main\Play_MXG_Para_sfx_flag_multi" MaxAttenuation="100.000000"/>
+				<Event Id="3254234354" Name="Play_Parapet_TowerExplosion" ObjectPath="\Events\Default Work Unit\Main\Play_Parapet_TowerExplosion"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="12073382" Language="SFX">
@@ -53,6 +58,10 @@
 					<ShortName>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_08.wav</ShortName>
 					<Path>SFX\Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_08_56D34C19.wem</Path>
 				</File>
+				<File Id="137454270" Language="SFX">
+					<ShortName>Parapet_sfx__flag\MXG_Para_sfx_flag_multi.wav</ShortName>
+					<Path>SFX\Parapet_sfx__flag\MXG_Para_sfx_flag_multi_56D34C19.wem</Path>
+				</File>
 				<File Id="143905231" Language="SFX">
 					<ShortName>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_07.wav</ShortName>
 					<Path>SFX\Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_07_56D34C19.wem</Path>
@@ -69,6 +78,10 @@
 					<ShortName>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_24.wav</ShortName>
 					<Path>SFX\Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_24_56D34C19.wem</Path>
 				</File>
+				<File Id="229744196" Language="SFX">
+					<ShortName>AdditionalSounds\ExplosionTower\MXG_Para_sfx_explo.wav</ShortName>
+					<Path>SFX\AdditionalSounds\ExplosionTower\MXG_Para_sfx_explo_56D34C19.wem</Path>
+				</File>
 				<File Id="242943397" Language="SFX">
 					<ShortName>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_12.wav</ShortName>
 					<Path>SFX\Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_12_56D34C19.wem</Path>
@@ -80,6 +93,10 @@
 				<File Id="345190887" Language="SFX">
 					<ShortName>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_22.wav</ShortName>
 					<Path>SFX\Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_22_56D34C19.wem</Path>
+				</File>
+				<File Id="346448110" Language="SFX">
+					<ShortName>AdditionalSounds\BallRespawn\MXG_Para_sfx_ballRespawn.wav</ShortName>
+					<Path>SFX\AdditionalSounds\BallRespawn\MXG_Para_sfx_ballRespawn_56D34C19.wem</Path>
 				</File>
 				<File Id="434835537" Language="SFX">
 					<ShortName>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_13.wav</ShortName>
@@ -121,6 +138,10 @@
 					<ShortName>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_25.wav</ShortName>
 					<Path>SFX\Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_25_56D34C19.wem</Path>
 				</File>
+				<File Id="773073101" Language="SFX">
+					<ShortName>AdditionalSounds\JackInTheBox\MXG_Para_sfx_jackInTheBox.wav</ShortName>
+					<Path>SFX\AdditionalSounds\JackInTheBox\MXG_Para_sfx_jackInTheBox_56D34C19.wem</Path>
+				</File>
 				<File Id="777388354" Language="SFX">
 					<ShortName>Parapet_sfx_Seagull_multi\Parapet_sfx_seagull_multi_03.wav</ShortName>
 					<Path>SFX\Parapet_sfx_Seagull_multi\Parapet_sfx_seagull_multi_03_56D34C19.wem</Path>
@@ -144,6 +165,10 @@
 				<File Id="841498850" Language="SFX">
 					<ShortName>Parapet_sfx_Seagull_multi\Parapet_sfx_seagull_multi_04.wav</ShortName>
 					<Path>SFX\Parapet_sfx_Seagull_multi\Parapet_sfx_seagull_multi_04_56D34C19.wem</Path>
+				</File>
+				<File Id="870419249" Language="SFX">
+					<ShortName>AdditionalSounds\BallGrab\BallGrab_02.wav</ShortName>
+					<Path>SFX\AdditionalSounds\BallGrab\BallGrab_02_56D34C19.wem</Path>
 				</File>
 				<File Id="887557441" Language="SFX">
 					<ShortName>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_09.wav</ShortName>
@@ -176,6 +201,47 @@
 				<File Id="1061475821" Language="SFX">
 					<ShortName>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_02.wav</ShortName>
 					<Path>SFX\Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_02_56D34C19.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="3534669627" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main_02</ObjectPath>
+			<ShortName>Main_02</ShortName>
+			<Path>Main_02.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1716169500" Name="Play_Parapet_sfx_col" ObjectPath="\Events\Default Work Unit\Main_02\Play_Parapet_sfx_col"/>
+				<Event Id="723477451" Name="Play_Parapet_sfx_mainFlag" ObjectPath="\Events\Default Work Unit\Main_02\Play_Parapet_sfx_mainFlag" MaxAttenuation="100.000000"/>
+				<Event Id="2805515628" Name="Play_Parapet_sfx_mort" ObjectPath="\Events\Default Work Unit\Main_02\Play_Parapet_sfx_mort"/>
+				<Event Id="3425437051" Name="Play_Parapet_sfx_puzzleComplete" ObjectPath="\Events\Default Work Unit\Main_02\Play_Parapet_sfx_puzzleComplete"/>
+				<Event Id="1244549788" Name="Play_Parapet_sfx_puzzlePiece" ObjectPath="\Events\Default Work Unit\Main_02\Play_Parapet_sfx_puzzlePiece"/>
+				<Event Id="2176059386" Name="Play_Pin_Switch" ObjectPath="\Events\Default Work Unit\Main_02\Play_Pin_Switch"/>
+				<Event Id="2719919427" Name="Play_Roll" ObjectPath="\Events\Default Work Unit\Main_02\Play_Roll" MaxAttenuation="25.000000"/>
+				<Event Id="3220749505" Name="Stop_Roll" ObjectPath="\Events\Default Work Unit\Main_02\Stop_Roll" MaxAttenuation="0.000000"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="44358176" Language="SFX">
+					<ShortName>Parapet_sfx_mort\MXG_Para_sfx_mort_fire.wav</ShortName>
+					<Path>SFX\Parapet_sfx_mort\MXG_Para_sfx_mort_fire_56D34C19.wem</Path>
+				</File>
+				<File Id="73302493" Language="SFX">
+					<ShortName>Parapet_sfx_puz\MXG_Para_sfx_puz_completed.wav</ShortName>
+					<Path>SFX\Parapet_sfx_puz\MXG_Para_sfx_puz_completed_56D34C19.wem</Path>
+				</File>
+				<File Id="261458065" Language="SFX">
+					<ShortName>Parapet_sfx__flag\MXG_Para_sfx_flag_flap.wav</ShortName>
+					<Path>SFX\Parapet_sfx__flag\MXG_Para_sfx_flag_flap_8956FC97.wem</Path>
+				</File>
+				<File Id="461999483" Language="SFX">
+					<ShortName>AdditionalSounds\Roll\MXG_Para_sfx_roll.wav</ShortName>
+					<Path>SFX\AdditionalSounds\Roll\MXG_Para_sfx_roll_8956FC97.wem</Path>
+				</File>
+				<File Id="671009346" Language="SFX">
+					<ShortName>Parapet_sfx__flag\MXG_Para_sfx_flag_amb.wav</ShortName>
+					<Path>SFX\Parapet_sfx__flag\MXG_Para_sfx_flag_amb_8956FC97.wem</Path>
+				</File>
+				<File Id="957558420" Language="SFX">
+					<ShortName>Parapet_sfx_puz\MXG_Para_sfx_puz_correctPiece.wav</ShortName>
+					<Path>SFX\Parapet_sfx_puz\MXG_Para_sfx_puz_correctPiece_56D34C19.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

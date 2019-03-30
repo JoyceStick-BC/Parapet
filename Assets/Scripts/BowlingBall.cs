@@ -9,10 +9,13 @@ public class BowlingBall : MonoBehaviour {
     private bool grabbed = false;
     private float elapsed = 1;
     private bool spawned = false;
+    private Rigidbody rb;
+    private bool isGrounded = false;
 	// Use this for initialization
 	void Start () {
         spawn = GameObject.Find("Sphere (1)");
         t = gameObject.transform;
+        rb = gameObject.GetComponent<Rigidbody>();
 
         if (GetComponent<VRTK_InteractableObject>() == null)
         {
@@ -30,10 +33,15 @@ public class BowlingBall : MonoBehaviour {
         }
         grabbed = true;
         gameObject.GetComponent<Rigidbody>().useGravity = true;
+        AudioManager.Instance.BowlingBowlGrab(gameObject);
     }
 
     // Update is called once per frame
     void Update () {
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            AudioManager.Instance.PlayMortar(gameObject);
+        }
         if (grabbed && !spawned)
         {
             //VRTK_Logger.Info("Can spawn");
@@ -46,11 +54,27 @@ public class BowlingBall : MonoBehaviour {
                 clone.GetComponent<MeshRenderer>().enabled = true;
                 clone.GetComponent<SphereCollider>().enabled = true;
                 clone.GetComponent<BowlingBall>().spawn = spawn;
+                AudioManager.Instance.BowlingBowlSpawn(gameObject);
                 //clone.transform.position = t.position;
                 spawned = true;
                 //gameObject.GetComponent<MeshCollider>().isTrigger = false;
             }
         }
-        
-	}
+
+        RaycastHit hit;
+        float angluarMagnitude = rb.angularVelocity.magnitude;
+        AudioManager.Instance.UpdateBallAngularRTPC(angluarMagnitude, gameObject);
+        if (Physics.Raycast(gameObject.transform.position, Vector3.down, out hit, .5f))
+        {
+            isGrounded = true;
+            if (angluarMagnitude > 3)
+            {
+                AudioManager.Instance.PlayRollingBall(gameObject);
+            }
+            else AudioManager.Instance.StopRollingBall(gameObject);
+        }
+        else isGrounded = false;
+        Debug.Log(angluarMagnitude);
+
+    }
 }
