@@ -5,7 +5,7 @@ using VRTK;
 
 public class Explode : MonoBehaviour {
     int radius = 15;
-    int power = 400;
+    int power = 200;
     public GameObject NelsonBase;
     public GameObject NelsonBottom;
     public GameObject NelsonMiddle;
@@ -73,9 +73,9 @@ public class Explode : MonoBehaviour {
                     //    }
                     //}
                     NelsonBase.GetComponent<Rigidbody>().AddExplosionForce(power + 200, explosionPos, radius, 3.0F);
-                    NelsonBottom.GetComponent<Rigidbody>().AddExplosionForce(power + 100, explosionPos, radius, 3.0F);
-                    NelsonMiddle.GetComponent<Rigidbody>().AddExplosionForce(power, explosionPos, radius, 3.0F);
-                    NelsonTop.GetComponent<Rigidbody>().AddExplosionForce(power - 100, explosionPos, radius, 3.0F);
+                    NelsonBottom.GetComponent<Rigidbody>().AddExplosionForce(power, explosionPos, radius, 3.0F);
+                    NelsonMiddle.GetComponent<Rigidbody>().AddExplosionForce(power-100, explosionPos, radius, 3.0F);
+                    NelsonTop.GetComponent<Rigidbody>().AddExplosionForce(power - 170, explosionPos, radius, 3.0F);
                     Instantiate(explosion, NelsonBase.transform.position, NelsonBase.transform.rotation);
                     Instantiate(explosion, NelsonBottom.transform.position, NelsonBottom.transform.rotation);
                     Instantiate(explosion, NelsonMiddle.transform.position, NelsonMiddle.transform.rotation);

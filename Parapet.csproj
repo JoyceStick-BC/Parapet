@@ -266,6 +266,7 @@
     <Compile Include="Assets\Scripts\CannonLaunch.cs" />
     <Compile Include="Assets\Scripts\Explode.cs" />
     <Compile Include="Assets\Scripts\Jackrotate.cs" />
+    <Compile Include="Assets\Scripts\MiniCannon.cs" />
     <Compile Include="Assets\Scripts\PinReset.cs" />
     <Compile Include="Assets\Scripts\Snapped.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_GazeTracker.cs" />
