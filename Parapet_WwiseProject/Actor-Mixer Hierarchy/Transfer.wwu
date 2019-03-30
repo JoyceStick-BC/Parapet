@@ -147,242 +147,6 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
-						<SwitchContainer Name="Pin_Switch" ID="{1B5A51FE-3B14-424E-A85A-D2292106B16C}" ShortID="566036314">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<RandomSequenceContainer Name="Pin_Single" ID="{0D138168-CE8F-4BF6-9687-A4967D718438}" ShortID="813449484">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="Pin_01" ID="{FFEA2156-5A5C-4B01-99E2-BBF5DC928CFE}" ShortID="110875853">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Pin_01" ID="{38D98A66-4579-4821-A8DA-D3A969F9C3E1}" ShortID="929103980">
-													<PropertyList>
-														<Property Name="TrimBegin" Type="Real64" Value="0.59464919800885"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>AdditionalSounds\Pin\Pin_01.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Pin_01" ID="{38D98A66-4579-4821-A8DA-D3A969F9C3E1}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Pin_02" ID="{DB36BFEF-9FFC-4683-9350-F45FA24BBBDE}" ShortID="632733691">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Pin_02" ID="{E2E6E7E1-6C03-4358-B03B-56838A75FC53}" ShortID="261317871">
-													<PropertyList>
-														<Property Name="TrimBegin" Type="Real64" Value="0.373057591261062"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>AdditionalSounds\Pin\Pin_02.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Pin_02" ID="{E2E6E7E1-6C03-4358-B03B-56838A75FC53}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Pin_03" ID="{8F79455F-D2B8-4166-B2B7-5D1F67247A26}" ShortID="941757022">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Pin_03" ID="{435D4B94-D93B-4EBE-8817-211A910A4022}" ShortID="224643138">
-													<PropertyList>
-														<Property Name="TrimBegin" Type="Real64" Value="0.32102853060472"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>AdditionalSounds\Pin\Pin_03.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Pin_03" ID="{435D4B94-D93B-4EBE-8817-211A910A4022}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Pin_04" ID="{DD97499E-78DF-4B2B-A552-F25E306FDEE8}" ShortID="816058609">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Pin_04" ID="{09B7F615-6ECB-4943-A7C5-04FB82351649}" ShortID="514965240">
-													<PropertyList>
-														<Property Name="TrimBegin" Type="Real64" Value="0.190765578908555"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>AdditionalSounds\Pin\Pin_04.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Pin_04" ID="{09B7F615-6ECB-4943-A7C5-04FB82351649}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Pin_05" ID="{6C0A69AB-6985-475A-81D2-D1479A03FDAD}" ShortID="1028288259">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Pin_05" ID="{46537826-D765-4D84-90A7-FDA3601CC5F2}" ShortID="459846833">
-													<PropertyList>
-														<Property Name="TrimBegin" Type="Real64" Value="0.080174940081121"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>AdditionalSounds\Pin\Pin_05.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Pin_05" ID="{46537826-D765-4D84-90A7-FDA3601CC5F2}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="Pin_Multi" ID="{528D1394-0FC9-41A3-BFDC-044B4E3EB0E2}" ShortID="761137449">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="Pin_07" ID="{7B1347A4-E9D2-42B6-8004-28BABD101EB6}" ShortID="795764666">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Pin_07" ID="{B17BF68C-A8D5-45DB-AC12-F5652127D41E}" ShortID="1019494351">
-													<Language>SFX</Language>
-													<AudioFile>AdditionalSounds\Pin\Pin_07.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Pin_07" ID="{B17BF68C-A8D5-45DB-AC12-F5652127D41E}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Pin_08" ID="{05E4BFB5-972A-43AD-8ADA-118A57A4438D}" ShortID="37178576">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Pin_08" ID="{01AF495A-2107-43C2-BD8E-C432B62096E3}" ShortID="93040973">
-													<Language>SFX</Language>
-													<AudioFile>AdditionalSounds\Pin\Pin_08.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Pin_08" ID="{01AF495A-2107-43C2-BD8E-C432B62096E3}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Pin_09" ID="{8BA0497C-3F7C-40C6-AE9D-A30F4A133AF9}" ShortID="331615349">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Pin_09" ID="{CAB88F85-371D-4DF8-9293-397CBC737D64}" ShortID="326762633">
-													<Language>SFX</Language>
-													<AudioFile>AdditionalSounds\Pin\Pin_09.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Pin_09" ID="{CAB88F85-371D-4DF8-9293-397CBC737D64}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Pin_06" ID="{1E2F2E01-EAEE-4B64-A1DB-9F7532B9875C}" ShortID="218352054">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Pin_06" ID="{ECCDF712-7B23-4E53-9B3A-C3A71E2EC678}" ShortID="297359604">
-													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="2.70772953539823E-02"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.243695658185841"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>AdditionalSounds\Pin\Pin_06.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Pin_06" ID="{ECCDF712-7B23-4E53-9B3A-C3A71E2EC678}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</RandomSequenceContainer>
-							</ChildrenList>
-							<GroupingInfo>
-								<GroupingBehaviorList>
-									<GroupingBehavior>
-										<ItemRef Name="Pin_Single" ID="{0D138168-CE8F-4BF6-9687-A4967D718438}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="Pin_Multi" ID="{528D1394-0FC9-41A3-BFDC-044B4E3EB0E2}"/>
-									</GroupingBehavior>
-								</GroupingBehaviorList>
-							</GroupingInfo>
-						</SwitchContainer>
 						<Sound Name="MXG_Para_sfx_roll" ID="{05F90900-2CA4-4984-B434-7353E1D8F134}" ShortID="820123822">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
@@ -441,6 +205,30 @@
 												</PointList>
 											</Curve>
 										</RTPC>
+										<RTPC Name="" ID="{98F2BF54-41FF-46F9-AA6E-7379EC3F40CC}" ShortID="429258769">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Occlusion" ID="{221DBB9E-7EB8-4BFA-B89C-5F85A3E5D91C}" WorkUnitID="{980F8A5E-46F3-4CEF-8A35-F51149C93637}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{803EA000-20AD-457F-ABBF-F2A28C4CCE4C}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-200</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
 									</RTPCList>
 								</Property>
 							</PropertyList>
@@ -457,7 +245,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="RoomEffect" ID="{30CD8362-4C52-4670-9C28-0866ADBEBE6E}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+									<ObjectRef Name="SpatialBUS" ID="{5FD26E46-0FCB-45D5-8FDA-3F28262EE3E6}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>

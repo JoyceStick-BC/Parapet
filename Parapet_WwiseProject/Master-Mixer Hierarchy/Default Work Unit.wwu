@@ -72,23 +72,6 @@
 								</AuxBus>
 							</ChildrenList>
 						</Bus>
-						<Bus Name="RoomEffect" ID="{30CD8362-4C52-4670-9C28-0866ADBEBE6E}">
-							<PropertyList>
-								<Property Name="BusChannelConfig" Type="int32">
-									<ValueList>
-										<Value>12546</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Mixer" PluginName="Resonance Audio Room Effects" CompanyID="272" PluginID="200" PluginType="6">
-									<ObjectRef Name="BaseMixerrPlugin" ID="{43ED47A7-0ABB-4461-A6DE-67CA4306DCE0}" WorkUnitID="{56586F8D-B793-409B-BB67-453DE3DDBF15}"/>
-								</Reference>
-								<Reference Name="UserAuxSend0">
-									<ObjectRef Name="SpatialVerb" ID="{0F9E20C6-A7D2-48B2-AEAA-5323EAD0628C}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
-								</Reference>
-							</ReferenceList>
-						</Bus>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>

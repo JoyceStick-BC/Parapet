@@ -28,6 +28,7 @@
 				<Event Id="4252188990" Name="Play_JackInTheBox" ObjectPath="\Events\Default Work Unit\Main\Play_JackInTheBox" MaxAttenuation="100.000000"/>
 				<Event Id="3884044616" Name="Play_MXG_Para_sfx_flag_multi" ObjectPath="\Events\Default Work Unit\Main\Play_MXG_Para_sfx_flag_multi" MaxAttenuation="100.000000"/>
 				<Event Id="3254234354" Name="Play_Parapet_TowerExplosion" ObjectPath="\Events\Default Work Unit\Main\Play_Parapet_TowerExplosion"/>
+				<Event Id="687508220" Name="Play_quil_mult" ObjectPath="\Events\Default Work Unit\Main\Play_quil_mult" MaxAttenuation="25.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="12073382" Language="SFX">
@@ -203,19 +204,59 @@
 					<Path>SFX\Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_02_56D34C19.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
+			<ExcludedMemoryFiles>
+				<File Id="93040973" Language="SFX">
+					<ShortName>AdditionalSounds\Pin\Pin_08.wav</ShortName>
+					<Path>SFX\AdditionalSounds\Pin\Pin_08_56D34C19.wem</Path>
+				</File>
+				<File Id="224643138" Language="SFX">
+					<ShortName>AdditionalSounds\Pin\Pin_03.wav</ShortName>
+					<Path>SFX\AdditionalSounds\Pin\Pin_03_02227657.wem</Path>
+				</File>
+				<File Id="261317871" Language="SFX">
+					<ShortName>AdditionalSounds\Pin\Pin_02.wav</ShortName>
+					<Path>SFX\AdditionalSounds\Pin\Pin_02_317FD49F.wem</Path>
+				</File>
+				<File Id="297359604" Language="SFX">
+					<ShortName>AdditionalSounds\Pin\Pin_06.wav</ShortName>
+					<Path>SFX\AdditionalSounds\Pin\Pin_06_F2F66D8E.wem</Path>
+				</File>
+				<File Id="326762633" Language="SFX">
+					<ShortName>AdditionalSounds\Pin\Pin_09.wav</ShortName>
+					<Path>SFX\AdditionalSounds\Pin\Pin_09_56D34C19.wem</Path>
+				</File>
+				<File Id="459846833" Language="SFX">
+					<ShortName>AdditionalSounds\Pin\Pin_05.wav</ShortName>
+					<Path>SFX\AdditionalSounds\Pin\Pin_05_4A390F5A.wem</Path>
+				</File>
+				<File Id="514965240" Language="SFX">
+					<ShortName>AdditionalSounds\Pin\Pin_04.wav</ShortName>
+					<Path>SFX\AdditionalSounds\Pin\Pin_04_F232EAAC.wem</Path>
+				</File>
+				<File Id="929103980" Language="SFX">
+					<ShortName>AdditionalSounds\Pin\Pin_01.wav</ShortName>
+					<Path>SFX\AdditionalSounds\Pin\Pin_01_55B98570.wem</Path>
+				</File>
+				<File Id="1019494351" Language="SFX">
+					<ShortName>AdditionalSounds\Pin\Pin_07.wav</ShortName>
+					<Path>SFX\AdditionalSounds\Pin\Pin_07_56D34C19.wem</Path>
+				</File>
+			</ExcludedMemoryFiles>
 		</SoundBank>
 		<SoundBank Id="3534669627" Language="SFX">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main_02</ObjectPath>
 			<ShortName>Main_02</ShortName>
 			<Path>Main_02.bnk</Path>
 			<IncludedEvents>
+				<Event Id="2897532144" Name="Play_BBCol" ObjectPath="\Events\Default Work Unit\Main_02\Play_BBCol" MaxAttenuation="25.000000"/>
 				<Event Id="1716169500" Name="Play_Parapet_sfx_col" ObjectPath="\Events\Default Work Unit\Main_02\Play_Parapet_sfx_col"/>
 				<Event Id="723477451" Name="Play_Parapet_sfx_mainFlag" ObjectPath="\Events\Default Work Unit\Main_02\Play_Parapet_sfx_mainFlag" MaxAttenuation="100.000000"/>
 				<Event Id="2805515628" Name="Play_Parapet_sfx_mort" ObjectPath="\Events\Default Work Unit\Main_02\Play_Parapet_sfx_mort"/>
 				<Event Id="3425437051" Name="Play_Parapet_sfx_puzzleComplete" ObjectPath="\Events\Default Work Unit\Main_02\Play_Parapet_sfx_puzzleComplete"/>
 				<Event Id="1244549788" Name="Play_Parapet_sfx_puzzlePiece" ObjectPath="\Events\Default Work Unit\Main_02\Play_Parapet_sfx_puzzlePiece"/>
-				<Event Id="2176059386" Name="Play_Pin_Switch" ObjectPath="\Events\Default Work Unit\Main_02\Play_Pin_Switch"/>
+				<Event Id="2176059386" Name="Play_Pin_Switch" ObjectPath="\Events\Default Work Unit\Main_02\Play_Pin_Switch" MaxAttenuation="25.000000"/>
 				<Event Id="2719919427" Name="Play_Roll" ObjectPath="\Events\Default Work Unit\Main_02\Play_Roll" MaxAttenuation="25.000000"/>
+				<Event Id="3948925255" Name="Play_Splash" ObjectPath="\Events\Default Work Unit\Main_02\Play_Splash"/>
 				<Event Id="3220749505" Name="Stop_Roll" ObjectPath="\Events\Default Work Unit\Main_02\Stop_Roll" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
@@ -227,21 +268,105 @@
 					<ShortName>Parapet_sfx_puz\MXG_Para_sfx_puz_completed.wav</ShortName>
 					<Path>SFX\Parapet_sfx_puz\MXG_Para_sfx_puz_completed_56D34C19.wem</Path>
 				</File>
+				<File Id="93040973" Language="SFX">
+					<ShortName>AdditionalSounds\Pin\Pin_08.wav</ShortName>
+					<Path>SFX\AdditionalSounds\Pin\Pin_08_56D34C19.wem</Path>
+				</File>
+				<File Id="104874424" Language="SFX">
+					<ShortName>BBCol\Para_BBCol_Wood_03.wav</ShortName>
+					<Path>SFX\BBCol\Para_BBCol_Wood_03_56D34C19.wem</Path>
+				</File>
+				<File Id="147067316" Language="SFX">
+					<ShortName>BBCol\Para_BBCol_Metal_02.wav</ShortName>
+					<Path>SFX\BBCol\Para_BBCol_Metal_02_56D34C19.wem</Path>
+				</File>
+				<File Id="224643138" Language="SFX">
+					<ShortName>AdditionalSounds\Pin\Pin_03.wav</ShortName>
+					<Path>SFX\AdditionalSounds\Pin\Pin_03_02227657.wem</Path>
+				</File>
+				<File Id="252304248" Language="SFX">
+					<ShortName>BBCol\Para_BBCol_Stone_04.wav</ShortName>
+					<Path>SFX\BBCol\Para_BBCol_Stone_04_56D34C19.wem</Path>
+				</File>
+				<File Id="261317871" Language="SFX">
+					<ShortName>AdditionalSounds\Pin\Pin_02.wav</ShortName>
+					<Path>SFX\AdditionalSounds\Pin\Pin_02_317FD49F.wem</Path>
+				</File>
 				<File Id="261458065" Language="SFX">
 					<ShortName>Parapet_sfx__flag\MXG_Para_sfx_flag_flap.wav</ShortName>
 					<Path>SFX\Parapet_sfx__flag\MXG_Para_sfx_flag_flap_8956FC97.wem</Path>
+				</File>
+				<File Id="297359604" Language="SFX">
+					<ShortName>AdditionalSounds\Pin\Pin_06.wav</ShortName>
+					<Path>SFX\AdditionalSounds\Pin\Pin_06_F2F66D8E.wem</Path>
+				</File>
+				<File Id="326762633" Language="SFX">
+					<ShortName>AdditionalSounds\Pin\Pin_09.wav</ShortName>
+					<Path>SFX\AdditionalSounds\Pin\Pin_09_56D34C19.wem</Path>
+				</File>
+				<File Id="348123721" Language="SFX">
+					<ShortName>BBCol\Para_BBCol_Stone_02.wav</ShortName>
+					<Path>SFX\BBCol\Para_BBCol_Stone_02_56D34C19.wem</Path>
+				</File>
+				<File Id="398334824" Language="SFX">
+					<ShortName>BBCol\Para_BBCol_Wood_04.wav</ShortName>
+					<Path>SFX\BBCol\Para_BBCol_Wood_04_56D34C19.wem</Path>
+				</File>
+				<File Id="437342047" Language="SFX">
+					<ShortName>BBCol\Para_BBCol_Wood_01.wav</ShortName>
+					<Path>SFX\BBCol\Para_BBCol_Wood_01_56D34C19.wem</Path>
+				</File>
+				<File Id="452033934" Language="SFX">
+					<ShortName>BBCol\Para_BBCol_Metal_01.wav</ShortName>
+					<Path>SFX\BBCol\Para_BBCol_Metal_01_56D34C19.wem</Path>
+				</File>
+				<File Id="459846833" Language="SFX">
+					<ShortName>AdditionalSounds\Pin\Pin_05.wav</ShortName>
+					<Path>SFX\AdditionalSounds\Pin\Pin_05_4A390F5A.wem</Path>
 				</File>
 				<File Id="461999483" Language="SFX">
 					<ShortName>AdditionalSounds\Roll\MXG_Para_sfx_roll.wav</ShortName>
 					<Path>SFX\AdditionalSounds\Roll\MXG_Para_sfx_roll_8956FC97.wem</Path>
 				</File>
+				<File Id="514965240" Language="SFX">
+					<ShortName>AdditionalSounds\Pin\Pin_04.wav</ShortName>
+					<Path>SFX\AdditionalSounds\Pin\Pin_04_F232EAAC.wem</Path>
+				</File>
 				<File Id="671009346" Language="SFX">
 					<ShortName>Parapet_sfx__flag\MXG_Para_sfx_flag_amb.wav</ShortName>
 					<Path>SFX\Parapet_sfx__flag\MXG_Para_sfx_flag_amb_8956FC97.wem</Path>
 				</File>
+				<File Id="706114647" Language="SFX">
+					<ShortName>BBCol\Para_BBCol_Metal_04.wav</ShortName>
+					<Path>SFX\BBCol\Para_BBCol_Metal_04_56D34C19.wem</Path>
+				</File>
+				<File Id="706748188" Language="SFX">
+					<ShortName>BBCol\Para_BBCol_Stone_01.wav</ShortName>
+					<Path>SFX\BBCol\Para_BBCol_Stone_01_56D34C19.wem</Path>
+				</File>
+				<File Id="857787806" Language="SFX">
+					<ShortName>BBCol\Para_BBCol_Wood_02.wav</ShortName>
+					<Path>SFX\BBCol\Para_BBCol_Wood_02_56D34C19.wem</Path>
+				</File>
+				<File Id="929103980" Language="SFX">
+					<ShortName>AdditionalSounds\Pin\Pin_01.wav</ShortName>
+					<Path>SFX\AdditionalSounds\Pin\Pin_01_55B98570.wem</Path>
+				</File>
+				<File Id="933438454" Language="SFX">
+					<ShortName>BBCol\Para_BBCol_Metal_03.wav</ShortName>
+					<Path>SFX\BBCol\Para_BBCol_Metal_03_56D34C19.wem</Path>
+				</File>
+				<File Id="940477011" Language="SFX">
+					<ShortName>BBCol\Para_BBCol_Stone_03.wav</ShortName>
+					<Path>SFX\BBCol\Para_BBCol_Stone_03_56D34C19.wem</Path>
+				</File>
 				<File Id="957558420" Language="SFX">
 					<ShortName>Parapet_sfx_puz\MXG_Para_sfx_puz_correctPiece.wav</ShortName>
 					<Path>SFX\Parapet_sfx_puz\MXG_Para_sfx_puz_correctPiece_56D34C19.wem</Path>
+				</File>
+				<File Id="1019494351" Language="SFX">
+					<ShortName>AdditionalSounds\Pin\Pin_07.wav</ShortName>
+					<Path>SFX\AdditionalSounds\Pin\Pin_07_56D34C19.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

@@ -1,7 +1,6 @@
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	161311051	SpatialBUS			\Default Work Unit\Master Audio Bus\SpatialBUS	
 	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
-	2170639827	RoomEffect			\Default Work Unit\Master Audio Bus\RoomEffect	
 	3014379214	Seagul			\Default Work Unit\Master Audio Bus\SpatialBUS\Seagul	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
@@ -13,7 +12,6 @@ Effect plug-ins	ID	Name	Type				Notes
 	48620415	Have_U_Ever_Been_Outside	Wwise RoomVerb			
 	996803124	Resonance Audio Room Effects (Custom)	Resonance Audio Room Effects			
 	1291433366	Base	Resonance Audio Renderer			
-	1465383648	BaseMixerrPlugin	Resonance Audio Room Effects			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

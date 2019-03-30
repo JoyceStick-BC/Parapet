@@ -10,9 +10,11 @@ public class BowlingBall : MonoBehaviour {
     private float elapsed = 1;
     private bool spawned = false;
     private Rigidbody rb;
+    private GameObject pedestral;
     private bool isGrounded = false;
 	// Use this for initialization
 	void Start () {
+        pedestral = GameObject.Find("Pedestral");
         spawn = GameObject.Find("Sphere (1)");
         t = gameObject.transform;
         rb = gameObject.GetComponent<Rigidbody>();
@@ -23,6 +25,14 @@ public class BowlingBall : MonoBehaviour {
         }
         GetComponent<VRTK_InteractableObject>().InteractableObjectGrabbed += new InteractableObjectEventHandler(BowlingBallGrab);
 
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        BowlingBallCollisionRegistry reg = collision.gameObject.GetComponent<BowlingBallCollisionRegistry>();
+        if (collision.gameObject == pedestral || reg == null) return;
+        AudioManager.bowlingBallColSurface surface = reg.surface;
+        AudioManager.Instance.BowlingCollision(collision, surface);
+        //collisionD.transform.position = collision.transform.position;
     }
 
     private void BowlingBallGrab(object sender, InteractableObjectEventArgs e)
@@ -38,10 +48,6 @@ public class BowlingBall : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            AudioManager.Instance.PlayMortar(gameObject);
-        }
         if (grabbed && !spawned)
         {
             //VRTK_Logger.Info("Can spawn");
@@ -74,7 +80,27 @@ public class BowlingBall : MonoBehaviour {
             else AudioManager.Instance.StopRollingBall(gameObject);
         }
         else isGrounded = false;
-        Debug.Log(angluarMagnitude);
+        //occ
+        RaycastHit hit02;
+        Debug.DrawRay(transform.position, AudioManager.Instance._player.transform.position - transform.position);
+        if (Physics.Raycast(transform.position, AudioManager.Instance._player.transform.position - transform.position, out hit02, 100))
+        {
+            //debugOBJ.transform.position = hit02.point;
+            Debug.Log(hit02.collider.gameObject.name);
+            if (hit02.collider.gameObject == AudioManager.Instance._player)
+            {
+                AudioManager.Instance.SetOcclusionRTPC(100, gameObject);
+                Debug.Log("PLLLAYER");
+                AudioManager.Instance.SetOcclusion(0, 0, gameObject);
+            }
+            else
+            {
+                AudioManager.Instance.SetOcclusionRTPC(20, gameObject);
+                Debug.Log("WALLLLLLL");
+                AudioManager.Instance.SetOcclusion(100, 10f, gameObject);
+            }
 
+        }
     }
+    public GameObject debugOBJ;
 }

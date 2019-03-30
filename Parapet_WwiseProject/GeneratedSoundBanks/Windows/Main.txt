@@ -1,5 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	74477125	Parapet_sfx_ambiance			\Default Work Unit\Main\Parapet_sfx_ambiance	
+	687508220	Play_quil_mult			\Default Work Unit\Main\Play_quil_mult	
 	2087451311	Play_BallRespawn			\Default Work Unit\Main\Play_BallRespawn	
 	2487091518	Parapet_sfx_seagul			\Default Work Unit\Main\Parapet_sfx_seagul	
 	3254234354	Play_Parapet_TowerExplosion			\Default Work Unit\Main\Play_Parapet_TowerExplosion	
@@ -8,11 +9,23 @@ Event	ID	Name			Wwise Object Path	Notes
 	4252188990	Play_JackInTheBox			\Default Work Unit\Main\Play_JackInTheBox	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
+	163665651	Quil_Col			\Default Work Unit\Quil_Col	
 	3014379214	Seagul			\Default Work Unit\Seagul	
+	3713941218	BowlingBallCol			\Default Work Unit\BowlingBallCol	
 
 Switch	ID	Name	Switch Group			Notes
+	3944382562	group	Quil_Col			
+	4283682317	single	Quil_Col			
 	1600352189	Seagul_Single	Seagul			
 	2907836809	Seagul_Burst	Seagul			
+	1216965916	stone	BowlingBallCol			
+	1970351858	fabric	BowlingBallCol			
+	2058049674	wood	BowlingBallCol			
+	2473969246	metal	BowlingBallCol			
+	3930794368	quil	BowlingBallCol			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	2661120963	AmbianceOC			\Default Work Unit\AmbianceOC	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	12073382	Seagull_Single_06	D:\Github\Parapet\Parapet_WwiseProject\.cache\Windows\SFX\Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_06_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Parapet_sfx\Parapet_sfx_seagull\Parapet_sfx_Seagull_single\Seagull_Single_06		1014736

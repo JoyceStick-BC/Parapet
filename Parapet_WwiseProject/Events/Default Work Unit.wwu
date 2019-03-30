@@ -103,6 +103,30 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_quil_mult" ID="{5FFDC9BD-FBF2-473F-8E68-436502F2A896}">
+							<ChildrenList>
+								<Action Name="" ID="{AA3DF26B-D656-4024-9554-126F1E719425}" ShortID="999016431">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="group" ID="{04DD6611-451E-43FA-A31A-9E18B02F098D}" WorkUnitID="{997F5B51-2756-46AF-9184-BCACDF7666AE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{26320112-19D6-4B0C-89E1-0155FF449235}" ShortID="196450560">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Pin_Switch" ID="{1B5A51FE-3B14-424E-A85A-D2292106B16C}" WorkUnitID="{C875FD9F-D567-46A3-AFDF-F034770F11DC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Main_02" ID="{709A6191-B964-44B1-9B05-E0687340648C}" ShortID="832627037">
@@ -157,7 +181,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Pin_Switch" ID="{1B5A51FE-3B14-424E-A85A-D2292106B16C}" WorkUnitID="{1DA2453A-CBE1-42CF-8178-628EED37E34B}"/>
+											<ObjectRef Name="Pin_Switch" ID="{1B5A51FE-3B14-424E-A85A-D2292106B16C}" WorkUnitID="{C875FD9F-D567-46A3-AFDF-F034770F11DC}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -216,6 +240,34 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="MXG_Para_sfx_roll" ID="{05F90900-2CA4-4984-B434-7353E1D8F134}" WorkUnitID="{1DA2453A-CBE1-42CF-8178-628EED37E34B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Splash" ID="{4BF80AE9-E447-4DED-A2D3-222CEE4E3C8F}">
+							<ChildrenList>
+								<Action Name="" ID="{2CC9387A-1E36-4DBE-BC37-01C50FD6591F}" ShortID="505402434">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Splash" ID="{643E40F9-0293-414D-8534-3DAB0FD8A349}" WorkUnitID="{C875FD9F-D567-46A3-AFDF-F034770F11DC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_BBCol" ID="{E06D591A-34C2-44DB-8802-073C217DB3CD}">
+							<ChildrenList>
+								<Action Name="" ID="{7871C69D-1B44-48D4-BB7F-452F66EF329B}" ShortID="1040785382">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="BBCol" ID="{9F2E3181-5F27-4CC2-9191-8FC40973C4C6}" WorkUnitID="{C875FD9F-D567-46A3-AFDF-F034770F11DC}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

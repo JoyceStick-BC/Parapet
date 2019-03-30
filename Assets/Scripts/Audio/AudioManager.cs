@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour {
     public static AudioManager Instance = null;
+    public List<GameObject> collisionD = new List<GameObject>();
+    public Queue<GameObject> collisionQueueDebug = new Queue<GameObject>();
+    public GameObject _player = null;
+    public GameObject ambObj;
+
+    private float timeOfQuilCol = 0;
+    private int numberOfQuilCol = 0;
 
     private uint bankID;
 
@@ -11,6 +18,15 @@ public class AudioManager : MonoBehaviour {
     {
         tentFlag,
         mainFlag
+    }
+
+    public enum bowlingBallColSurface
+    {
+        wood,
+        stone,
+        fabric,
+        metal,
+        quil
     }
     private void Awake()
     {
@@ -20,7 +36,11 @@ public class AudioManager : MonoBehaviour {
     }
     private void Start()
     {
-        AkSoundEngine.RegisterPluginDLL
+        foreach (GameObject g in collisionD)
+        {
+            collisionQueueDebug.Enqueue(g);
+        }
+        //AkSoundEngine.RegisterPluginDLL
     }
 
     private void AudioInitialisation ()
@@ -44,7 +64,7 @@ public class AudioManager : MonoBehaviour {
 
     private void sfx_startAmb ()
     {
-        AkSoundEngine.PostEvent("Parapet_sfx_ambiance", gameObject);
+        AkSoundEngine.PostEvent("Parapet_sfx_ambiance", ambObj);
     }
 
     private void sfx_startSeagul()
@@ -55,15 +75,15 @@ public class AudioManager : MonoBehaviour {
     private IEnumerator sfx_SeagulGen()
     {
         RandomBurst();
-        AkSoundEngine.PostEvent("Parapet_sfx_seagul", gameObject);
+        AkSoundEngine.PostEvent("Parapet_sfx_seagul", ambObj);
         yield return new WaitForSecondsRealtime(Random.Range(1, 5));
         StartCoroutine(sfx_SeagulGen());
     }
 
     private void RandomBurst()
     {
-        if (Random.Range(0, 100) > 70) AkSoundEngine.SetSwitch("Seagul", "Seagul_Burst", gameObject);
-        else AkSoundEngine.SetSwitch("Seagul", "Seagul_Single", gameObject);
+        if (Random.Range(0, 100) > 70) AkSoundEngine.SetSwitch("Seagul", "Seagul_Burst", ambObj);
+        else AkSoundEngine.SetSwitch("Seagul", "Seagul_Single", ambObj);
     }
 
 
@@ -159,4 +179,91 @@ public class AudioManager : MonoBehaviour {
     {
         AkSoundEngine.PostEvent("Stop_Roll", ball);
     }
+
+    public void SplashSound (GameObject splashObj, WaterTriggerManager.waterSplashSize splashSize)
+    {
+        switch (splashSize)
+        {
+            case (WaterTriggerManager.waterSplashSize.big):
+                AkSoundEngine.SetSwitch("WaterSplash", "big", splashObj);
+                Debug.Log("BIG");
+                break;
+            case (WaterTriggerManager.waterSplashSize.medium):
+                AkSoundEngine.SetSwitch("WaterSplash", "med", splashObj);
+                Debug.Log("MED");
+                break;
+            case (WaterTriggerManager.waterSplashSize.small):
+                AkSoundEngine.SetSwitch("WaterSplash", "small", splashObj);
+                Debug.Log("SMALL");
+                break;
+        }
+        AkSoundEngine.PostEvent("Play_Splash", splashObj);
+    }
+
+    //Collision SHIT
+    public void BowlingCollision(Collision collision, bowlingBallColSurface surfaceCollided)
+    {
+        GameObject placeholder = collisionQueueDebug.Dequeue();
+        placeholder.transform.position = collision.contacts[0].point;
+        collisionQueueDebug.Enqueue(placeholder);
+        switch (surfaceCollided)
+        {
+            case (bowlingBallColSurface.fabric):
+                AkSoundEngine.SetSwitch("BowlingBallCol", "fabric", placeholder);
+                break;
+            case (bowlingBallColSurface.metal):
+                AkSoundEngine.SetSwitch("BowlingBallCol", "metal", placeholder);
+                break;
+            case (bowlingBallColSurface.quil):
+                AkSoundEngine.SetSwitch("Quil_Col", "single", placeholder);
+                AkSoundEngine.SetSwitch("BowlingBallCol", "quil", placeholder);
+                break;
+            case (bowlingBallColSurface.stone):
+                AkSoundEngine.SetSwitch("BowlingBallCol", "stone", placeholder);
+                break;
+            case (bowlingBallColSurface.wood):
+                AkSoundEngine.SetSwitch("BowlingBallCol", "wood", placeholder);
+                break;
+        }
+
+        AkSoundEngine.PostEvent("Play_BBCol", placeholder);
+    }
+
+
+    public void QuilCount ()
+    {
+        if (timeOfQuilCol == 0)
+        {
+            timeOfQuilCol = Time.realtimeSinceStartup;
+            numberOfQuilCol++;
+            return;
+        }
+        if (Time.realtimeSinceStartup - timeOfQuilCol < .3)
+        {
+            numberOfQuilCol++;
+        }
+
+        if (numberOfQuilCol >= 4)
+        {
+            AkSoundEngine.PostEvent("Play_quil_mult", GameObject.Find("MultiQuilSource"));
+            numberOfQuilCol = 0;
+        }
+    }
+
+    public void SetOcclusion (float obstrLvl, float occlusionLevel, GameObject objectToOcc)
+    {
+        AkSoundEngine.SetObjectObstructionAndOcclusion(objectToOcc, _player, obstrLvl, occlusionLevel);
+        //AkSoundEngine.SetObjectObstructionAndOcclusion(objectToOcc, _player, 0, 0);
+    }
+
+    public void SetOcclusionRTPC (float value, GameObject target)
+    {
+        AkSoundEngine.SetRTPCValue("Occlusion", value, target);
+    }
+
+    public void SetOcclusionAmb (float value)
+    {
+        AkSoundEngine.SetRTPCValue("AmbianceOC", value);
+    }
+
 }

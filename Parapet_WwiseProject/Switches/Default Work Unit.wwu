@@ -16,6 +16,28 @@
 						<Switch Name="Materials_metal" ID="{20AE92C7-451E-4EE7-BB6B-F8F83A0CFAE9}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="WaterSplash" ID="{E3C09165-50FA-4695-B206-5EB901AC5D68}">
+					<ChildrenList>
+						<Switch Name="big" ID="{F95E3C98-5BBD-4606-A627-D99DAD6E7AAC}"/>
+						<Switch Name="med" ID="{40B76146-90F0-403C-833F-875C8C11C030}"/>
+						<Switch Name="small" ID="{E228B007-D694-431B-B1C3-2FBEDF5B3EE4}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="BowlingBallCol" ID="{A881F079-91EA-4326-992B-235DDADFF3CD}">
+					<ChildrenList>
+						<Switch Name="fabric" ID="{6CC9A26F-EB67-4ED2-8C23-FFD47A5B37F5}"/>
+						<Switch Name="metal" ID="{51D32041-D452-4A8B-91A5-F2E001B368D3}"/>
+						<Switch Name="quil" ID="{32BAEF7F-6CE3-42FF-A468-BBF142D52C01}"/>
+						<Switch Name="stone" ID="{55F51DB6-83C1-41CE-8906-60585A1BD0B2}"/>
+						<Switch Name="wood" ID="{75ECE1A7-F74A-4DBF-8800-05E6E0D59302}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="Quil_Col" ID="{5A66E388-6BC3-4CF7-B7D9-C782A97DBD38}">
+					<ChildrenList>
+						<Switch Name="single" ID="{13F7F414-727E-4A34-A9C8-629400BB9EB9}"/>
+						<Switch Name="group" ID="{04DD6611-451E-43FA-A31A-9E18B02F098D}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

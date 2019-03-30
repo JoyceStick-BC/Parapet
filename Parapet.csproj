@@ -240,6 +240,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\LowPolyWater_Pack\Scripts\LowPolyWater.cs" />
     <Compile Include="Assets\PuzzleScripts\A1.cs" />
     <Compile Include="Assets\ResonanceAudio\Scripts\WwiseResonanceAudio.cs" />
     <Compile Include="Assets\ResonanceAudio\Scripts\WwiseResonanceAudioRoom.cs" />
@@ -251,11 +252,16 @@
     <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
+    <Compile Include="Assets\Scripts\Audio\AmbianceOcc.cs" />
     <Compile Include="Assets\Scripts\Audio\AudioManager.cs" />
-    <Compile Include="Assets\Scripts\Audio\CollisionManager.cs" />
+    <Compile Include="Assets\Scripts\Audio\BowlingBallCollisionRegistry.cs" />
     <Compile Include="Assets\Scripts\Audio\FlagAudio.cs" />
-    <Compile Include="Assets\Scripts\Audio\MaterialHolder.cs" />
-    <Compile Include="Assets\Scripts\Audio\ScriptableObj\MaterialInfo.cs" />
+    <Compile Include="Assets\Scripts\Audio\MultiQuil.cs" />
+    <Compile Include="Assets\Scripts\Audio\RegisterPlayerToAudioManager.cs" />
+    <Compile Include="Assets\Scripts\Audio\SkittleMultiReg.cs" />
+    <Compile Include="Assets\Scripts\Audio\terstocc.cs" />
+    <Compile Include="Assets\Scripts\Audio\WaterColMat.cs" />
+    <Compile Include="Assets\Scripts\Audio\WaterTriggerManager.cs" />
     <Compile Include="Assets\Scripts\BowlingBall.cs" />
     <Compile Include="Assets\Scripts\CannonLaunch.cs" />
     <Compile Include="Assets\Scripts\Explode.cs" />
@@ -817,6 +823,8 @@
     <Compile Include="Assets\Wwise\Extensions\AkSoundEngine.extensions.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\LowPolyWater_Pack\LowPoly Island\Credits.txt" />
+    <None Include="Assets\LowPolyWater_Pack\Shaders\WaterShaded.shader" />
     <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
     <None Include="Assets\Standard Assets\Cameras\CameraGuidelines.txt" />
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
