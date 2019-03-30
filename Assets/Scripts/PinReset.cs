@@ -29,10 +29,10 @@ public class PinReset : MonoBehaviour {
             Destroy(pins[i]);
 
             GameObject clone = Instantiate(pinsspawn[i], GameObject.Find("Skittles_geo " + i).transform);
-            clone.GetComponent<Rigidbody>().isKinematic = false;
-            clone.GetComponent<Rigidbody>().useGravity = true;
             clone.GetComponent<MeshRenderer>().enabled = true;
             clone.GetComponent<MeshCollider>().enabled = true;
+            clone.GetComponent<Rigidbody>().isKinematic = false;
+            clone.GetComponent<Rigidbody>().useGravity = true;
             pins[i] = clone;
         }
 
