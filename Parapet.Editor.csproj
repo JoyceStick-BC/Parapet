@@ -283,6 +283,9 @@
     <Reference Include="UnityEngine.StandardEvents">
       <HintPath>Library\UnityAssemblies\UnityEngine.StandardEvents.dll</HintPath>
     </Reference>
+    <Reference Include="Mono.Simd">
+      <HintPath>Assets\Ocean\Plugins\Mono.Simd.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Parapet.csproj">
@@ -300,6 +303,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\LowPolyWater_Pack\Scripts\Editor\GeneratePlane.cs" />
+    <Compile Include="Assets\Ocean\Editor\BuoyancyInspector.cs" />
+    <Compile Include="Assets\Ocean\Editor\OceanGeneratorInspector.cs" />
     <Compile Include="Assets\ResonanceAudio\Editor\WwiseResonanceAudioRoomEditor.cs" />
     <Compile Include="Assets\SteamVR\Editor\SteamVR_Editor.cs" />
     <Compile Include="Assets\SteamVR\Editor\SteamVR_Preferences.cs" />
@@ -374,6 +379,17 @@
   <ItemGroup>
     <None Include="Assets\LowPolyWater_Pack\LowPoly Island\Credits.txt" />
     <None Include="Assets\LowPolyWater_Pack\Shaders\WaterShaded.shader" />
+    <None Include="Assets\Ocean\Plugins\kissfft.license.txt" />
+    <None Include="Assets\Ocean\Shaders\DepthMask.shader" />
+    <None Include="Assets\Ocean\Shaders\Ocean.shader" />
+    <None Include="Assets\Ocean\Shaders\OceanL1.shader" />
+    <None Include="Assets\Ocean\Shaders\OceanL2.shader" />
+    <None Include="Assets\Ocean\Shaders\OceanL3.shader" />
+    <None Include="Assets\Ocean\Shaders\OceanL4.shader" />
+    <None Include="Assets\Ocean\Shaders\OceanL5.shader" />
+    <None Include="Assets\Ocean\Shaders\OceanL6.shader" />
+    <None Include="Assets\Ocean\Shaders\OceanL7.shader" />
+    <None Include="Assets\Ocean\Shaders\OceanL8.shader" />
     <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
     <None Include="Assets\Standard Assets\Cameras\CameraGuidelines.txt" />
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />

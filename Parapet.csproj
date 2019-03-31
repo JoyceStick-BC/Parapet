@@ -232,6 +232,9 @@
     <Reference Include="UnityEngine.StandardEvents">
       <HintPath>Library\UnityAssemblies\UnityEngine.StandardEvents.dll</HintPath>
     </Reference>
+    <Reference Include="Mono.Simd">
+      <HintPath>Assets\Ocean\Plugins\Mono.Simd.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Parapet.Plugins.csproj">
@@ -241,6 +244,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\LowPolyWater_Pack\Scripts\LowPolyWater.cs" />
+    <Compile Include="Assets\Ocean\Plugins\Exocortex_FFT\ComplexF.cs" />
+    <Compile Include="Assets\Ocean\Plugins\Exocortex_FFT\Fourier.cs" />
+    <Compile Include="Assets\Ocean\Plugins\Exocortex_FFT\Fourier2.cs" />
+    <Compile Include="Assets\Ocean\Plugins\Exocortex_FFT\FourierDirection.cs" />
+    <Compile Include="Assets\Ocean\Plugins\uocean.cs" />
+    <Compile Include="Assets\Ocean\Scripts\BoatController.cs" />
+    <Compile Include="Assets\Ocean\Scripts\Boyant.cs" />
+    <Compile Include="Assets\Ocean\Scripts\Buoyancy.cs" />
+    <Compile Include="Assets\Ocean\Scripts\DestroyTimed.cs" />
+    <Compile Include="Assets\Ocean\Scripts\helper\FPSCounter.cs" />
+    <Compile Include="Assets\Ocean\Scripts\Ocean.cs" />
+    <Compile Include="Assets\Ocean\Scripts\presetLoader.cs" />
+    <Compile Include="Assets\Ocean\Scripts\SmoothFollow.cs" />
     <Compile Include="Assets\PuzzleScripts\A1.cs" />
     <Compile Include="Assets\ResonanceAudio\Scripts\WwiseResonanceAudio.cs" />
     <Compile Include="Assets\ResonanceAudio\Scripts\WwiseResonanceAudioRoom.cs" />
@@ -827,6 +843,17 @@
   <ItemGroup>
     <None Include="Assets\LowPolyWater_Pack\LowPoly Island\Credits.txt" />
     <None Include="Assets\LowPolyWater_Pack\Shaders\WaterShaded.shader" />
+    <None Include="Assets\Ocean\Plugins\kissfft.license.txt" />
+    <None Include="Assets\Ocean\Shaders\DepthMask.shader" />
+    <None Include="Assets\Ocean\Shaders\Ocean.shader" />
+    <None Include="Assets\Ocean\Shaders\OceanL1.shader" />
+    <None Include="Assets\Ocean\Shaders\OceanL2.shader" />
+    <None Include="Assets\Ocean\Shaders\OceanL3.shader" />
+    <None Include="Assets\Ocean\Shaders\OceanL4.shader" />
+    <None Include="Assets\Ocean\Shaders\OceanL5.shader" />
+    <None Include="Assets\Ocean\Shaders\OceanL6.shader" />
+    <None Include="Assets\Ocean\Shaders\OceanL7.shader" />
+    <None Include="Assets\Ocean\Shaders\OceanL8.shader" />
     <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
     <None Include="Assets\Standard Assets\Cameras\CameraGuidelines.txt" />
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
