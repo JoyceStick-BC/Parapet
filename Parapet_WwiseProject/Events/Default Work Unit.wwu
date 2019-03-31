@@ -273,6 +273,38 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Folder Name="Main_03" ID="{E2E136A2-3AAD-4230-BCBE-548903FAFB07}" ShortID="621003303">
+							<ChildrenList>
+								<Event Name="Play_BalloonRelease" ID="{83C1499B-AF16-4711-B5AE-2B2FB80B6D51}">
+									<ChildrenList>
+										<Action Name="" ID="{42CE1F4F-FD15-4452-BB11-CE291C72ACCD}" ShortID="958876528">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Release" ID="{AE107631-09A0-4A97-B94B-3EBF9E46DF69}" WorkUnitID="{C875FD9F-D567-46A3-AFDF-F034770F11DC}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_NewMort" ID="{2EEB9105-FE9F-4E9D-A91C-A6C4398A7248}">
+									<ChildrenList>
+										<Action Name="" ID="{E0887A4A-9B59-4525-B79E-2405BDDFBD15}" ShortID="259426008">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="NewMort" ID="{D3B3D12E-89A3-4B52-A5B6-0C9EF99042B2}" WorkUnitID="{C875FD9F-D567-46A3-AFDF-F034770F11DC}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

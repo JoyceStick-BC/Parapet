@@ -5,6 +5,30 @@
 			<ChildrenList>
 				<Effect Name="Base" ID="{6E8648FB-80F6-4493-9DF2-45F79030A37C}" PluginName="Resonance Audio Renderer" CompanyID="272" PluginID="100" PluginType="3"/>
 				<Effect Name="BaseMixerrPlugin" ID="{43ED47A7-0ABB-4461-A6DE-67CA4306DCE0}" PluginName="Resonance Audio Room Effects" CompanyID="272" PluginID="200" PluginType="6"/>
+				<Effect Name="Ball" ID="{A618E5E2-A441-4FBC-809B-DCEABC11547C}" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
+					<PropertyList>
+						<Property Name="DryLevel" Type="Real32" Value="0.52"/>
+						<Property Name="FeedBackLevel" Type="Real32" Value="-0.3"/>
+						<Property Name="ModDepth" Type="Real32" Value="32.6"/>
+						<Property Name="ModFrequency" Type="Real32" Value="0.34"/>
+						<Property Name="WetDryMix" Type="Real32" Value="46"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="Balloon_Verb" ID="{53B9EA7C-BAED-43D9-B560-D23E3B7F74AF}" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+					<PropertyList>
+						<Property Name="DryLevel" Type="Real32" Value="-2.3"/>
+						<Property Name="ReverbLevel" Type="Real32" Value="-13"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="Bal_Dist" ID="{421D66C0-9428-49ED-8F0D-E8A1ECAA9E07}" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
+					<PropertyList>
+						<Property Name="DistortionDrive" Type="Real32" Value="16"/>
+						<Property Name="DistortionTone" Type="Real32" Value="23"/>
+						<Property Name="DistortionType" Type="int32" Value="1"/>
+						<Property Name="Rectification" Type="Real32" Value="18"/>
+						<Property Name="WetDryMix" Type="Real32" Value="17"/>
+					</PropertyList>
+				</Effect>
 			</ChildrenList>
 		</WorkUnit>
 	</Effects>

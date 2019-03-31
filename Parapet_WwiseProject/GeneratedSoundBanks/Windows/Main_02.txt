@@ -8,6 +8,8 @@ Event	ID	Name			Wwise Object Path	Notes
 	2897532144	Play_BBCol			\Default Work Unit\Main_02\Play_BBCol	
 	3220749505	Stop_Roll			\Default Work Unit\Main_02\Stop_Roll	
 	3425437051	Play_Parapet_sfx_puzzleComplete			\Default Work Unit\Main_02\Play_Parapet_sfx_puzzleComplete	
+	3434821814	Play_BalloonRelease			\Default Work Unit\Main_02\Main_03\Play_BalloonRelease	
+	3909880506	Play_NewMort			\Default Work Unit\Main_02\Main_03\Play_NewMort	
 	3948925255	Play_Splash			\Default Work Unit\Main_02\Play_Splash	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
@@ -40,7 +42,9 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	73302493	MXG_Para_sfx_puz_completed	D:\Github\Parapet\Parapet_WwiseProject\.cache\Windows\SFX\Parapet_sfx_puz\MXG_Para_sfx_puz_completed_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Parapet_sfx\Parapet_sfx_puz_complete\MXG_Para_sfx_puz_completed		835848
 	93040973	Pin_08	D:\Github\Parapet\Parapet_WwiseProject\.cache\Windows\SFX\AdditionalSounds\Pin\Pin_08_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\BBCol\Pin_Switch\Pin_Multi\Pin_08		256576
 	104874424	Para_BBCol_Wood_03	D:\Github\Parapet\Parapet_WwiseProject\.cache\Windows\SFX\BBCol\Para_BBCol_Wood_03_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\BBCol\wood\Para_BBCol_Wood_03		54040
+	136664931	AR_sfx_balloonRelease_02	D:\Github\Parapet\Parapet_WwiseProject\.cache\Windows\SFX\Balloon\Release\AR_sfx_balloonRelease_02_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Balloon\Release\AR_sfx_balloonRelease_02		24176
 	147067316	Para_BBCol_Metal_02	D:\Github\Parapet\Parapet_WwiseProject\.cache\Windows\SFX\BBCol\Para_BBCol_Metal_02_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\BBCol\metal\Para_BBCol_Metal_02		94524
+	168529880	Para_sfx_newMort	D:\Github\Parapet\Parapet_WwiseProject\.cache\Windows\SFX\NewMort\Para_sfx_newMort_55DBC2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\NewMort\Para_sfx_newMort		76376
 	224643138	Pin_03	D:\Github\Parapet\Parapet_WwiseProject\.cache\Windows\SFX\AdditionalSounds\Pin\Pin_03_02227657.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\BBCol\Pin_Switch\Pin_Single\Pin_03		662068
 	252304248	Para_BBCol_Stone_04	D:\Github\Parapet\Parapet_WwiseProject\.cache\Windows\SFX\BBCol\Para_BBCol_Stone_04_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\BBCol\stone\Para_BBCol_Stone_04		14272
 	261317871	Pin_02	D:\Github\Parapet\Parapet_WwiseProject\.cache\Windows\SFX\AdditionalSounds\Pin\Pin_02_317FD49F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\BBCol\Pin_Switch\Pin_Single\Pin_02		307096
@@ -48,19 +52,36 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	297359604	Pin_06	D:\Github\Parapet\Parapet_WwiseProject\.cache\Windows\SFX\AdditionalSounds\Pin\Pin_06_F2F66D8E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\BBCol\Pin_Switch\Pin_Multi\Pin_06		736568
 	326762633	Pin_09	D:\Github\Parapet\Parapet_WwiseProject\.cache\Windows\SFX\AdditionalSounds\Pin\Pin_09_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\BBCol\Pin_Switch\Pin_Multi\Pin_09		800132
 	348123721	Para_BBCol_Stone_02	D:\Github\Parapet\Parapet_WwiseProject\.cache\Windows\SFX\BBCol\Para_BBCol_Stone_02_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\BBCol\stone\Para_BBCol_Stone_02		31912
+	379543737	AR_sfx_balloonRelease_03	D:\Github\Parapet\Parapet_WwiseProject\.cache\Windows\SFX\Balloon\Release\AR_sfx_balloonRelease_03_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Balloon\Release\AR_sfx_balloonRelease_03		48636
 	398334824	Para_BBCol_Wood_04	D:\Github\Parapet\Parapet_WwiseProject\.cache\Windows\SFX\BBCol\Para_BBCol_Wood_04_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\BBCol\wood\Para_BBCol_Wood_04		54044
+	401483045	Para_sfx_Water_med_02	D:\Github\Parapet\Parapet_WwiseProject\.cache\Windows\SFX\Water\Med\Para_sfx_Water_med_02_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\Splash\Splash_med\Para_sfx_Water_med_02		918232
 	437342047	Para_BBCol_Wood_01	D:\Github\Parapet\Parapet_WwiseProject\.cache\Windows\SFX\BBCol\Para_BBCol_Wood_01_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\BBCol\wood\Para_BBCol_Wood_01		54040
 	452033934	Para_BBCol_Metal_01	D:\Github\Parapet\Parapet_WwiseProject\.cache\Windows\SFX\BBCol\Para_BBCol_Metal_01_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\BBCol\metal\Para_BBCol_Metal_01		94524
 	459846833	Pin_05	D:\Github\Parapet\Parapet_WwiseProject\.cache\Windows\SFX\AdditionalSounds\Pin\Pin_05_4A390F5A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\BBCol\Pin_Switch\Pin_Single\Pin_05		268668
 	461999483	MXG_Para_sfx_roll	D:\Github\Parapet\Parapet_WwiseProject\.cache\Windows\SFX\AdditionalSounds\Roll\MXG_Para_sfx_roll_8956FC97.wem		\Actor-Mixer Hierarchy\Transfer\AdditionalSounds\MXG_Para_sfx_roll		1249196
 	514965240	Pin_04	D:\Github\Parapet\Parapet_WwiseProject\.cache\Windows\SFX\AdditionalSounds\Pin\Pin_04_F232EAAC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\BBCol\Pin_Switch\Pin_Single\Pin_04		323336
+	515019361	Para_sfx_newMort_04	D:\Github\Parapet\Parapet_WwiseProject\.cache\Windows\SFX\NewMort\Para_sfx_newMort_04_87169198.wem		\Actor-Mixer Hierarchy\Default Work Unit\NewMort\Para_sfx_newMort_04		81888
+	604683501	Para_sfx_fabric_02	D:\Github\Parapet\Parapet_WwiseProject\.cache\Windows\SFX\Fabric\Para_sfx_fabric_02_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\BBCol\Fabric\Para_sfx_fabric_02		76352
+	629337519	Para_sfx_Water_med_01	D:\Github\Parapet\Parapet_WwiseProject\.cache\Windows\SFX\Water\Med\Para_sfx_Water_med_01_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\Splash\Splash_med\Para_sfx_Water_med_01		918232
 	671009346	MXG_Para_sfx_flag_amb	D:\Github\Parapet\Parapet_WwiseProject\.cache\Windows\SFX\Parapet_sfx__flag\MXG_Para_sfx_flag_amb_8956FC97.wem		\Actor-Mixer Hierarchy\Default Work Unit\Parapet_sfx\Parapet_sfx_flag\MXG_Para_sfx_flag_amb		5280064
+	683796446	AR_sfx_balloonRelease_04	D:\Github\Parapet\Parapet_WwiseProject\.cache\Windows\SFX\Balloon\Release\AR_sfx_balloonRelease_04_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Balloon\Release\AR_sfx_balloonRelease_04		40400
+	686077528	Para_sfx_fabric_03	D:\Github\Parapet\Parapet_WwiseProject\.cache\Windows\SFX\Fabric\Para_sfx_fabric_03_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\BBCol\Fabric\Para_sfx_fabric_03		60096
 	706114647	Para_BBCol_Metal_04	D:\Github\Parapet\Parapet_WwiseProject\.cache\Windows\SFX\BBCol\Para_BBCol_Metal_04_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\BBCol\metal\Para_BBCol_Metal_04		94524
 	706748188	Para_BBCol_Stone_01	D:\Github\Parapet\Parapet_WwiseProject\.cache\Windows\SFX\BBCol\Para_BBCol_Stone_01_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\BBCol\stone\Para_BBCol_Stone_01		33444
+	735821035	Para_sfx_Water_high_02	D:\Github\Parapet\Parapet_WwiseProject\.cache\Windows\SFX\Water\High\Para_sfx_Water_high_02_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\Splash\Splash_big\Para_sfx_Water_high_02		1126172
+	753585287	Para_sfx_Water_high_01	D:\Github\Parapet\Parapet_WwiseProject\.cache\Windows\SFX\Water\High\Para_sfx_Water_high_01_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\Splash\Splash_big\Para_sfx_Water_high_01		896708
+	762137397	Para_sfx_fabric	D:\Github\Parapet\Parapet_WwiseProject\.cache\Windows\SFX\Fabric\Para_sfx_fabric_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\BBCol\Fabric\Para_sfx_fabric		79724
+	775682615	Para_sfx_newMort_03	D:\Github\Parapet\Parapet_WwiseProject\.cache\Windows\SFX\NewMort\Para_sfx_newMort_03_C79D0121.wem		\Actor-Mixer Hierarchy\Default Work Unit\NewMort\Para_sfx_newMort_03		81496
+	791830203	Para_sfx_fabric_04	D:\Github\Parapet\Parapet_WwiseProject\.cache\Windows\SFX\Fabric\Para_sfx_fabric_04_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\BBCol\Fabric\Para_sfx_fabric_04		96576
+	835095255	Para_sfx_newMort_02	D:\Github\Parapet\Parapet_WwiseProject\.cache\Windows\SFX\NewMort\Para_sfx_newMort_02_580CDC87.wem		\Actor-Mixer Hierarchy\Default Work Unit\NewMort\Para_sfx_newMort_02		73604
 	857787806	Para_BBCol_Wood_02	D:\Github\Parapet\Parapet_WwiseProject\.cache\Windows\SFX\BBCol\Para_BBCol_Wood_02_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\BBCol\wood\Para_BBCol_Wood_02		54040
+	882827273	AR_sfx_balloonRelease_07	D:\Github\Parapet\Parapet_WwiseProject\.cache\Windows\SFX\Balloon\Release\AR_sfx_balloonRelease_07_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Balloon\Release\AR_sfx_balloonRelease_07		39952
+	928736289	AR_sfx_balloonRelease_06	D:\Github\Parapet\Parapet_WwiseProject\.cache\Windows\SFX\Balloon\Release\AR_sfx_balloonRelease_06_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Balloon\Release\AR_sfx_balloonRelease_06		44048
 	929103980	Pin_01	D:\Github\Parapet\Parapet_WwiseProject\.cache\Windows\SFX\AdditionalSounds\Pin\Pin_01_55B98570.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\BBCol\Pin_Switch\Pin_Single\Pin_01		357180
 	933438454	Para_BBCol_Metal_03	D:\Github\Parapet\Parapet_WwiseProject\.cache\Windows\SFX\BBCol\Para_BBCol_Metal_03_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\BBCol\metal\Para_BBCol_Metal_03		94524
 	940477011	Para_BBCol_Stone_03	D:\Github\Parapet\Parapet_WwiseProject\.cache\Windows\SFX\BBCol\Para_BBCol_Stone_03_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\BBCol\stone\Para_BBCol_Stone_03		18532
 	957558420	MXG_Para_sfx_puz_correctPiece	D:\Github\Parapet\Parapet_WwiseProject\.cache\Windows\SFX\Parapet_sfx_puz\MXG_Para_sfx_puz_correctPiece_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Parapet_sfx\Parapet_sfx_puz_Single\MXG_Para_sfx_puz_correctPiece		591516
+	977748934	Para_sfx_Water_high_03	D:\Github\Parapet\Parapet_WwiseProject\.cache\Windows\SFX\Water\High\Para_sfx_Water_high_03_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\Splash\Splash_big\Para_sfx_Water_high_03		918236
 	1019494351	Pin_07	D:\Github\Parapet\Parapet_WwiseProject\.cache\Windows\SFX\AdditionalSounds\Pin\Pin_07_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\BBCol\Pin_Switch\Pin_Multi\Pin_07		557056
+	1033327840	AR_sfx_balloonRelease_05	D:\Github\Parapet\Parapet_WwiseProject\.cache\Windows\SFX\Balloon\Release\AR_sfx_balloonRelease_05_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Balloon\Release\AR_sfx_balloonRelease_05		21188
 

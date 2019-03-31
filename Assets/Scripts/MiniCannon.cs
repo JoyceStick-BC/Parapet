@@ -30,7 +30,7 @@ public class MiniCannon : MonoBehaviour {
     {
         delay = Time.time;
         grabbed = true;
-        AudioManager.Instance.PlayMortar(gameObject);
+        AudioManager.Instance.PlayMiniCannon(gameObject);
         GameObject cannonballCopy = Instantiate(cannonball, shotPos.position, shotPos.rotation) as GameObject;
         //GameObject cannonballCopy = Instantiate(cannonball, shotPos.position, cannonball.transform.rotation) as GameObject;
         cannonballRB = cannonballCopy.GetComponent<Rigidbody>();
@@ -50,7 +50,7 @@ public class MiniCannon : MonoBehaviour {
         {
             if(Time.time - delay > 0.1)
             {
-                AudioManager.Instance.PlayMortar(gameObject);
+                AudioManager.Instance.PlayMiniCannon(gameObject);
                 GameObject cannonballCopy = Instantiate(cannonball, shotPos.position, shotPos.rotation) as GameObject;
                 //GameObject cannonballCopy = Instantiate(cannonball, shotPos.position, cannonball.transform.rotation) as GameObject;
                 cannonballRB = cannonballCopy.GetComponent<Rigidbody>();

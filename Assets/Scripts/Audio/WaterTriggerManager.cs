@@ -15,7 +15,7 @@ public class WaterTriggerManager : MonoBehaviour {
         WaterColMat splashSize = other.gameObject.GetComponent<WaterColMat>();
         if (splashSize != null)
         {
-
+            AudioManager.Instance.SplashSound(other.gameObject, splashSize.splashSize);
         }
         //if (collider.Get)
     }

@@ -7,6 +7,7 @@ public class ReleaseBalloons : MonoBehaviour {
 
     public GameObject balloonBasket1;
     public GameObject balloonSample;
+    public Material[] balloonColors;
 
     private Rigidbody[] balloons;
     private MeshRenderer[] renders;
@@ -27,6 +28,8 @@ public class ReleaseBalloons : MonoBehaviour {
     {
         if (!launched)
         {
+            
+            Debug.Log("Release");
             balloons = balloonBasket1.GetComponentsInChildren<Rigidbody>();
             renders = balloonBasket1.GetComponentsInChildren<MeshRenderer>();
             forces = balloonBasket1.GetComponentsInChildren<ConstantForce>();
@@ -57,7 +60,7 @@ public class ReleaseBalloons : MonoBehaviour {
         totalBallons = balloonBasket1.transform.childCount;
         Transform[] transforms = balloonBasket1.GetComponentsInChildren<Transform>();
         print("balloons = " + transforms.Length);
-        foreach(Transform t in transforms)
+        foreach (Transform t in transforms)
         {
             if (t.position.y > 200)
             {
@@ -67,11 +70,13 @@ public class ReleaseBalloons : MonoBehaviour {
         if (transforms.Length < 500)
         {
             GameObject clone = Instantiate(balloonSample, balloonBasket1.transform);
+            clone.GetComponent<Renderer>().material = balloonColors[Random.Range(0, balloonColors.Length)];
             clone.transform.position = balloonBasket1.transform.position;
             clone.GetComponent<Rigidbody>().isKinematic = false;
             clone.GetComponent<Rigidbody>().AddForce(Random.Range(-1, 1) * 1, 4, Random.Range(-1, 1) * 1, ForceMode.Impulse);
             clone.GetComponent<MeshRenderer>().enabled = true;
             clone.GetComponent<ConstantForce>().enabled = true;
+            AudioManager.Instance.PlayBalloonRelease(gameObject);
         }
     }
 }

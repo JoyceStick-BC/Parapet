@@ -266,4 +266,13 @@ public class AudioManager : MonoBehaviour {
         AkSoundEngine.SetRTPCValue("AmbianceOC", value);
     }
 
+    public void PlayMiniCannon (GameObject miniCannon)
+    {
+        AkSoundEngine.PostEvent("Play_NewMort", miniCannon);
+    }
+    public void PlayBalloonRelease (GameObject gameObj)
+    {
+        AkSoundEngine.PostEvent("Play_BalloonRelease", gameObj);
+    }
+
 }
