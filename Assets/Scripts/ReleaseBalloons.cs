@@ -67,6 +67,7 @@ public class ReleaseBalloons : MonoBehaviour {
         if (transforms.Length < 500)
         {
             GameObject clone = Instantiate(balloonSample, balloonBasket1.transform);
+            clone.transform.position = balloonBasket1.transform.position;
             clone.GetComponent<Rigidbody>().isKinematic = false;
             clone.GetComponent<Rigidbody>().AddForce(Random.Range(-1, 1) * 1, 4, Random.Range(-1, 1) * 1, ForceMode.Impulse);
             clone.GetComponent<MeshRenderer>().enabled = true;
