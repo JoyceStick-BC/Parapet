@@ -22,7 +22,7 @@ public class FlagAudio : MonoBehaviour {
     // Update is called once per frame
     void Update () {
         RaycastHit hit;
-        Debug.DrawRay(transform.position, AudioManager.Instance._player.transform.position - transform.position);
+        if (AudioManager.Instance._player) return;
         if (Physics.Raycast(transform.position, AudioManager.Instance._player.transform.position - transform.position, out hit, 100))
         {
             //debugOBJ.transform.position = hit.point;

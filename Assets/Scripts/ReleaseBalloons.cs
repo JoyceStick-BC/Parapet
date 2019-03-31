@@ -6,7 +6,8 @@ using VRTK;
 public class ReleaseBalloons : MonoBehaviour {
 
     public GameObject balloonBasket1;
-    
+    public GameObject balloonSample;
+
     private Rigidbody[] balloons;
     private MeshRenderer[] renders;
     private ConstantForce[] forces;
@@ -33,7 +34,7 @@ public class ReleaseBalloons : MonoBehaviour {
             foreach (Rigidbody rb in balloons)
             {
                 rb.isKinematic = false;
-                rb.AddForce(Random.Range(-1, 1) * 2, 5, Random.Range(-1, 1) * 2, ForceMode.Impulse);
+                rb.AddForce(Random.Range(-1, 1) * 1, 4, Random.Range(-1, 1) * 1, ForceMode.Impulse);
             }
             foreach (MeshRenderer mesh in renders)
             {
@@ -53,12 +54,23 @@ public class ReleaseBalloons : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-		//while (i < totalBallons)
-  //      {
-  //          balloons[i].isKinematic = false;
-  //          balloons[i].AddForce(Random.Range(-1, 1) * 2, 5, Random.Range(-1, 1) * 2, ForceMode.Impulse);
-  //          renders[i].enabled = true;
-  //          forces[i].enabled = true;
-  //      }
-	}
+        totalBallons = balloonBasket1.transform.childCount;
+        Transform[] transforms = balloonBasket1.GetComponentsInChildren<Transform>();
+        print("balloons = " + transforms.Length);
+        foreach(Transform t in transforms)
+        {
+            if (t.position.y > 200)
+            {
+                Destroy(t.gameObject);
+            }
+        }
+        if (transforms.Length < 500)
+        {
+            GameObject clone = Instantiate(balloonSample, balloonBasket1.transform);
+            clone.GetComponent<Rigidbody>().isKinematic = false;
+            clone.GetComponent<Rigidbody>().AddForce(Random.Range(-1, 1) * 1, 4, Random.Range(-1, 1) * 1, ForceMode.Impulse);
+            clone.GetComponent<MeshRenderer>().enabled = true;
+            clone.GetComponent<ConstantForce>().enabled = true;
+        }
+    }
 }
