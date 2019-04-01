@@ -34,6 +34,8 @@ public class ReleaseBalloons : MonoBehaviour {
     private float countdown = 0.5f;
     private float time;
 
+    private bool audioKeeper = true;
+
     // Use this for initialization
     void Start () {
         //balloons = balloonBasket1.
@@ -89,10 +91,15 @@ public class ReleaseBalloons : MonoBehaviour {
             myAnimationController.Play("Take 001");
             animationPlayed = true;
         }
-
+        else
+        {
+            myAnimationController.Play("Closing2");
+            animationPlayed = false;
+        }
         if (!launched)
         {
-            
+            AudioManager.Instance.PlayButton(gameObject);
+
             //Debug.Log("Release");
             //balloons = balloonBasket1.GetComponentsInChildren<Rigidbody>();
             //renders = balloonBasket1.GetComponentsInChildren<MeshRenderer>();
@@ -130,12 +137,20 @@ public class ReleaseBalloons : MonoBehaviour {
     void Update () {
         if (launched)
         {
+            audioKeeper = true;
             NewBalloon();
             buttonRend.material = greenButtonMat;
             buttonRend.gameObject.transform.localPosition = new Vector3(0, -0.039f, 0);
         }
         else
         {
+            if (audioKeeper)
+            {
+                AudioManager.Instance.PlayButton(gameObject);
+                audioKeeper = false;
+
+            }
+            
             buttonRend.material = greyButtonMat;
             buttonRend.gameObject.transform.localPosition = new Vector3(0, -0.006914731f, 0);
         }

@@ -2717,6 +2717,50 @@
 								</GroupingList>
 							</GroupingInfo>
 						</SwitchContainer>
+						<Sound Name="Para_Button" ID="{82E5C67A-5DF8-479A-BA06-C82C3E1DE0EF}" ShortID="247675847">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-17</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{95D0B1D9-3F20-4AB8-85C0-69BF48B1CA77}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="2"/>
+													<Property Name="Min" Type="Real64" Value="-4"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="sfx_Jack" ID="{BAFB55A5-4AF9-4178-BF1D-A5038202F1C8}" WorkUnitID="{417C7A31-DFA2-4567-B6FE-B70E2C7D4DD7}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Para_Button" ID="{B12F1492-D36F-4117-B262-2A646F1B4247}" ShortID="776311374">
+									<Language>SFX</Language>
+									<AudioFile>Para_Button.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{94C55ABF-A6E5-4814-B89E-22B4D9D536A4}"/>
+							</PositioningInfo>
+							<ActiveSourceList>
+								<ActiveSource Name="Para_Button" ID="{B12F1492-D36F-4117-B262-2A646F1B4247}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 				<SwitchContainer Name="Balloon" ID="{CF8AE82A-3648-4110-8477-E317B7870438}" ShortID="231373697">
@@ -2971,7 +3015,13 @@
 					</GroupingInfo>
 				</SwitchContainer>
 				<RandomSequenceContainer Name="Rez" ID="{85BC8170-72CC-407E-8141-5E32C4F98686}" ShortID="731420148">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Quil" ID="{606EF17E-4187-42F9-83A8-5CF42949350E}" WorkUnitID="{417C7A31-DFA2-4567-B6FE-B70E2C7D4DD7}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
 						</Reference>
@@ -3072,7 +3122,7 @@
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-2</Value>
+										<Value>-3</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>

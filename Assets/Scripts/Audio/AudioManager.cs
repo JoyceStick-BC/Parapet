@@ -8,6 +8,7 @@ public class AudioManager : MonoBehaviour {
     public Queue<GameObject> collisionQueueDebug = new Queue<GameObject>();
     public GameObject _player = null;
     public GameObject ambObj;
+    private GameObject multiQuil;
 
     private float timeOfQuilCol = 0;
     private int numberOfQuilCol = 0;
@@ -40,6 +41,7 @@ public class AudioManager : MonoBehaviour {
         {
             collisionQueueDebug.Enqueue(g);
         }
+        multiQuil = GameObject.Find("MultiQuilSource");
         //AkSoundEngine.RegisterPluginDLL
     }
 
@@ -234,7 +236,7 @@ public class AudioManager : MonoBehaviour {
         if (collision.relativeVelocity.magnitude > ballVelocity) ballVelocity = collision.relativeVelocity.magnitude;
         if (ballVelocity > 3 && numberOfQuilCol > 4)
         {
-            AkSoundEngine.PostEvent("Play_quil_mult", GameObject.Find("MultiQuilSource"));
+            AkSoundEngine.PostEvent("Play_quil_mult", multiQuil);
         }
         StopCoroutine(quilTimer());
         StartCoroutine(quilTimer());
@@ -275,7 +277,11 @@ public class AudioManager : MonoBehaviour {
 
     public void PlayQuilRez ()
     {
-        AkSoundEngine.PostEvent("Play_Rez", gameObject);
+        AkSoundEngine.PostEvent("Play_Rez", multiQuil);
+    }
+    public void PlayButton (GameObject button)
+    {
+        AkSoundEngine.PostEvent("Play_Para_Button", button);
     }
 
 }

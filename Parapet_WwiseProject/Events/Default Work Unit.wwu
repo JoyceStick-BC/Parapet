@@ -303,6 +303,20 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="Play_Para_Button" ID="{C797315E-C115-4B05-9733-DD5B37B5BA7A}">
+									<ChildrenList>
+										<Action Name="" ID="{5EF4AB03-61BF-437E-A36C-8CDB00864C39}" ShortID="948244733">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Para_Button" ID="{82E5C67A-5DF8-479A-BA06-C82C3E1DE0EF}" WorkUnitID="{C875FD9F-D567-46A3-AFDF-F034770F11DC}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 						<Event Name="Play_Rez" ID="{BC98C716-4FF2-44A1-90B5-10D3C90B2097}">

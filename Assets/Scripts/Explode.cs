@@ -11,22 +11,37 @@ public class Explode : MonoBehaviour {
     public GameObject NelsonMiddle;
     public GameObject NelsonTop;
     public GameObject explosion;
-    private GameObject safetyPane;
+    private MeshCollider safetyPane;
+
+
+    private Renderer buttonRend;
+    private Material greenButtonMat;
+    private Material greyButtonMat;
+
+    public GameObject originalStatue;
+    public GameObject exploStatue;
+    private List<Rigidbody> rigidInPrefab = new List<Rigidbody>();
 
     private bool exploded = false;
     private bool clicked = false;
     private float delay;
     private bool firstTimeClick = false;
 
+    private void MaterialInit()
+    {
+        buttonRend = GameObject.Find("ExplosionButton").GetComponent<Renderer>();
+        greenButtonMat = Resources.Load<Material>("Mat/Button_Green");
+        greyButtonMat = Resources.Load<Material>("Mat/Button_Silver");
+    }
     // Use this for initialization
     void Start()
     {
-        safetyPane = GameObject.Find("SafetyPlane");
+        safetyPane = GameObject.Find("SafetyPlane").GetComponent<MeshCollider>();
         NelsonBase.GetComponent<Rigidbody>().isKinematic = true;
         NelsonBottom.GetComponent<Rigidbody>().isKinematic = true;
         NelsonMiddle.GetComponent<Rigidbody>().isKinematic = true;
         NelsonTop.GetComponent<Rigidbody>().isKinematic = true;
-
+        MaterialInit();
         if (GetComponent<VRTK_InteractableObject>() == null)
         {
             Debug.Log("very sad");
@@ -48,41 +63,11 @@ public class Explode : MonoBehaviour {
             if (!firstTimeClick)
             {
                 firstTimeClick = true;
+                AudioManager.Instance.PlayButton(gameObject);
                 AudioManager.Instance.PlayTowerDestruction(gameObject);
-            }
-            if (Time.time - delay >= .5f)
-            {
-                if (!exploded)
-                {
-                    NelsonBase.GetComponent<Rigidbody>().isKinematic = false;
-                    NelsonBottom.GetComponent<Rigidbody>().isKinematic = false;
-                    NelsonMiddle.GetComponent<Rigidbody>().isKinematic = false;
-                    NelsonTop.GetComponent<Rigidbody>().isKinematic = false;
-
-                    Vector3 explosionPos = transform.position;
-
-                    explosionPos.x = explosionPos.x + 5;
-                    Collider[] colliders = Physics.OverlapSphere(explosionPos, radius);
-                    //foreach (Collider hit in colliders)
-                    //{
-                    //    Rigidbody rb = hit.GetComponent<Rigidbody>();
-
-                    //    if (rb != null)
-                    //    {
-                    //        rb.AddExplosionForce(power, explosionPos, radius, 3.0F);
-                    //    }
-                    //}
-                    NelsonBase.GetComponent<Rigidbody>().AddExplosionForce(power + 200, explosionPos, radius, 3.0F);
-                    NelsonBottom.GetComponent<Rigidbody>().AddExplosionForce(power, explosionPos, radius, 3.0F);
-                    NelsonMiddle.GetComponent<Rigidbody>().AddExplosionForce(power-100, explosionPos, radius, 3.0F);
-                    NelsonTop.GetComponent<Rigidbody>().AddExplosionForce(power - 170, explosionPos, radius, 3.0F);
-                    Instantiate(explosion, NelsonBase.transform.position, NelsonBase.transform.rotation);
-                    Instantiate(explosion, NelsonBottom.transform.position, NelsonBottom.transform.rotation);
-                    Instantiate(explosion, NelsonMiddle.transform.position, NelsonMiddle.transform.rotation);
-                    Instantiate(explosion, NelsonTop.transform.position, NelsonTop.transform.rotation);
-                    exploded = true;
-                    StartCoroutine(waitfor3secondsbeforeColiderisoff(safetyPane.GetComponent<MeshCollider>()));
-                }
+                buttonRend.material = greenButtonMat;
+                buttonRend.gameObject.transform.localPosition = new Vector3(0, -0.039f, 0);
+                StartCoroutine(waitfor3secondsbeforeColiderisoff(safetyPane.GetComponent<MeshCollider>()));
             }
         }
 	}
@@ -90,8 +75,41 @@ public class Explode : MonoBehaviour {
 
     IEnumerator waitfor3secondsbeforeColiderisoff (MeshCollider collider)
     {
+        safetyPane.isTrigger = true;
+        yield return new WaitForSecondsRealtime(.5f);
+        GameObject tempGO;
+        tempGO = Instantiate(exploStatue);
+        tempGO.transform.position = originalStatue.transform.position;
+
+        rigidInPrefab.AddRange(tempGO.GetComponentsInChildren<Rigidbody>());
+        int count = 0;
+        foreach (Rigidbody rb in rigidInPrefab)
+        {
+            //rb.AddExplosionForce(500, rb.gameObject.transform.position, 500);
+            rb.AddForce(new Vector3(Random.Range(-3,4), Random.Range(100, 200), Random.Range(100, 6000) * -1));
+            if (count % 12 == 0)
+            {
+                //Instantiate(explosion, rb.transform.position, rb.transform.rotation);
+            }
+            count++;
+        }
+        Instantiate(explosion, NelsonBase.transform.position, NelsonBase.transform.rotation);
+        Instantiate(explosion, NelsonBottom.transform.position, NelsonBottom.transform.rotation);
+        Instantiate(explosion, NelsonMiddle.transform.position, NelsonMiddle.transform.rotation);
+        Instantiate(explosion, NelsonTop.transform.position, NelsonTop.transform.rotation);
+
+        //GetComponent<Rigidbody>().AddExplosionForce(500, gameObject.transform.position, 50);
+        Destroy(originalStatue);
         collider.isTrigger = true;
         yield return new WaitForSecondsRealtime(10);
+        foreach (Rigidbody rb in rigidInPrefab)
+        {
+            if (rb != null)
+            {
+                Destroy(rb.gameObject);
+            }
+        }
+        safetyPane.isTrigger = false;
         collider.isTrigger = false;
     }
 }

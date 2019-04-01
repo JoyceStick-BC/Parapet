@@ -1,0 +1,789 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!74 &7400000
+AnimationClip:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Closing
+  serializedVersion: 6
+  m_Legacy: 0
+  m_Compressed: 0
+  m_UseHighQualityCurve: 1
+  m_RotationCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.29166666
+        value: {x: -9.8130805e-17, y: -9.8130785e-17, z: 0.7071068, w: 0.7071067}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: -0.70911294, y: -0.7091128, z: 0, w: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666666
+        value: {x: 0.029702904, y: 0.029702898, z: 0.7064827, w: 0.7064826}
+        inSlope: {x: -1.3079196, y: -1.3079345, z: 0.05531311, w: 0.05531311}
+        outSlope: {x: -1.2979504, y: -1.2979504, z: 0.054359425, w: 0.054359425}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5416667
+        value: {x: 0.35194895, y: 0.3519489, z: 0.61329603, w: 0.6132959}
+        inSlope: {x: -3.0002587, y: -3.0002587, z: 1.7228123, w: 1.7228123}
+        outSlope: {x: -3.0021667, y: -3.0021667, z: 1.7213821, w: 1.721859}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.6666667
+        value: {x: 0.57320356, y: 0.5732035, z: 0.41405037, w: 0.4140503}
+        inSlope: {x: -2.0709038, y: -2.0709038, z: 2.8688908, w: 2.8691292}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Jack_Root_JNT/Jack_Cover_JNT1
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.29166666
+        value: {x: -0.00087245234, y: 0.029522512, z: 0.029526329, w: 0.99912757}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0.0022201177, y: -0.07159014, z: -0.0147024775, w: 0.0025431314}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.6666667
+        value: {x: -4.1186373e-18, y: 0.029535403, z: 1.3938668e-16, w: 0.99956375}
+        inSlope: {x: -0.0015457855, y: 0.000054637585, z: 0.052166507, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Jack_Root_JNT/Jack_Spring_JNT1
+  m_CompressedRotationCurves: []
+  m_EulerCurves: []
+  m_PositionCurves: []
+  m_ScaleCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.981739, y: 1, z: 1}
+        inSlope: {x: 2.415289, y: 0, z: 0}
+        outSlope: {x: 2.415289, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.083333336
+        value: {x: 0.88110197, y: 1, z: 1}
+        inSlope: {x: -0.26414418, y: 0, z: 0}
+        outSlope: {x: -0.26414418, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.16666667
+        value: {x: 1.0037512, y: 1, z: 1}
+        inSlope: {x: -2.9435806, y: 0, z: 0}
+        outSlope: {x: -2.9435806, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.29166666
+        value: {x: 1.1821501, y: 1, z: 1}
+        inSlope: {x: -0.21157986, y: 0, z: 0}
+        outSlope: {x: -0.21157986, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666666
+        value: {x: 1.1440321, y: 1, z: 1}
+        inSlope: {x: 1.7199664, y: 0, z: 0}
+        outSlope: {x: 1.7199664, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.6666667
+        value: {x: 0.22126815, y: 1, z: 1}
+        inSlope: {x: 5.6752486, y: 0, z: 0}
+        outSlope: {x: 5.6752486, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Jack_Root_JNT/Jack_Spring_JNT1
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.29166666
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.6666667
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Jack_Root_JNT/Jack_Cover_JNT1
+  m_FloatCurves: []
+  m_PPtrCurves: []
+  m_SampleRate: 24
+  m_WrapMode: 0
+  m_Bounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+  m_ClipBindingConstant:
+    genericBindings:
+    - serializedVersion: 2
+      path: 3321215509
+      attribute: 2
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 4208648592
+      attribute: 2
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 4208648592
+      attribute: 3
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 3321215509
+      attribute: 3
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    pptrCurveMapping: []
+  m_AnimationClipSettings:
+    serializedVersion: 2
+    m_AdditiveReferencePoseClip: {fileID: 0}
+    m_AdditiveReferencePoseTime: 0
+    m_StartTime: 0
+    m_StopTime: 0.6666667
+    m_OrientationOffsetY: 0
+    m_Level: 0
+    m_CycleOffset: 0
+    m_HasAdditiveReferencePose: 0
+    m_LoopTime: 0
+    m_LoopBlend: 0
+    m_LoopBlendOrientation: 0
+    m_LoopBlendPositionY: 0
+    m_LoopBlendPositionXZ: 0
+    m_KeepOriginalOrientation: 0
+    m_KeepOriginalPositionY: 1
+    m_KeepOriginalPositionXZ: 0
+    m_HeightFromFeet: 0
+    m_Mirror: 0
+  m_EditorCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0.981739
+        inSlope: 2.415289
+        outSlope: 2.415289
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.083333336
+        value: 0.88110197
+        inSlope: -0.26414418
+        outSlope: -0.26414418
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.16666667
+        value: 1.0037512
+        inSlope: -2.9435806
+        outSlope: -2.9435806
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.29166666
+        value: 1.1821501
+        inSlope: -0.21157986
+        outSlope: -0.21157986
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666666
+        value: 1.1440321
+        inSlope: 1.7199664
+        outSlope: 1.7199664
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.6666667
+        value: 0.22126815
+        inSlope: 5.6752486
+        outSlope: 5.6752486
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalScale.x
+    path: Jack_Root_JNT/Jack_Spring_JNT1
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.083333336
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.16666667
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.29166666
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666666
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.6666667
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalScale.y
+    path: Jack_Root_JNT/Jack_Spring_JNT1
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.083333336
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.16666667
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.29166666
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666666
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.6666667
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalScale.z
+    path: Jack_Root_JNT/Jack_Spring_JNT1
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.29166666
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.6666667
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalScale.x
+    path: Jack_Root_JNT/Jack_Cover_JNT1
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.29166666
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.6666667
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalScale.y
+    path: Jack_Root_JNT/Jack_Cover_JNT1
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.29166666
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.6666667
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalScale.z
+    path: Jack_Root_JNT/Jack_Cover_JNT1
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.29166666
+        value: -9.8130805e-17
+        inSlope: 0
+        outSlope: -0.70911294
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666666
+        value: 0.029702904
+        inSlope: -1.3079196
+        outSlope: -1.2979504
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5416667
+        value: 0.35194895
+        inSlope: -3.0002587
+        outSlope: -3.0021667
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.6666667
+        value: 0.57320356
+        inSlope: -2.0709038
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalRotation.x
+    path: Jack_Root_JNT/Jack_Cover_JNT1
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.29166666
+        value: -9.8130785e-17
+        inSlope: 0
+        outSlope: -0.7091128
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666666
+        value: 0.029702898
+        inSlope: -1.3079345
+        outSlope: -1.2979504
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5416667
+        value: 0.3519489
+        inSlope: -3.0002587
+        outSlope: -3.0021667
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.6666667
+        value: 0.5732035
+        inSlope: -2.0709038
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalRotation.y
+    path: Jack_Root_JNT/Jack_Cover_JNT1
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.29166666
+        value: 0.7071068
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666666
+        value: 0.7064827
+        inSlope: 0.05531311
+        outSlope: 0.054359425
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5416667
+        value: 0.61329603
+        inSlope: 1.7228123
+        outSlope: 1.7213821
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.6666667
+        value: 0.41405037
+        inSlope: 2.8688908
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalRotation.z
+    path: Jack_Root_JNT/Jack_Cover_JNT1
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.29166666
+        value: 0.7071067
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666666
+        value: 0.7064826
+        inSlope: 0.05531311
+        outSlope: 0.054359425
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5416667
+        value: 0.6132959
+        inSlope: 1.7228123
+        outSlope: 1.721859
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.6666667
+        value: 0.4140503
+        inSlope: 2.8691292
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalRotation.w
+    path: Jack_Root_JNT/Jack_Cover_JNT1
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.29166666
+        value: -0.00087245234
+        inSlope: 0
+        outSlope: 0.0022201177
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.6666667
+        value: -4.1186373e-18
+        inSlope: -0.0015457855
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalRotation.x
+    path: Jack_Root_JNT/Jack_Spring_JNT1
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.29166666
+        value: 0.029522512
+        inSlope: 0
+        outSlope: -0.07159014
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.6666667
+        value: 0.029535403
+        inSlope: 0.000054637585
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalRotation.y
+    path: Jack_Root_JNT/Jack_Spring_JNT1
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.29166666
+        value: 0.029526329
+        inSlope: 0
+        outSlope: -0.0147024775
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.6666667
+        value: 1.3938668e-16
+        inSlope: 0.052166507
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalRotation.z
+    path: Jack_Root_JNT/Jack_Spring_JNT1
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.29166666
+        value: 0.99912757
+        inSlope: 0
+        outSlope: 0.0025431314
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.6666667
+        value: 0.99956375
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalRotation.w
+    path: Jack_Root_JNT/Jack_Spring_JNT1
+    classID: 4
+    script: {fileID: 0}
+  m_EulerEditorCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.29166666
+        value: -0.19977733
+        inSlope: 0.5450331
+        outSlope: 0.5450331
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.6666667
+        value: -9.435103e-16
+        inSlope: -0.3554077
+        outSlope: -0.3554077
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAngles.x
+    path: Jack_Root_JNT/Jack_Spring_JNT1
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.29166666
+        value: 3.379106
+        inSlope: -8.209002
+        outSlope: -8.209002
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.6666667
+        value: 3.3849998
+        inSlope: -0.0015277863
+        outSlope: -0.0015277863
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAngles.y
+    path: Jack_Root_JNT/Jack_Spring_JNT1
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.29166666
+        value: 3.379544
+        inSlope: -1.6327143
+        outSlope: -1.6327143
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.6666667
+        value: 1.5951626e-14
+        inSlope: 6.0080566
+        outSlope: 6.0080566
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAngles.z
+    path: Jack_Root_JNT/Jack_Spring_JNT1
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.29166666
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666666
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5416667
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.6666667
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAngles.x
+    path: Jack_Root_JNT/Jack_Cover_JNT1
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.29166666
+        value: -1.5902774e-14
+        inSlope: -115.48392
+        outSlope: -115.48392
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666666
+        value: 4.8149776
+        inSlope: -212.84546
+        outSlope: -212.84546
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5416667
+        value: 59.69998
+        inSlope: -563.78406
+        outSlope: -563.78406
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.6666667
+        value: 108.31548
+        inSlope: -576.6214
+        outSlope: -576.6214
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAngles.y
+    path: Jack_Root_JNT/Jack_Cover_JNT1
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.29166666
+        value: 90
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666666
+        value: 90
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5416667
+        value: 90
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.6666667
+        value: 90
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAngles.z
+    path: Jack_Root_JNT/Jack_Cover_JNT1
+    classID: 4
+    script: {fileID: 0}
+  m_HasGenericRootTransform: 0
+  m_HasMotionFloatCurves: 0
+  m_GenerateMotionCurves: 0
+  m_Events: []

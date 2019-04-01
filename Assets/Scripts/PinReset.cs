@@ -9,8 +9,21 @@ public class PinReset : MonoBehaviour {
 
     public GameObject SkittlePrebaf;
     private GameObject currentSkittle;
+
+    private Renderer buttonRend;
+    private Material greenButtonMat;
+    private Material greyButtonMat;
+
+    private void MaterialInit()
+    {
+        buttonRend = GameObject.Find("ResetButton").GetComponent<Renderer>();
+        greenButtonMat = Resources.Load<Material>("Mat/Button_Green");
+        greyButtonMat = Resources.Load<Material>("Mat/Button_Silver");
+    }
+
     // Use this for initialization
     void Start () {
+        MaterialInit();
         currentSkittle = Instantiate(SkittlePrebaf);
         for (int i = 0; i < pins.Length; i++)
         {
@@ -30,6 +43,9 @@ public class PinReset : MonoBehaviour {
         VRTK_Logger.Info("Clicked Typewriter");
         Destroy(currentSkittle);
         currentSkittle = Instantiate(SkittlePrebaf);
+        AudioManager.Instance.PinResetSound();
+        StartCoroutine(ButtonToGreen());
+
         // If the used object is the typewriter, set the headlines active
         //for (int i = 0; i < pins.Length; i++){
         //    Destroy(pins[i]);
@@ -43,8 +59,14 @@ public class PinReset : MonoBehaviour {
         //}
 
     }
-    // Update is called once per frame
-    void Update () {
-		
-	}
+    IEnumerator ButtonToGreen()
+    {
+        AudioManager.Instance.PlayButton(gameObject);
+        AudioManager.Instance.PlayQuilRez();
+        buttonRend.material = greenButtonMat;
+        buttonRend.gameObject.transform.localPosition = new Vector3(0, -0.039f, 0);
+        yield return new WaitForSecondsRealtime(.15f);
+        buttonRend.gameObject.transform.localPosition = new Vector3(0, -0.006914731f, 0);
+        buttonRend.material = greyButtonMat;
+    }
 }

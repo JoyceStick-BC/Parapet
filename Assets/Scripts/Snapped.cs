@@ -7,6 +7,7 @@ public class Snapped : MonoBehaviour {
 
     public GameObject snapped;
     private bool done = false;
+    public GameObject puzzle;
 
 	// Use this for initialization
 	void Start () {
@@ -19,11 +20,12 @@ public class Snapped : MonoBehaviour {
         {
             if (gameObject.transform.position.Equals(snapped.transform.position))
             {
-                VRTK_Logger.Info("Snapped");
+                VRTK_Logger.Info(gameObject.name + "Snapped");
                 Destroy(gameObject.GetComponent<Rigidbody>());
                 Destroy(gameObject.GetComponent<MeshCollider>());
                 done = true;
                 AudioManager.Instance.PlayPuzzleSnapSound(gameObject);
+                puzzle.GetComponent<PuzzleMgr>().completedPieces++;
             }
         }
 	}

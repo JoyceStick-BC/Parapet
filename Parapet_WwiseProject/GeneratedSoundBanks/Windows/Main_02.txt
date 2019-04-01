@@ -2,6 +2,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	723477451	Play_Parapet_sfx_mainFlag			\Default Work Unit\Main_02\Play_Parapet_sfx_mainFlag	
 	1244549788	Play_Parapet_sfx_puzzlePiece			\Default Work Unit\Main_02\Play_Parapet_sfx_puzzlePiece	
 	1716169500	Play_Parapet_sfx_col			\Default Work Unit\Main_02\Play_Parapet_sfx_col	
+	1821016611	Play_Para_Button			\Default Work Unit\Main_02\Main_03\Play_Para_Button	
 	2176059386	Play_Pin_Switch			\Default Work Unit\Main_02\Play_Pin_Switch	
 	2553766129	Play_Rez			\Default Work Unit\Main_02\Play_Rez	
 	2719919427	Play_Roll			\Default Work Unit\Main_02\Play_Roll	
@@ -82,6 +83,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	762137397	Para_sfx_fabric	D:\Github\Parapet\Parapet_WwiseProject\.cache\Windows\SFX\Fabric\Para_sfx_fabric_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\BBCol\Fabric\Para_sfx_fabric		79724
 	772084947	Mortar_Add_02	D:\Github\Parapet\Parapet_WwiseProject\.cache\Windows\SFX\Mortar_ADD\Mortar_Add_02_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Blen_MiniMort\Mortar_ADD\Mortar_Add_02		397976
 	775682615	Para_sfx_newMort_03	D:\Github\Parapet\Parapet_WwiseProject\.cache\Windows\SFX\NewMort\Para_sfx_newMort_03_C79D0121.wem		\Actor-Mixer Hierarchy\Default Work Unit\Blen_MiniMort\NewMort\Para_sfx_newMort_03		81496
+	776311374	Para_Button	D:\Github\Parapet\Parapet_WwiseProject\.cache\Windows\SFX\Para_Button_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\Para_Button		58600
 	791830203	Para_sfx_fabric_04	D:\Github\Parapet\Parapet_WwiseProject\.cache\Windows\SFX\Fabric\Para_sfx_fabric_04_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\BBCol\Fabric\Para_sfx_fabric_04		96576
 	812976483	Splash_Giant_01	D:\Github\Parapet\Parapet_WwiseProject\.cache\Windows\SFX\Giant\Splash_Giant_01_A0EC0329.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\Splash\GiantSplash\Giant\Splash_Giant_01		1106080
 	834882112	Splash_Giant_02	D:\Github\Parapet\Parapet_WwiseProject\.cache\Windows\SFX\Giant\Splash_Giant_02_18D7B901.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\Splash\GiantSplash\Giant\Splash_Giant_02		1159924

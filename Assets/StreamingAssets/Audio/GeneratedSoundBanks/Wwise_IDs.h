@@ -22,6 +22,7 @@ namespace AK
         static const AkUniqueID PLAY_JACKINTHEBOX = 4252188990U;
         static const AkUniqueID PLAY_MXG_PARA_SFX_FLAG_MULTI = 3884044616U;
         static const AkUniqueID PLAY_NEWMORT = 3909880506U;
+        static const AkUniqueID PLAY_PARA_BUTTON = 1821016611U;
         static const AkUniqueID PLAY_PARAPET_SFX_COL = 1716169500U;
         static const AkUniqueID PLAY_PARAPET_SFX_MAINFLAG = 723477451U;
         static const AkUniqueID PLAY_PARAPET_SFX_MORT = 2805515628U;

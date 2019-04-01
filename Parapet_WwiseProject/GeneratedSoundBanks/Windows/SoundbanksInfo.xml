@@ -25,7 +25,7 @@
 				<Event Id="2487091518" Name="Parapet_sfx_seagul" ObjectPath="\Events\Default Work Unit\Main\Parapet_sfx_seagul" MaxAttenuation="100.000000"/>
 				<Event Id="3843796471" Name="Play_BallGrab" ObjectPath="\Events\Default Work Unit\Main\Play_BallGrab"/>
 				<Event Id="2087451311" Name="Play_BallRespawn" ObjectPath="\Events\Default Work Unit\Main\Play_BallRespawn"/>
-				<Event Id="4252188990" Name="Play_JackInTheBox" ObjectPath="\Events\Default Work Unit\Main\Play_JackInTheBox" MaxAttenuation="100.000000"/>
+				<Event Id="4252188990" Name="Play_JackInTheBox" ObjectPath="\Events\Default Work Unit\Main\Play_JackInTheBox" MaxAttenuation="20.000000"/>
 				<Event Id="3884044616" Name="Play_MXG_Para_sfx_flag_multi" ObjectPath="\Events\Default Work Unit\Main\Play_MXG_Para_sfx_flag_multi" MaxAttenuation="100.000000"/>
 				<Event Id="3254234354" Name="Play_Parapet_TowerExplosion" ObjectPath="\Events\Default Work Unit\Main\Play_Parapet_TowerExplosion"/>
 				<Event Id="687508220" Name="Play_quil_mult" ObjectPath="\Events\Default Work Unit\Main\Play_quil_mult" MaxAttenuation="25.000000"/>
@@ -243,13 +243,14 @@
 				<Event Id="3434821814" Name="Play_BalloonRelease" ObjectPath="\Events\Default Work Unit\Main_02\Main_03\Play_BalloonRelease"/>
 				<Event Id="2897532144" Name="Play_BBCol" ObjectPath="\Events\Default Work Unit\Main_02\Play_BBCol" MaxAttenuation="25.000000"/>
 				<Event Id="3909880506" Name="Play_NewMort" ObjectPath="\Events\Default Work Unit\Main_02\Main_03\Play_NewMort"/>
+				<Event Id="1821016611" Name="Play_Para_Button" ObjectPath="\Events\Default Work Unit\Main_02\Main_03\Play_Para_Button" MaxAttenuation="20.000000"/>
 				<Event Id="1716169500" Name="Play_Parapet_sfx_col" ObjectPath="\Events\Default Work Unit\Main_02\Play_Parapet_sfx_col"/>
 				<Event Id="723477451" Name="Play_Parapet_sfx_mainFlag" ObjectPath="\Events\Default Work Unit\Main_02\Play_Parapet_sfx_mainFlag" MaxAttenuation="100.000000"/>
 				<Event Id="2805515628" Name="Play_Parapet_sfx_mort" ObjectPath="\Events\Default Work Unit\Main_02\Play_Parapet_sfx_mort"/>
 				<Event Id="3425437051" Name="Play_Parapet_sfx_puzzleComplete" ObjectPath="\Events\Default Work Unit\Main_02\Play_Parapet_sfx_puzzleComplete"/>
 				<Event Id="1244549788" Name="Play_Parapet_sfx_puzzlePiece" ObjectPath="\Events\Default Work Unit\Main_02\Play_Parapet_sfx_puzzlePiece"/>
 				<Event Id="2176059386" Name="Play_Pin_Switch" ObjectPath="\Events\Default Work Unit\Main_02\Play_Pin_Switch" MaxAttenuation="25.000000"/>
-				<Event Id="2553766129" Name="Play_Rez" ObjectPath="\Events\Default Work Unit\Main_02\Play_Rez"/>
+				<Event Id="2553766129" Name="Play_Rez" ObjectPath="\Events\Default Work Unit\Main_02\Play_Rez" MaxAttenuation="25.000000"/>
 				<Event Id="2719919427" Name="Play_Roll" ObjectPath="\Events\Default Work Unit\Main_02\Play_Roll" MaxAttenuation="25.000000"/>
 				<Event Id="3948925255" Name="Play_Splash" ObjectPath="\Events\Default Work Unit\Main_02\Play_Splash" MaxAttenuation="100.000000"/>
 				<Event Id="3220749505" Name="Stop_Roll" ObjectPath="\Events\Default Work Unit\Main_02\Stop_Roll" MaxAttenuation="0.000000"/>
@@ -426,6 +427,10 @@
 				<File Id="775682615" Language="SFX">
 					<ShortName>NewMort\Para_sfx_newMort_03.wav</ShortName>
 					<Path>SFX\NewMort\Para_sfx_newMort_03_C79D0121.wem</Path>
+				</File>
+				<File Id="776311374" Language="SFX">
+					<ShortName>Para_Button.wav</ShortName>
+					<Path>SFX\Para_Button_56D34C19.wem</Path>
 				</File>
 				<File Id="791830203" Language="SFX">
 					<ShortName>Fabric\Para_sfx_fabric_04.wav</ShortName>
