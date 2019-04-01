@@ -23,7 +23,7 @@ public class Jackrotate : MonoBehaviour {
         float x = gameObject.transform.eulerAngles.x;
         float x2 = gameObject.transform.rotation.x;
         //Debug.Log("Euler: " + x);
-        Debug.Log("min = " + min + ", max = " + max + ", goUp = " + goUp + ", rotation = " + x2);
+        //Debug.Log("min = " + min + ", max = " + max + ", goUp = " + goUp + ", rotation = " + x2);
 
         if (count > 50)
         {

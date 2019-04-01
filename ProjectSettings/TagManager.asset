@@ -16,6 +16,11 @@ TagManager:
   - D1
   - D2
   - D3
+  - Ocean
+  - FxTemporaire
+  - Fire
+  - Tower
+  - Floor
   layers:
   - Default
   - TransparentFX

@@ -286,6 +286,9 @@
     <Reference Include="Mono.Simd">
       <HintPath>Assets\Ocean\Plugins\Mono.Simd.dll</HintPath>
     </Reference>
+    <Reference Include="JMOAssets_CartoonFXFreeWelcome">
+      <HintPath>Assets\JMO Assets\Editor\JMOAssets_CartoonFXFreeWelcome.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Parapet.csproj">
@@ -302,6 +305,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\JMO Assets\Cartoon FX Easy Editor\Editor\CFXEasyEditor.cs" />
     <Compile Include="Assets\LowPolyWater_Pack\Scripts\Editor\GeneratePlane.cs" />
     <Compile Include="Assets\Ocean\Editor\BuoyancyInspector.cs" />
     <Compile Include="Assets\Ocean\Editor\OceanGeneratorInspector.cs" />
@@ -377,6 +381,10 @@
     <Compile Include="Assets\Wwise\Editor\WwiseWindows\TreeViewControl\TreeViewItem.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\JMO Assets\Cartoon FX Easy Editor\CartoonFX Easy Editor Readme.txt" />
+    <None Include="Assets\JMO Assets\Cartoon FX\CartoonFX Free.txt" />
+    <None Include="Assets\JMO Assets\Cartoon FX\Shaders\CFX3 Multiply Color.shader" />
+    <None Include="Assets\JMO Assets\Cartoon FX\Shaders\CFXM_MobileParticleAdd_Alpha8.shader" />
     <None Include="Assets\LowPolyWater_Pack\LowPoly Island\Credits.txt" />
     <None Include="Assets\LowPolyWater_Pack\Shaders\WaterShaded.shader" />
     <None Include="Assets\Ocean\Plugins\kissfft.license.txt" />

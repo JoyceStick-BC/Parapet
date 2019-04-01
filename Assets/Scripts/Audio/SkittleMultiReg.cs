@@ -9,7 +9,7 @@ public class SkittleMultiReg : MonoBehaviour {
     {
         if (collision.gameObject == bb01 || (collision.gameObject == bb02))
         {
-            AudioManager.Instance.QuilCount();
+            AudioManager.Instance.QuilCount(collision);
         }
     }
 }

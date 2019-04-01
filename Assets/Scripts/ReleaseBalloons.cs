@@ -9,6 +9,16 @@ public class ReleaseBalloons : MonoBehaviour {
     public GameObject balloonSample;
     public Material[] balloonColors;
 
+    //new Logic
+    private GameObject balloon;
+    private int maxBallon = 200;
+    private Queue<GameObject> balloonQueue = new Queue<GameObject>();
+    private GameObject tempGOHolder;
+    private Transform spawnTransform;
+    private Renderer buttonRend;
+    private Material greenButtonMat;
+    private Material greyButtonMat;
+
     private Rigidbody[] balloons;
     private MeshRenderer[] renders;
     private ConstantForce[] forces;
@@ -28,8 +38,50 @@ public class ReleaseBalloons : MonoBehaviour {
     void Start () {
         //balloons = balloonBasket1.
         GetComponent<VRTK_InteractableObject>().InteractableObjectUsed += new InteractableObjectEventHandler(Release_Balloons);
+        InitializeBalloon();
+        MaterialInit();
+    }
+
+    private void MaterialInit()
+    {
+        buttonRend = GameObject.Find("BalloonButton").GetComponent<Renderer>();
+        greenButtonMat = Resources.Load<Material>("Mat/Button_Green");
+        greyButtonMat = Resources.Load<Material>("Mat/Button_Silver");
+    }
+    private void InitializeBalloon ()
+    {
+        spawnTransform = GameObject.Find("LaunchPoint").transform;//transform of spawn point
+        balloon = GameObject.Find("balloon_lo");
+        for (int i = 0; i < maxBallon; i++)
+        {
+            tempGOHolder = Instantiate(balloonSample, balloonBasket1.transform);//creates one
+            tempGOHolder.SetActive(false);//inactive
+            tempGOHolder.GetComponent<Renderer>().material = balloonColors[Random.Range(0, balloonColors.Length)];//color
+            tempGOHolder.transform.position = spawnTransform.position;//set init pos
+            balloonQueue.Enqueue(tempGOHolder);//Add to queue
+        }
+        
+    }
+
+    private void NewBalloon ()
+    {
+        AudioManager.Instance.PlayBalloonRelease(gameObject);
+        tempGOHolder = balloonQueue.Dequeue();
+        tempGOHolder.transform.position = balloonBasket1.transform.position;
+        tempGOHolder.SetActive(true);
+        Rigidbody rb = tempGOHolder.GetComponent<Rigidbody>();
+        rb.isKinematic = false;
+        rb.velocity = Vector3.zero;
+        rb.isKinematic = false;
+        rb.AddForce(Random.Range(-1, 1) * 1, 4, Random.Range(-1, 1) * 1, ForceMode.Impulse);
+        tempGOHolder.GetComponent<MeshRenderer>().enabled = true;
+        tempGOHolder.GetComponent<ConstantForce>().enabled = true;
+        tempGOHolder.GetComponent<MeshCollider>().enabled = true;
+        //SetForce
+        balloonQueue.Enqueue(tempGOHolder);
 
     }
+
     private void Release_Balloons(object sender, InteractableObjectEventArgs e)
     {
         if (!animationPlayed)
@@ -40,6 +92,7 @@ public class ReleaseBalloons : MonoBehaviour {
 
         if (!launched)
         {
+            
             //Debug.Log("Release");
             //balloons = balloonBasket1.GetComponentsInChildren<Rigidbody>();
             //renders = balloonBasket1.GetComponentsInChildren<MeshRenderer>();
@@ -48,7 +101,7 @@ public class ReleaseBalloons : MonoBehaviour {
             //foreach (Rigidbody rb in balloons)
             //{
             //    rb.isKinematic = false;
-            //    rb.AddForce(Random.Range(-1, 1) * 1, 4, Random.Range(-1, 1) * 1, ForceMode.Impulse);
+            //    
             //}
             //foreach (MeshRenderer mesh in renders)
             //{
@@ -72,38 +125,20 @@ public class ReleaseBalloons : MonoBehaviour {
         
     }
 
+
     // Update is called once per frame
     void Update () {
         if (launched)
         {
-            
-                totalBalloons = balloonBasket1.transform.childCount;
-                Transform[] transforms = balloonBasket1.GetComponentsInChildren<Transform>();
-                print("balloons = " + transforms.Length);
-                foreach (Transform t in transforms)
-                {
-                    if (t.position.y > 200)
-                    {
-                        Destroy(t.gameObject);
-                    }
-                }
-                if (transforms.Length < 500)
-                {
-                    if (Time.time - time > countdown)
-                    {
-                        GameObject clone = Instantiate(balloonSample, balloonBasket1.transform);
-                        //random colors
-                        clone.GetComponent<Renderer>().material = balloonColors[Random.Range(0, balloonColors.Length)];
-                        clone.transform.position = balloonBasket1.transform.position;
-                        clone.GetComponent<Rigidbody>().isKinematic = false;
-                        clone.GetComponent<Rigidbody>().AddForce(Random.Range(-1, 1) * 0, 3, Random.Range(-1, 1) * 0, ForceMode.Impulse);
-                        clone.GetComponent<MeshRenderer>().enabled = true;
-                        clone.GetComponent<MeshCollider>().enabled = true;
-                        clone.GetComponent<ConstantForce>().enabled = true;
-                        AudioManager.Instance.PlayBalloonRelease(gameObject);
-                    }
-                }
-                countdown = 0.3f;
-            }
+            NewBalloon();
+            buttonRend.material = greenButtonMat;
+            buttonRend.gameObject.transform.localPosition = new Vector3(0, -0.039f, 0);
+        }
+        else
+        {
+            buttonRend.material = greyButtonMat;
+            buttonRend.gameObject.transform.localPosition = new Vector3(0, -0.006914731f, 0);
+        }
+
     }
 }

@@ -1703,7 +1703,7 @@
 										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="Splash_big" ID="{B201C952-FA4C-4C8F-ADA4-C782BCC2424F}" ShortID="281651466">
+								<BlendContainer Name="GiantSplash" ID="{110744F2-D4DB-4A64-9EF4-532E5D340316}" ShortID="229264991">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
@@ -1713,7 +1713,97 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="Para_sfx_Water_high_01" ID="{E9EAE09E-7D6D-457E-B550-ECF2AE2778EA}" ShortID="436280101">
+										<RandomSequenceContainer Name="Splash_big" ID="{B201C952-FA4C-4C8F-ADA4-C782BCC2424F}" ShortID="281651466">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Splash" ID="{E2FFC199-9BA6-4FF0-B785-F6819569C305}" WorkUnitID="{417C7A31-DFA2-4567-B6FE-B70E2C7D4DD7}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SpatialBUS" ID="{5FD26E46-0FCB-45D5-8FDA-3F28262EE3E6}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Para_sfx_Water_high_01" ID="{E9EAE09E-7D6D-457E-B550-ECF2AE2778EA}" ShortID="436280101">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Para_sfx_Water_high_01" ID="{097BAE65-EF69-447B-ACB7-DC2CC0DE9F96}" ShortID="753585287">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="3.58444581505848E-02"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.880749543128654"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Water\High\Para_sfx_Water_high_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Para_sfx_Water_high_01" ID="{097BAE65-EF69-447B-ACB7-DC2CC0DE9F96}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Para_sfx_Water_high_02" ID="{82CDCDED-45DB-4D64-943F-011F3C4574E1}" ShortID="608575844">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Para_sfx_Water_high_02" ID="{6EEF05CC-298C-47F6-ACD0-BFA7FFF5E713}" ShortID="735821035">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="2.57243238304092E-02"/>
+																<Property Name="TrimBegin" Type="Real64" Value="1.74925402046784"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Water\High\Para_sfx_Water_high_02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Para_sfx_Water_high_02" ID="{6EEF05CC-298C-47F6-ACD0-BFA7FFF5E713}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Para_sfx_Water_high_03" ID="{955B0479-32C7-4F48-9020-62193215463E}" ShortID="587383879">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Para_sfx_Water_high_03" ID="{546947E3-BBD4-41FB-982D-E2C23845DD00}" ShortID="977748934">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="3.14614857456141E-02"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.367050667032164"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Water\High\Para_sfx_Water_high_03.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Para_sfx_Water_high_03" ID="{546947E3-BBD4-41FB-982D-E2C23845DD00}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{D9813378-7584-4021-A97F-F71ADA00F02D}"/>
+											</PositioningInfo>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Giant" ID="{6CC857CB-755B-4BEC-B6D6-4144C784BC92}" ShortID="581290699">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
@@ -1723,55 +1813,102 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Para_sfx_Water_high_01" ID="{097BAE65-EF69-447B-ACB7-DC2CC0DE9F96}" ShortID="753585287">
-													<Language>SFX</Language>
-													<AudioFile>Water\High\Para_sfx_Water_high_01.wav</AudioFile>
-												</AudioFileSource>
+												<Sound Name="Splash_Giant_01" ID="{ED2FC05D-291C-4587-981D-6CFA65E9E811}" ShortID="824039740">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Splash_Giant_01" ID="{A0EDCA41-BF46-4CDA-9BC8-CBB8C2CB8F7F}" ShortID="812976483">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="7.68067434210526E-02"/>
+																<Property Name="TrimBegin" Type="Real64" Value="7.68067434210526E-02"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Giant\Splash_Giant_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Splash_Giant_01" ID="{A0EDCA41-BF46-4CDA-9BC8-CBB8C2CB8F7F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Splash_Giant_02" ID="{509701F9-93EB-493E-B686-ED6BCAE76BD3}" ShortID="771499592">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Splash_Giant_02" ID="{BD7272A7-650B-42F3-BD6A-955A7B558871}" ShortID="834882112">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="4.68289702119883E-02"/>
+																<Property Name="TrimBegin" Type="Real64" Value="6.02086759868421E-02"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Giant\Splash_Giant_02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Splash_Giant_02" ID="{BD7272A7-650B-42F3-BD6A-955A7B558871}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Splash_Giant_03" ID="{3E962C14-9256-4384-B4D9-A64FB7683A6C}" ShortID="905770951">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Splash_Giant_03" ID="{A1834DE3-E171-481A-B1C7-BB64F0A3FB52}" ShortID="150565517">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.025819216008772"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.120489674707602"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Giant\Splash_Giant_03.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Splash_Giant_03" ID="{A1834DE3-E171-481A-B1C7-BB64F0A3FB52}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Splash_Giant_04" ID="{452BA3E8-116B-417F-8463-5ACE490E0430}" ShortID="210206310">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Splash_Giant_04" ID="{361E1FDB-B8AC-4DC3-B8E4-2F0631B5E009}" ShortID="538298497">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="3.67341694078947E-02"/>
+																<Property Name="TrimBegin" Type="Real64" Value="8.81620065789473E-02"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Giant\Splash_Giant_04.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Splash_Giant_04" ID="{361E1FDB-B8AC-4DC3-B8E4-2F0631B5E009}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
 											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Para_sfx_Water_high_01" ID="{097BAE65-EF69-447B-ACB7-DC2CC0DE9F96}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Para_sfx_Water_high_02" ID="{82CDCDED-45DB-4D64-943F-011F3C4574E1}" ShortID="608575844">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Para_sfx_Water_high_02" ID="{6EEF05CC-298C-47F6-ACD0-BFA7FFF5E713}" ShortID="735821035">
-													<Language>SFX</Language>
-													<AudioFile>Water\High\Para_sfx_Water_high_02.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Para_sfx_Water_high_02" ID="{6EEF05CC-298C-47F6-ACD0-BFA7FFF5E713}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Para_sfx_Water_high_03" ID="{955B0479-32C7-4F48-9020-62193215463E}" ShortID="587383879">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Para_sfx_Water_high_03" ID="{546947E3-BBD4-41FB-982D-E2C23845DD00}" ShortID="977748934">
-													<Language>SFX</Language>
-													<AudioFile>Water\High\Para_sfx_Water_high_03.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Para_sfx_Water_high_03" ID="{546947E3-BBD4-41FB-982D-E2C23845DD00}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
+										</RandomSequenceContainer>
 									</ChildrenList>
-								</RandomSequenceContainer>
+								</BlendContainer>
 							</ChildrenList>
 							<PositioningInfo>
 								<Panner Name="" ID="{6B9781C9-0550-42D4-856D-24F985E75E8F}"/>
@@ -1779,13 +1916,13 @@
 							<GroupingInfo>
 								<GroupingBehaviorList>
 									<GroupingBehavior>
-										<ItemRef Name="Splash_big" ID="{B201C952-FA4C-4C8F-ADA4-C782BCC2424F}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
 										<ItemRef Name="Splash_small" ID="{682717F2-ED05-4057-94DC-B57DC3770AE1}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
 										<ItemRef Name="Splash_med" ID="{4FF618F2-CC68-480F-B443-172C4E574203}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="GiantSplash" ID="{110744F2-D4DB-4A64-9EF4-532E5D340316}"/>
 									</GroupingBehavior>
 								</GroupingBehaviorList>
 								<GroupingList>
@@ -1804,7 +1941,7 @@
 									<Grouping>
 										<SwitchRef Name="big" ID="{F95E3C98-5BBD-4606-A627-D99DAD6E7AAC}"/>
 										<ItemList>
-											<ItemRef Name="Splash_big" ID="{B201C952-FA4C-4C8F-ADA4-C782BCC2424F}"/>
+											<ItemRef Name="GiantSplash" ID="{110744F2-D4DB-4A64-9EF4-532E5D340316}"/>
 										</ItemList>
 									</Grouping>
 								</GroupingList>
@@ -2128,7 +2265,20 @@
 									</ReferenceList>
 									<ChildrenList>
 										<RandomSequenceContainer Name="Pin_Single" ID="{0D138168-CE8F-4BF6-9687-A4967D718438}" ShortID="813449484">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-4</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Quil" ID="{606EF17E-4187-42F9-83A8-5CF42949350E}" WorkUnitID="{417C7A31-DFA2-4567-B6FE-B70E2C7D4DD7}"/>
+												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
 												</Reference>
@@ -2248,9 +2398,13 @@
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{3A32C6CE-786C-4202-82F6-F45D06A617EF}"/>
+											</PositioningInfo>
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="Pin_Multi" ID="{528D1394-0FC9-41A3-BFDC-044B4E3EB0E2}" ShortID="761137449">
 											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
 												<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
 												<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
@@ -2259,6 +2413,8 @@
 														<Value>1</Value>
 													</ValueList>
 												</Property>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 												<Property Name="UseMaxSoundPerInstance" Type="bool">
 													<ValueList>
 														<Value>True</Value>
@@ -2266,11 +2422,14 @@
 												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-2</Value>
+														<Value>-11</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Quil" ID="{606EF17E-4187-42F9-83A8-5CF42949350E}" WorkUnitID="{417C7A31-DFA2-4567-B6FE-B70E2C7D4DD7}"/>
+												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
 												</Reference>
@@ -2290,6 +2449,9 @@
 													</ReferenceList>
 													<ChildrenList>
 														<AudioFileSource Name="Pin_07" ID="{B17BF68C-A8D5-45DB-AC12-F5652127D41E}" ShortID="1019494351">
+															<PropertyList>
+																<Property Name="TrimBegin" Type="Real64" Value="0.416700657894736"/>
+															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>AdditionalSounds\Pin\Pin_07.wav</AudioFile>
 														</AudioFileSource>
@@ -2299,6 +2461,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="Pin_08" ID="{05E4BFB5-972A-43AD-8ADA-118A57A4438D}" ShortID="37178576">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
@@ -2309,6 +2478,11 @@
 													</ReferenceList>
 													<ChildrenList>
 														<AudioFileSource Name="Pin_08" ID="{01AF495A-2107-43C2-BD8E-C432B62096E3}" ShortID="93040973">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="5.27368421052631E-02"/>
+																<Property Name="TrimBegin" Type="Real64" Value="9.22894736842104E-02"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.596219298245613"/>
+															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>AdditionalSounds\Pin\Pin_08.wav</AudioFile>
 														</AudioFileSource>
@@ -2328,6 +2502,11 @@
 													</ReferenceList>
 													<ChildrenList>
 														<AudioFileSource Name="Pin_09" ID="{CAB88F85-371D-4DF8-9293-397CBC737D64}" ShortID="326762633">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.33811353252924"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.118796646564327"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.72255137518275"/>
+															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>AdditionalSounds\Pin\Pin_09.wav</AudioFile>
 														</AudioFileSource>
@@ -2337,6 +2516,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="Pin_06" ID="{1E2F2E01-EAEE-4B64-A1DB-9F7532B9875C}" ShortID="218352054">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
@@ -2349,7 +2535,7 @@
 														<AudioFileSource Name="Pin_06" ID="{ECCDF712-7B23-4E53-9B3A-C3A71E2EC678}" ShortID="297359604">
 															<PropertyList>
 																<Property Name="FadeInDuration" Type="Real64" Value="2.70772953539823E-02"/>
-																<Property Name="TrimBegin" Type="Real64" Value="0.243695658185841"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.391314421891981"/>
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>AdditionalSounds\Pin\Pin_06.wav</AudioFile>
@@ -2360,6 +2546,9 @@
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{8915561E-9DDB-4C90-BB60-2DFAFF8B54C6}"/>
+											</PositioningInfo>
 										</RandomSequenceContainer>
 									</ChildrenList>
 									<GroupingInfo>
@@ -2532,6 +2721,11 @@
 				</Folder>
 				<SwitchContainer Name="Balloon" ID="{CF8AE82A-3648-4110-8477-E317B7870438}" ShortID="231373697">
 					<ReferenceList>
+						<Reference Name="AttachableMixerInput">
+							<Custom>
+								<Effect Name="Resonance Audio Room Effects (Attached)" ID="{19237922-F831-4DF7-A3D5-E12A5CF73EF5}" ShortID="355348516" PluginName="AttachableMixerInput" CompanyID="272" PluginID="201" PluginType="3"/>
+							</Custom>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
 						</Reference>
@@ -2776,22 +2970,17 @@
 						</GroupingBehaviorList>
 					</GroupingInfo>
 				</SwitchContainer>
-				<RandomSequenceContainer Name="NewMort" ID="{D3B3D12E-89A3-4B52-A5B6-0C9EF99042B2}" ShortID="925757440">
+				<RandomSequenceContainer Name="Rez" ID="{85BC8170-72CC-407E-8141-5E32C4F98686}" ShortID="731420148">
 					<ReferenceList>
-						<Reference Name="AttachableMixerInput">
-							<Custom>
-								<Effect Name="Resonance Audio Room Effects (Attached)" ID="{5C86DB12-EF63-45B6-BB52-5F50587D93B0}" ShortID="392574424" PluginName="AttachableMixerInput" CompanyID="272" PluginID="201" PluginType="3"/>
-							</Custom>
-						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="SpatialBUS" ID="{5FD26E46-0FCB-45D5-8FDA-3F28262EE3E6}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="Para_sfx_newMort" ID="{92CF5F37-DC1D-4890-A4E2-2E4A77BC8AED}" ShortID="734276901">
+						<Sound Name="Para_sfx_quil_rez_01" ID="{3DFBAEED-55E6-4BB8-9AB1-59CC3F41E47B}" ShortID="63582680">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
@@ -2801,20 +2990,16 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Para_sfx_newMort" ID="{BCFA8004-2C85-4559-AE11-0499C26CC469}" ShortID="168529880">
-									<PropertyList>
-										<Property Name="FadeInDuration" Type="Real64" Value="3.13669590643275E-03"/>
-										<Property Name="TrimBegin" Type="Real64" Value="0.011202485380117"/>
-									</PropertyList>
+								<AudioFileSource Name="Para_sfx_quil_rez_01" ID="{5885C431-C8B7-43D7-BBE0-FDF0BEE1C952}" ShortID="601034487">
 									<Language>SFX</Language>
-									<AudioFile>NewMort\Para_sfx_newMort.wav</AudioFile>
+									<AudioFile>Rez\Para_sfx_quil_rez_01.wav</AudioFile>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="Para_sfx_newMort" ID="{BCFA8004-2C85-4559-AE11-0499C26CC469}" Platform="Linked"/>
+								<ActiveSource Name="Para_sfx_quil_rez_01" ID="{5885C431-C8B7-43D7-BBE0-FDF0BEE1C952}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="Para_sfx_newMort_02" ID="{BD4A62D4-0A1C-4148-9A24-0B7799C9095A}" ShortID="602749631">
+						<Sound Name="Para_sfx_quil_rez_02" ID="{28A19432-DD04-4726-A25F-8F22A86E20D0}" ShortID="876728704">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
@@ -2824,20 +3009,16 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Para_sfx_newMort_02" ID="{56699189-582A-49A6-9061-C19357F5C108}" ShortID="835095255">
-									<PropertyList>
-										<Property Name="FadeInDuration" Type="Real64" Value="2.14935124269006E-03"/>
-										<Property Name="TrimBegin" Type="Real64" Value="9.02727521929825E-03"/>
-									</PropertyList>
+								<AudioFileSource Name="Para_sfx_quil_rez_02" ID="{CA4C3771-3087-4D71-A664-AA4BD309CE3D}" ShortID="739442581">
 									<Language>SFX</Language>
-									<AudioFile>NewMort\Para_sfx_newMort_02.wav</AudioFile>
+									<AudioFile>Rez\Para_sfx_quil_rez_02.wav</AudioFile>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="Para_sfx_newMort_02" ID="{56699189-582A-49A6-9061-C19357F5C108}" Platform="Linked"/>
+								<ActiveSource Name="Para_sfx_quil_rez_02" ID="{CA4C3771-3087-4D71-A664-AA4BD309CE3D}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="Para_sfx_newMort_03" ID="{EF071A63-5295-4C02-B194-6B45EC64F809}" ShortID="72242627">
+						<Sound Name="Para_sfx_quil_rez_03" ID="{38A9AB21-96B1-4BBC-838E-2A0A2C77C45E}" ShortID="715404567">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
@@ -2847,20 +3028,16 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Para_sfx_newMort_03" ID="{B0F8A4F8-5499-46EC-B6D2-FF59115F05B3}" ShortID="775682615">
-									<PropertyList>
-										<Property Name="FadeInDuration" Type="Real64" Value="3.08826754385965E-03"/>
-										<Property Name="TrimBegin" Type="Real64" Value="4.52945906432748E-02"/>
-									</PropertyList>
+								<AudioFileSource Name="Para_sfx_quil_rez_03" ID="{841EBC84-813F-4C73-A8ED-CD83AB4376CB}" ShortID="534001036">
 									<Language>SFX</Language>
-									<AudioFile>NewMort\Para_sfx_newMort_03.wav</AudioFile>
+									<AudioFile>Rez\Para_sfx_quil_rez_03.wav</AudioFile>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="Para_sfx_newMort_03" ID="{B0F8A4F8-5499-46EC-B6D2-FF59115F05B3}" Platform="Linked"/>
+								<ActiveSource Name="Para_sfx_quil_rez_03" ID="{841EBC84-813F-4C73-A8ED-CD83AB4376CB}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="Para_sfx_newMort_04" ID="{185B8C22-A04D-4326-9614-8B6A6363A3CB}" ShortID="346448052">
+						<Sound Name="Para_sfx_quil_rez_04" ID="{B03ECCA6-B368-4E63-8AE0-4E068BC94686}" ShortID="667610607">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
@@ -2870,21 +3047,328 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Para_sfx_newMort_04" ID="{EE786B0B-6B5A-4838-8923-4C307021A7D9}" ShortID="515019361">
-									<PropertyList>
-										<Property Name="FadeInDuration" Type="Real64" Value="1.96619152046784E-03"/>
-										<Property Name="TrimBegin" Type="Real64" Value="2.21196546052632E-02"/>
-									</PropertyList>
+								<AudioFileSource Name="Para_sfx_quil_rez_04" ID="{E1847600-613B-4D1F-8065-FCF6C7641D29}" ShortID="167165821">
 									<Language>SFX</Language>
-									<AudioFile>NewMort\Para_sfx_newMort_04.wav</AudioFile>
+									<AudioFile>Rez\Para_sfx_quil_rez_04.wav</AudioFile>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="Para_sfx_newMort_04" ID="{EE786B0B-6B5A-4838-8923-4C307021A7D9}" Platform="Linked"/>
+								<ActiveSource Name="Para_sfx_quil_rez_04" ID="{E1847600-613B-4D1F-8065-FCF6C7641D29}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
+				<BlendContainer Name="Blen_MiniMort" ID="{737D46C6-8E9B-446E-A4FC-EE7F0338B12D}" ShortID="925740127">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="NewMort" ID="{D3B3D12E-89A3-4B52-A5B6-0C9EF99042B2}" ShortID="925757440">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="AttachableMixerInput">
+									<Custom>
+										<Effect Name="Resonance Audio Room Effects (Attached)" ID="{5C86DB12-EF63-45B6-BB52-5F50587D93B0}" ShortID="392574424" PluginName="AttachableMixerInput" CompanyID="272" PluginID="201" PluginType="3"/>
+									</Custom>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SpatialBUS" ID="{5FD26E46-0FCB-45D5-8FDA-3F28262EE3E6}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Para_sfx_newMort" ID="{92CF5F37-DC1D-4890-A4E2-2E4A77BC8AED}" ShortID="734276901">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Para_sfx_newMort" ID="{BCFA8004-2C85-4559-AE11-0499C26CC469}" ShortID="168529880">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="3.13669590643275E-03"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.011202485380117"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>NewMort\Para_sfx_newMort.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Para_sfx_newMort" ID="{BCFA8004-2C85-4559-AE11-0499C26CC469}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Para_sfx_newMort_02" ID="{BD4A62D4-0A1C-4148-9A24-0B7799C9095A}" ShortID="602749631">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Para_sfx_newMort_02" ID="{56699189-582A-49A6-9061-C19357F5C108}" ShortID="835095255">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="2.14935124269006E-03"/>
+												<Property Name="TrimBegin" Type="Real64" Value="9.02727521929825E-03"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>NewMort\Para_sfx_newMort_02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Para_sfx_newMort_02" ID="{56699189-582A-49A6-9061-C19357F5C108}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Para_sfx_newMort_03" ID="{EF071A63-5295-4C02-B194-6B45EC64F809}" ShortID="72242627">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Para_sfx_newMort_03" ID="{B0F8A4F8-5499-46EC-B6D2-FF59115F05B3}" ShortID="775682615">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="3.08826754385965E-03"/>
+												<Property Name="TrimBegin" Type="Real64" Value="4.52945906432748E-02"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>NewMort\Para_sfx_newMort_03.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Para_sfx_newMort_03" ID="{B0F8A4F8-5499-46EC-B6D2-FF59115F05B3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Para_sfx_newMort_04" ID="{185B8C22-A04D-4326-9614-8B6A6363A3CB}" ShortID="346448052">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Para_sfx_newMort_04" ID="{EE786B0B-6B5A-4838-8923-4C307021A7D9}" ShortID="515019361">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="1.96619152046784E-03"/>
+												<Property Name="TrimBegin" Type="Real64" Value="2.21196546052632E-02"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>NewMort\Para_sfx_newMort_04.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Para_sfx_newMort_04" ID="{EE786B0B-6B5A-4838-8923-4C307021A7D9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Mortar_ADD" ID="{56E6750E-5F06-4D44-BE26-8B6B3C73322E}" ShortID="200254396">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-17</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Mortar_Add_01" ID="{B8F6BD63-0F8A-4D8D-B3DE-0E38DF468E54}" ShortID="50361240">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Mortar_Add_01" ID="{E2ED1661-BBDB-40BC-B02D-C1908C1600DA}" ShortID="700213870">
+											<Language>SFX</Language>
+											<AudioFile>Mortar_ADD\Mortar_Add_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Mortar_Add_01" ID="{E2ED1661-BBDB-40BC-B02D-C1908C1600DA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Mortar_Add_02" ID="{0A585289-D611-4EBE-9C77-E581600396B4}" ShortID="74715764">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Mortar_Add_02" ID="{80C67484-14C8-4A28-A221-2E0C3A5FDA13}" ShortID="772084947">
+											<Language>SFX</Language>
+											<AudioFile>Mortar_ADD\Mortar_Add_02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Mortar_Add_02" ID="{80C67484-14C8-4A28-A221-2E0C3A5FDA13}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Mortar_Sweet" ID="{EFE1BD2B-99E7-47FD-95A8-DC7BB073CB3C}" ShortID="504515262">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Mortar_sweet_01" ID="{D7094102-B02D-4177-B07F-55EB36DDB2DC}" ShortID="335767334">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Mortar_sweet_01" ID="{C8990412-FCC0-4EC0-B18E-D3E0CEC2F344}" ShortID="966810430">
+											<Language>SFX</Language>
+											<AudioFile>Mortar_Sweet\Mortar_sweet_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Mortar_sweet_01" ID="{C8990412-FCC0-4EC0-B18E-D3E0CEC2F344}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Mortar_sweet_02" ID="{1CAE154F-D247-4EF5-8C25-59928C601D1C}" ShortID="399604422">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Mortar_sweet_02" ID="{1EC2CE49-5D8C-4023-8704-B99C9152AC78}" ShortID="394061670">
+											<Language>SFX</Language>
+											<AudioFile>Mortar_Sweet\Mortar_sweet_02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Mortar_sweet_02" ID="{1EC2CE49-5D8C-4023-8704-B99C9152AC78}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Mortar_sweet_03" ID="{56EA0F47-8DAF-41B2-8F26-AD818F2BA64B}" ShortID="395698906">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Mortar_sweet_03" ID="{4A26D0F0-66ED-4DFA-98CD-1D32A270E6A3}" ShortID="279854508">
+											<Language>SFX</Language>
+											<AudioFile>Mortar_Sweet\Mortar_sweet_03.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Mortar_sweet_03" ID="{4A26D0F0-66ED-4DFA-98CD-1D32A270E6A3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Mortar_sweet_04" ID="{1FAAD62E-4C5F-49CC-9C61-FEE6FA35983A}" ShortID="31823804">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Mortar_sweet_04" ID="{B29AB728-668F-428D-9FE3-92917A3863C2}" ShortID="1066217086">
+											<Language>SFX</Language>
+											<AudioFile>Mortar_Sweet\Mortar_sweet_04.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Mortar_sweet_04" ID="{B29AB728-668F-428D-9FE3-92917A3863C2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Mortar_sweet_05" ID="{A4489715-51BB-44B7-A6B7-8D79DBC967F7}" ShortID="664816219">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Mortar_sweet_05" ID="{EF9331F0-64A5-4247-972A-DA67A4CF3FE8}" ShortID="329994621">
+											<Language>SFX</Language>
+											<AudioFile>Mortar_Sweet\Mortar_sweet_05.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Mortar_sweet_05" ID="{EF9331F0-64A5-4247-972A-DA67A4CF3FE8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Mortar_sweet_06" ID="{5FB04AB2-102B-4252-87E4-BE0A3AA8A594}" ShortID="86285020">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Mortar_sweet_06" ID="{1E1DF795-FEBF-4943-8873-F8412DAE76F8}" ShortID="1013178876">
+											<Language>SFX</Language>
+											<AudioFile>Mortar_Sweet\Mortar_sweet_06.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Mortar_sweet_06" ID="{1E1DF795-FEBF-4943-8873-F8412DAE76F8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</BlendContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

@@ -291,13 +291,13 @@
 								</Event>
 								<Event Name="Play_NewMort" ID="{2EEB9105-FE9F-4E9D-A91C-A6C4398A7248}">
 									<ChildrenList>
-										<Action Name="" ID="{E0887A4A-9B59-4525-B79E-2405BDDFBD15}" ShortID="259426008">
+										<Action Name="" ID="{B101994B-F6BC-40CA-A218-E72CC0CF8F3A}" ShortID="79338109">
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="NewMort" ID="{D3B3D12E-89A3-4B52-A5B6-0C9EF99042B2}" WorkUnitID="{C875FD9F-D567-46A3-AFDF-F034770F11DC}"/>
+													<ObjectRef Name="Blen_MiniMort" ID="{737D46C6-8E9B-446E-A4FC-EE7F0338B12D}" WorkUnitID="{C875FD9F-D567-46A3-AFDF-F034770F11DC}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -305,6 +305,20 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Event Name="Play_Rez" ID="{BC98C716-4FF2-44A1-90B5-10D3C90B2097}">
+							<ChildrenList>
+								<Action Name="" ID="{5E3A9F89-F88E-4C43-AEC5-F651C264D0CC}" ShortID="111796856">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Rez" ID="{85BC8170-72CC-407E-8141-5E32C4F98686}" WorkUnitID="{C875FD9F-D567-46A3-AFDF-F034770F11DC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

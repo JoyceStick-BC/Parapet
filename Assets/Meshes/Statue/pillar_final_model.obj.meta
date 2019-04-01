@@ -1,18 +1,18 @@
 fileFormatVersion: 2
-guid: 311b54ee4fe8bd449abb01465a6538e0
-timeCreated: 1554059387
+guid: 9b61778ba25a5224a88e55277b049a18
+timeCreated: 1554110163
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
-    100002: statue_only_remeshed:statue_only_remeshed:polySurface84
+    100002: statue_only_remeshed:statue_only_remeshed:polySurface322
     400000: //RootNode
-    400002: statue_only_remeshed:statue_only_remeshed:polySurface84
-    2100000: statue_only_remeshed_statue_only_remeshed_polySurface84Mat
-    2300000: statue_only_remeshed:statue_only_remeshed:polySurface84
-    3300000: statue_only_remeshed:statue_only_remeshed:polySurface84
-    4300000: statue_only_remeshed:statue_only_remeshed:polySurface84
+    400002: statue_only_remeshed:statue_only_remeshed:polySurface322
+    2100000: statue_only_remeshed_statue_only_remeshed_polySurface322Mat
+    2300000: statue_only_remeshed:statue_only_remeshed:polySurface322
+    3300000: statue_only_remeshed:statue_only_remeshed:polySurface322
+    4300000: statue_only_remeshed:statue_only_remeshed:polySurface322
   externalObjects: {}
   materials:
     importMaterials: 1

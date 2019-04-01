@@ -82,15 +82,15 @@ public class BowlingBall : MonoBehaviour {
         else isGrounded = false;
         //occ
         RaycastHit hit02;
+        if (AudioManager.Instance._player == null) return;
         Debug.DrawRay(transform.position, AudioManager.Instance._player.transform.position - transform.position);
         if (Physics.Raycast(transform.position, AudioManager.Instance._player.transform.position - transform.position, out hit02, 100))
         {
             //debugOBJ.transform.position = hit02.point;
-            Debug.Log(hit02.collider.gameObject.name);
+            //Debug.Log(hit02.collider.gameObject.name);
             if (hit02.collider.gameObject == AudioManager.Instance._player)
             {
                 AudioManager.Instance.SetOcclusionRTPC(100, gameObject);
-                Debug.Log("PLLLAYER");
                 AudioManager.Instance.SetOcclusion(0, 0, gameObject);
             }
             else

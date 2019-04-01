@@ -30,6 +30,7 @@ namespace AK
         static const AkUniqueID PLAY_PARAPET_TOWEREXPLOSION = 3254234354U;
         static const AkUniqueID PLAY_PIN_SWITCH = 2176059386U;
         static const AkUniqueID PLAY_QUIL_MULT = 687508220U;
+        static const AkUniqueID PLAY_REZ = 2553766129U;
         static const AkUniqueID PLAY_ROLL = 2719919427U;
         static const AkUniqueID PLAY_SPLASH = 3948925255U;
         static const AkUniqueID STOP_ROLL = 3220749505U;

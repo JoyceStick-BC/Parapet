@@ -186,15 +186,12 @@ public class AudioManager : MonoBehaviour {
         {
             case (WaterTriggerManager.waterSplashSize.big):
                 AkSoundEngine.SetSwitch("WaterSplash", "big", splashObj);
-                Debug.Log("BIG");
                 break;
             case (WaterTriggerManager.waterSplashSize.medium):
                 AkSoundEngine.SetSwitch("WaterSplash", "med", splashObj);
-                Debug.Log("MED");
                 break;
             case (WaterTriggerManager.waterSplashSize.small):
                 AkSoundEngine.SetSwitch("WaterSplash", "small", splashObj);
-                Debug.Log("SMALL");
                 break;
         }
         AkSoundEngine.PostEvent("Play_Splash", splashObj);
@@ -229,25 +226,26 @@ public class AudioManager : MonoBehaviour {
         AkSoundEngine.PostEvent("Play_BBCol", placeholder);
     }
 
-
-    public void QuilCount ()
+    private float ballVelocity = 0;
+    public void QuilCount (Collision collision)
     {
-        if (timeOfQuilCol == 0)
-        {
-            timeOfQuilCol = Time.realtimeSinceStartup;
-            numberOfQuilCol++;
-            return;
-        }
-        if (Time.realtimeSinceStartup - timeOfQuilCol < .3)
-        {
-            numberOfQuilCol++;
-        }
-
-        if (numberOfQuilCol >= 4)
+        print("quil count");
+        numberOfQuilCol++;
+        if (collision.relativeVelocity.magnitude > ballVelocity) ballVelocity = collision.relativeVelocity.magnitude;
+        if (ballVelocity > 3 && numberOfQuilCol > 4)
         {
             AkSoundEngine.PostEvent("Play_quil_mult", GameObject.Find("MultiQuilSource"));
-            numberOfQuilCol = 0;
         }
+        StopCoroutine(quilTimer());
+        StartCoroutine(quilTimer());
+    }
+
+    IEnumerator quilTimer ()
+    {
+        yield return new WaitForSecondsRealtime(.5f);
+        Debug.Log("TRIGG");
+        numberOfQuilCol = 0;
+        ballVelocity = 0;
     }
 
     public void SetOcclusion (float obstrLvl, float occlusionLevel, GameObject objectToOcc)
@@ -273,6 +271,11 @@ public class AudioManager : MonoBehaviour {
     public void PlayBalloonRelease (GameObject gameObj)
     {
         AkSoundEngine.PostEvent("Play_BalloonRelease", gameObj);
+    }
+
+    public void PlayQuilRez ()
+    {
+        AkSoundEngine.PostEvent("Play_Rez", gameObject);
     }
 
 }
