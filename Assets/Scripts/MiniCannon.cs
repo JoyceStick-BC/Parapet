@@ -48,15 +48,20 @@ public class MiniCannon : MonoBehaviour {
     void Update () {
         if (grabbed)
         {
-            if(Time.time - delay > 0.1)
+            if(Time.time - delay > 0.3)
             {
                 AudioManager.Instance.PlayMiniCannon(gameObject);
-                GameObject cannonballCopy = Instantiate(cannonball, shotPos.position, shotPos.rotation) as GameObject;
+                GameObject cannonballCopy = Instantiate(cannonball, shotPos.position, transform.rotation) as GameObject;
                 //GameObject cannonballCopy = Instantiate(cannonball, shotPos.position, cannonball.transform.rotation) as GameObject;
                 cannonballRB = cannonballCopy.GetComponent<Rigidbody>();
-
+                shotPos.rotation = transform.rotation;
                 //cannonballRB.AddForce(shotPos.forward * firepower);
-                cannonballRB.AddForce(firepower, firepower, 0, ForceMode.VelocityChange);
+                //cannonballRB.AddForce(firepower, firepower, .25f*firepower, ForceMode.VelocityChange);
+                //cannonballRB.AddForce(shotPos.localPosition.x * firepower, Mathf.Abs(shotPos.localPosition.y * firepower)*0, shotPos.localPosition.z *firepower, ForceMode.VelocityChange);
+                //cannonballRB.AddRelativeForce(transform.up * firepower, ForceMode.VelocityChange);
+                cannonballRB.AddRelativeForce(transform.localPosition.x * firepower*0, Mathf.Abs(transform.localPosition.y * firepower)*10*-1, transform.localPosition.z * firepower*0, ForceMode.VelocityChange);
+
+
                 //Instantiate(explosion, shotPos.position, shotPos.rotation);
                 delay = Time.time;
             }

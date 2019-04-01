@@ -95,8 +95,8 @@ public class ReleaseBalloons : MonoBehaviour {
                         clone.GetComponent<Renderer>().material = balloonColors[Random.Range(0, balloonColors.Length)];
                         clone.transform.position = balloonBasket1.transform.position;
                         clone.GetComponent<Rigidbody>().isKinematic = false;
-                    clone.GetComponent<Rigidbody>().AddForce(Random.Range(-1, 1) * 0, 2, Random.Range(-1, 1) * 0, ForceMode.Impulse);
-                    clone.GetComponent<MeshRenderer>().enabled = true;
+                        clone.GetComponent<Rigidbody>().AddForce(Random.Range(-1, 1) * 0, 3, Random.Range(-1, 1) * 0, ForceMode.Impulse);
+                        clone.GetComponent<MeshRenderer>().enabled = true;
                         clone.GetComponent<MeshCollider>().enabled = true;
                         clone.GetComponent<ConstantForce>().enabled = true;
                         AudioManager.Instance.PlayBalloonRelease(gameObject);
