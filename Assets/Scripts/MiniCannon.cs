@@ -31,12 +31,13 @@ public class MiniCannon : MonoBehaviour {
         delay = Time.time;
         grabbed = true;
         AudioManager.Instance.PlayMiniCannon(gameObject);
-        GameObject cannonballCopy = Instantiate(cannonball, shotPos.position, shotPos.rotation) as GameObject;
+        GameObject cannonballCopy = Instantiate(cannonball, shotPos.position, transform.rotation) as GameObject;
         //GameObject cannonballCopy = Instantiate(cannonball, shotPos.position, cannonball.transform.rotation) as GameObject;
         cannonballRB = cannonballCopy.GetComponent<Rigidbody>();
 
         //cannonballRB.AddForce(shotPos.forward * firepower);
-        cannonballRB.AddForce(firepower, firepower, 0, ForceMode.VelocityChange);
+        //cannonballRB.AddForce(firepower, firepower, 0, ForceMode.VelocityChange);
+        cannonballRB.AddRelativeForce(transform.localPosition.x * firepower * 0, Mathf.Abs(transform.localPosition.y * firepower) * 10 * -1, transform.localPosition.z * firepower * 0, ForceMode.VelocityChange);
         //Instantiate(explosion, shotPos.position, shotPos.rotation);
     }
     private void Mortar_InteractableObjectUnGrabbed(object sender, InteractableObjectEventArgs e)

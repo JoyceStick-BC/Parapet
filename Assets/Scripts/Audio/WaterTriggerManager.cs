@@ -17,6 +17,12 @@ public class WaterTriggerManager : MonoBehaviour {
         {
             AudioManager.Instance.SplashSound(other.gameObject, splashSize.splashSize);
         }
-        //if (collider.Get)
+        StartCoroutine(DestroyAfter5(other.gameObject));
+    }
+
+    IEnumerator DestroyAfter5 (GameObject objToDestroy)
+    {
+        yield return new WaitForSecondsRealtime(5);
+        Destroy(objToDestroy);
     }
 }
