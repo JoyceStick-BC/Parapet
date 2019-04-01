@@ -92,6 +92,7 @@ public class ReleaseBalloons : MonoBehaviour {
                     if (Time.time - time > countdown)
                     {
                         GameObject clone = Instantiate(balloonSample, balloonBasket1.transform);
+                        //random colors
                         clone.GetComponent<Renderer>().material = balloonColors[Random.Range(0, balloonColors.Length)];
                         clone.transform.position = balloonBasket1.transform.position;
                         clone.GetComponent<Rigidbody>().isKinematic = false;
