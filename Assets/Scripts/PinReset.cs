@@ -35,7 +35,7 @@ public class PinReset : MonoBehaviour {
         {
             Debug.Log("very sad");
         }
-        GetComponent<VRTK_InteractableObject>().InteractableObjectTouched += new InteractableObjectEventHandler(ResetPins);
+        GetComponent<VRTK_InteractableObject>().InteractableObjectUsed += new InteractableObjectEventHandler(ResetPins);
     }
 
     private void ResetPins(object sender, InteractableObjectEventArgs e)

@@ -68,6 +68,7 @@ public class Explode : MonoBehaviour {
                 buttonRend.material = greenButtonMat;
                 buttonRend.gameObject.transform.localPosition = new Vector3(0, -0.039f, 0);
                 StartCoroutine(waitfor3secondsbeforeColiderisoff(safetyPane.GetComponent<MeshCollider>()));
+                gameObject.GetComponent<MeshCollider>().enabled = false;
             }
         }
 	}
