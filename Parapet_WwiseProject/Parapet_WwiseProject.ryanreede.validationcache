@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="89">
 	<ValidationCacheItem File="D:\Github\Parapet\Parapet_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1554158939" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Github\Parapet\Parapet_WwiseProject\Actor-Mixer Hierarchy\Transfer.wwu" DateLow="1554250762" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Github\Parapet\Parapet_WwiseProject\Actor-Mixer Hierarchy\Transfer.wwu" DateLow="1554260955" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Github\Parapet\Parapet_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1554127828" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Github\Parapet\Parapet_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="1549927568" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Github\Parapet\Parapet_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="1552865850" DateHigh="0"/>
@@ -10,19 +10,19 @@
 	<ValidationCacheItem File="D:\Github\Parapet\Parapet_WwiseProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1549927568" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Github\Parapet\Parapet_WwiseProject\Effects\Default Work Unit.wwu" DateLow="1554250723" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Github\Parapet\Parapet_WwiseProject\Effects\Factory Effects.wwu" DateLow="1549927568" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Github\Parapet\Parapet_WwiseProject\Events\Default Work Unit.wwu" DateLow="1554251083" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Github\Parapet\Parapet_WwiseProject\Events\Default Work Unit.wwu" DateLow="1554259316" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Github\Parapet\Parapet_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1553943598" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Github\Parapet\Parapet_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1549927568" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Github\Parapet\Parapet_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1553941518" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Github\Parapet\Parapet_WwiseProject\Mixing Sessions\Default Work Unit.wwu" DateLow="1549927568" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Github\Parapet\Parapet_WwiseProject\Modulators\Default Work Unit.wwu" DateLow="1549927568" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Github\Parapet\Parapet_WwiseProject\Parapet_WwiseProject.ryanreede.wsettings" DateLow="1554251086" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Github\Parapet\Parapet_WwiseProject\Parapet_WwiseProject.ryanreede.wsettings" DateLow="1554263537" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Github\Parapet\Parapet_WwiseProject\Parapet_WwiseProject.wproj" DateLow="1553934896" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Github\Parapet\Parapet_WwiseProject\Presets\Default Work Unit.wwu" DateLow="1549927568" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Github\Parapet\Parapet_WwiseProject\Queries\Default Work Unit.wwu" DateLow="1549927568" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Github\Parapet\Parapet_WwiseProject\Queries\Factory Queries.wwu" DateLow="1549927568" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Github\Parapet\Parapet_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1553930622" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Github\Parapet\Parapet_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1549927568" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Github\Parapet\Parapet_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1554259242" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Github\Parapet\Parapet_WwiseProject\States\Default Work Unit.wwu" DateLow="1549927568" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Github\Parapet\Parapet_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1553927051" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Github\Parapet\Parapet_WwiseProject\Triggers\Default Work Unit.wwu" DateLow="1549927568" DateHigh="0"/>

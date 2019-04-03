@@ -21,11 +21,11 @@ public class Snapped : MonoBehaviour {
             if (gameObject.transform.position.Equals(snapped.transform.position))
             {
                 VRTK_Logger.Info(gameObject.name + "Snapped");
-                Destroy(gameObject.GetComponent<Rigidbody>());
-                Destroy(gameObject.GetComponent<MeshCollider>());
+                //Destroy(gameObject.GetComponent<Rigidbody>());
+                //Destroy(gameObject.GetComponent<MeshCollider>());
                 done = true;
-                AudioManager.Instance.PlayPuzzleSnapSound(gameObject);
-                puzzle.GetComponent<PuzzleMgr>().completedPieces++;
+                //AudioManager.Instance.PlayPuzzleSnapSound(gameObject);
+                //PuzzleMgr.Instance.completedPieces++;
             }
         }
 	}

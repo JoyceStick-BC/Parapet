@@ -1,0 +1,19 @@
+# File produced by Open Asset Import Library (http://www.assimp.sf.net)
+# (assimp v3.1.193236683)
+
+newmtl Wood_plain_021_old_painted
+kd 0.5 0.5 0.5
+illum 1
+
+newmtl cart_metal9
+kd 0.5 0.5 0.5
+illum 1
+
+newmtl Wood_pladfin_rough_001_damaged_old
+kd 0.5 0.5 0.5
+illum 1
+
+newmtl Material _17760
+kd 0.588 0.588 0.588
+illum 1
+

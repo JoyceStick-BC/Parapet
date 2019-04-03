@@ -305,6 +305,7 @@
     <Compile Include="Assets\Scripts\ReleaseBalloons.cs" />
     <Compile Include="Assets\Scripts\ResetPlayer.cs" />
     <Compile Include="Assets\Scripts\Snapped.cs" />
+    <Compile Include="Assets\Scripts\SnapPiece.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_GazeTracker.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_LaserPointer.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_Teleporter.cs" />
