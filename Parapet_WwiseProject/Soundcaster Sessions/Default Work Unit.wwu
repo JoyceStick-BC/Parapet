@@ -1,6 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{63032087-2717-4CAC-955E-3CBE9DC2861A}" SchemaVersion="89">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{63032087-2717-4CAC-955E-3CBE9DC2861A}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{63032087-2717-4CAC-955E-3CBE9DC2861A}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="TEST" ID="{DF917A36-B6FB-472B-ACF1-464B15D3AD22}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Pause_WindUP" ID="{D51C2FFA-E8FB-4E24-B07A-3A82FD26AF20}" WorkUnitID="{1F54CBE6-2F89-4F7A-8329-38CCD8B74888}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_WindUp" ID="{188A859F-601D-4949-8D0A-6C5D567895D6}" WorkUnitID="{1F54CBE6-2F89-4F7A-8329-38CCD8B74888}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Resume_Windup" ID="{73C88C12-8486-4347-845A-D82B4C2B3782}" WorkUnitID="{1F54CBE6-2F89-4F7A-8329-38CCD8B74888}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="ballAngularV" ID="{2383C04F-5F87-458D-8B51-22EF8D94AF2D}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="AmbianceOC" ID="{883F0F4A-BC11-4645-9A7F-58FC44D2AB3B}"/>
+							<Value>0.443458980044348</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Occlusion" ID="{221DBB9E-7EB8-4BFA-B89C-5F85A3E5D91C}"/>
+							<Value>100</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="fabric" ID="{6CC9A26F-EB67-4ED2-8C23-FFD47A5B37F5}"/>
+						<CurrentSwitchRef Name="big" ID="{F95E3C98-5BBD-4606-A627-D99DAD6E7AAC}"/>
+						<CurrentSwitchRef Name="Materials_metal" ID="{20AE92C7-451E-4EE7-BB6B-F8F83A0CFAE9}"/>
+						<CurrentSwitchRef Name="Seagul_Burst" ID="{F9CF2C2D-451D-41CC-BA1E-FB371E8E66CA}"/>
+						<CurrentSwitchRef Name="group" ID="{04DD6611-451E-43FA-A31A-9E18B02F098D}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>

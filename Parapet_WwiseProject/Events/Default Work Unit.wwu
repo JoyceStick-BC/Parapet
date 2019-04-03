@@ -45,6 +45,28 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{313E6150-86FD-4036-9264-E1F5C6925B4C}" ShortID="726259384">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MXG_Para_sfx_jackInTheBox_boo" ID="{FFBD483D-82E1-4E3F-91D5-2B0F8220D1C9}" WorkUnitID="{1DA2453A-CBE1-42CF-8178-628EED37E34B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{752F791C-774B-4A7E-BDF2-723F57C5B32E}" ShortID="708135421">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="0"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="WindUp" ID="{FCE55E75-B91E-4E6A-97D1-CB2AF7C0298E}" WorkUnitID="{1DA2453A-CBE1-42CF-8178-628EED37E34B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="Play_BallGrab" ID="{0893E8D9-15B5-476A-B62C-064601DD761D}">
@@ -328,6 +350,52 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Rez" ID="{85BC8170-72CC-407E-8141-5E32C4F98686}" WorkUnitID="{C875FD9F-D567-46A3-AFDF-F034770F11DC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_WindUp" ID="{188A859F-601D-4949-8D0A-6C5D567895D6}">
+							<ChildrenList>
+								<Action Name="" ID="{5D281C10-775B-40E0-AD00-6255C329D210}" ShortID="357944749">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="WindUp" ID="{FCE55E75-B91E-4E6A-97D1-CB2AF7C0298E}" WorkUnitID="{1DA2453A-CBE1-42CF-8178-628EED37E34B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Pause_WindUP" ID="{D51C2FFA-E8FB-4E24-B07A-3A82FD26AF20}">
+							<ChildrenList>
+								<Action Name="" ID="{A34B3E5A-2F93-43AE-AEBC-DF7EEADC6110}" ShortID="486205979">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="7"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="WindUp" ID="{FCE55E75-B91E-4E6A-97D1-CB2AF7C0298E}" WorkUnitID="{1DA2453A-CBE1-42CF-8178-628EED37E34B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Resume_Windup" ID="{73C88C12-8486-4347-845A-D82B4C2B3782}">
+							<ChildrenList>
+								<Action Name="" ID="{5E6A36AE-4885-4C64-A41B-CC91E3F550B0}" ShortID="998262191">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="9"/>
+										<Property Name="FadeInCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="WindUp" ID="{FCE55E75-B91E-4E6A-97D1-CB2AF7C0298E}" WorkUnitID="{1DA2453A-CBE1-42CF-8178-628EED37E34B}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

@@ -15,6 +15,7 @@ namespace AK
     {
         static const AkUniqueID PARAPET_SFX_AMBIANCE = 74477125U;
         static const AkUniqueID PARAPET_SFX_SEAGUL = 2487091518U;
+        static const AkUniqueID PAUSE_WINDUP = 3250956673U;
         static const AkUniqueID PLAY_BALLGRAB = 3843796471U;
         static const AkUniqueID PLAY_BALLOONRELEASE = 3434821814U;
         static const AkUniqueID PLAY_BALLRESPAWN = 2087451311U;
@@ -34,6 +35,8 @@ namespace AK
         static const AkUniqueID PLAY_REZ = 2553766129U;
         static const AkUniqueID PLAY_ROLL = 2719919427U;
         static const AkUniqueID PLAY_SPLASH = 3948925255U;
+        static const AkUniqueID PLAY_WINDUP = 113242507U;
+        static const AkUniqueID RESUME_WINDUP = 621483562U;
         static const AkUniqueID STOP_ROLL = 3220749505U;
     } // namespace EVENTS
 

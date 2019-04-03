@@ -258,8 +258,152 @@
 								<ActiveSource Name="MXG_Para_sfx_roll" ID="{E7E95E63-C7F0-4F4A-BDD3-9F8472BBD11C}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<BlendContainer Name="WindUp" ID="{FCE55E75-B91E-4E6A-97D1-CB2AF7C0298E}" ShortID="126685522">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="sfx_Jack" ID="{BAFB55A5-4AF9-4178-BF1D-A5038202F1C8}" WorkUnitID="{417C7A31-DFA2-4567-B6FE-B70E2C7D4DD7}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="MXG_Para_sfx_jackInTheBox_windup" ID="{42320D82-EC5F-4E02-8C10-1399EC6C7279}" ShortID="74467798">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>33</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-300</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+										</Reference>
+										<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+											<ObjectRef Name="Click" ID="{1DF6E893-84A5-473D-AE70-2D414CBAEEA8}" WorkUnitID="{56586F8D-B793-409B-BB67-453DE3DDBF15}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MXG_Para_sfx_jackInTheBox_windup" ID="{3FECAFD4-7301-4117-AAA1-0C6344AABD72}" ShortID="914220952">
+											<Language>SFX</Language>
+											<AudioFile>MXG_Para_sfx_jackInTheBox_windup.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MXG_Para_sfx_jackInTheBox_windup" ID="{3FECAFD4-7301-4117-AAA1-0C6344AABD72}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MXG_Jack_CircusMX" ID="{04C7A1BF-8A6B-48C2-9717-0A2EA8F69239}" ShortID="784715450">
+									<PropertyList>
+										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-13</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MXG_Jack_CircusMX" ID="{FB0DCF05-A1E3-49DB-BF57-82FE3F9540BF}" ShortID="813411510">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.485017537109115"/>
+												<Property Name="TrimBegin" Type="Real64" Value="10.1970682637392"/>
+												<Property Name="TrimEnd" Type="Real64" Value="118.829296591733"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>MXG_Jack_CircusMX.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{F82F1EC7-D938-4EA4-B6A6-7ECD4CEAC019}"/>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="MXG_Jack_CircusMX" ID="{FB0DCF05-A1E3-49DB-BF57-82FE3F9540BF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{4F39B11D-CACC-42A1-968B-CDA93C8F1DBD}"/>
+							</PositioningInfo>
+						</BlendContainer>
 					</ChildrenList>
 				</Folder>
+				<Sound Name="MXG_Para_sfx_jackInTheBox_boo" ID="{FFBD483D-82E1-4E3F-91D5-2B0F8220D1C9}" ShortID="995607148">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>5</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="sfx_Jack" ID="{BAFB55A5-4AF9-4178-BF1D-A5038202F1C8}" WorkUnitID="{417C7A31-DFA2-4567-B6FE-B70E2C7D4DD7}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{798449CC-ADDA-4D60-AD3F-A5EFDC2E4D41}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F1C7692B-2956-4A66-BB27-25EC8DEFAE6C}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="MXG_Para_sfx_jackInTheBox_boo" ID="{6841DD16-83A0-4CDE-9990-310130F1D6FC}" ShortID="679140403">
+							<Language>SFX</Language>
+							<AudioFile>MXG_Para_sfx_jackInTheBox_boo.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<PositioningInfo>
+						<Panner Name="" ID="{EF47B7E1-A836-4FE1-A8C8-48444B8BF48F}"/>
+					</PositioningInfo>
+					<ActiveSourceList>
+						<ActiveSource Name="MXG_Para_sfx_jackInTheBox_boo" ID="{6841DD16-83A0-4CDE-9990-310130F1D6FC}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

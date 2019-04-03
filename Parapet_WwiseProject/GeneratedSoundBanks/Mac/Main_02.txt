@@ -1,4 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
+	113242507	Play_WindUp			\Default Work Unit\Main_02\Play_WindUp	
+	621483562	Resume_Windup			\Default Work Unit\Main_02\Resume_Windup	
 	723477451	Play_Parapet_sfx_mainFlag			\Default Work Unit\Main_02\Play_Parapet_sfx_mainFlag	
 	1244549788	Play_Parapet_sfx_puzzlePiece			\Default Work Unit\Main_02\Play_Parapet_sfx_puzzlePiece	
 	1716169500	Play_Parapet_sfx_col			\Default Work Unit\Main_02\Play_Parapet_sfx_col	
@@ -9,6 +11,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2805515628	Play_Parapet_sfx_mort			\Default Work Unit\Main_02\Play_Parapet_sfx_mort	
 	2897532144	Play_BBCol			\Default Work Unit\Main_02\Play_BBCol	
 	3220749505	Stop_Roll			\Default Work Unit\Main_02\Stop_Roll	
+	3250956673	Pause_WindUP			\Default Work Unit\Main_02\Pause_WindUP	
 	3425437051	Play_Parapet_sfx_puzzleComplete			\Default Work Unit\Main_02\Play_Parapet_sfx_puzzleComplete	
 	3434821814	Play_BalloonRelease			\Default Work Unit\Main_02\Main_03\Play_BalloonRelease	
 	3909880506	Play_NewMort			\Default Work Unit\Main_02\Main_03\Play_NewMort	
@@ -45,15 +48,15 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	104874424	Para_BBCol_Wood_03	D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\SFX\BBCol\Para_BBCol_Wood_03_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\BBCol\wood\Para_BBCol_Wood_03		54040
 	136664931	AR_sfx_balloonRelease_02	D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\SFX\Balloon\Release\AR_sfx_balloonRelease_02_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Balloon\Release\AR_sfx_balloonRelease_02		24176
 	147067316	Para_BBCol_Metal_02	D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\SFX\BBCol\Para_BBCol_Metal_02_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\BBCol\metal\Para_BBCol_Metal_02		94524
-	150565517	Splash_Giant_03	D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\SFX\Giant\Splash_Giant_03_CF44A1F8.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\Splash\GiantSplash\Giant\Splash_Giant_03		1483944
+	150565517	Splash_Giant_03	D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\SFX\Giant\Splash_Giant_03_6D401DA3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\Splash\GiantSplash\Giant\Splash_Giant_03		1483944
 	167165821	Para_sfx_quil_rez_04	D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\SFX\Rez\Para_sfx_quil_rez_04_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Rez\Para_sfx_quil_rez_04		195012
-	168529880	Para_sfx_newMort	D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\SFX\NewMort\Para_sfx_newMort_55DBC2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Blen_MiniMort\NewMort\Para_sfx_newMort		76376
+	168529880	Para_sfx_newMort	D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\SFX\NewMort\Para_sfx_newMort_82FFA350.wem		\Actor-Mixer Hierarchy\Default Work Unit\Blen_MiniMort\NewMort\Para_sfx_newMort		76376
 	224643138	Pin_03	D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\SFX\AdditionalSounds\Pin\Pin_03_02227657.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\BBCol\Pin_Switch\Pin_Single\Pin_03		662068
 	252304248	Para_BBCol_Stone_04	D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\SFX\BBCol\Para_BBCol_Stone_04_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\BBCol\stone\Para_BBCol_Stone_04		14272
 	261317871	Pin_02	D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\SFX\AdditionalSounds\Pin\Pin_02_317FD49F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\BBCol\Pin_Switch\Pin_Single\Pin_02		307096
 	261458065	MXG_Para_sfx_flag_flap	D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\SFX\Parapet_sfx__flag\MXG_Para_sfx_flag_flap_8956FC97.wem		\Actor-Mixer Hierarchy\Default Work Unit\Parapet_sfx\Parapet_sfx_flag\MXG_Para_sfx_flag_flap		3744064
 	279854508	Mortar_sweet_03	D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\SFX\Mortar_Sweet\Mortar_sweet_03_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Blen_MiniMort\Mortar_Sweet\Mortar_sweet_03		385748
-	326762633	Pin_09	D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\SFX\AdditionalSounds\Pin\Pin_09_069298D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\BBCol\Pin_Switch\Pin_Multi\Pin_09		307984
+	326762633	Pin_09	D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\SFX\AdditionalSounds\Pin\Pin_09_41190DC0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\BBCol\Pin_Switch\Pin_Multi\Pin_09		307984
 	329994621	Mortar_sweet_05	D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\SFX\Mortar_Sweet\Mortar_sweet_05_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Blen_MiniMort\Mortar_Sweet\Mortar_sweet_05		399084
 	348123721	Para_BBCol_Stone_02	D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\SFX\BBCol\Para_BBCol_Stone_02_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\BBCol\stone\Para_BBCol_Stone_02		31912
 	379543737	AR_sfx_balloonRelease_03	D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\SFX\Balloon\Release\AR_sfx_balloonRelease_03_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Balloon\Release\AR_sfx_balloonRelease_03		48636
@@ -65,9 +68,9 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	459846833	Pin_05	D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\SFX\AdditionalSounds\Pin\Pin_05_4A390F5A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\BBCol\Pin_Switch\Pin_Single\Pin_05		268668
 	461999483	MXG_Para_sfx_roll	D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\SFX\AdditionalSounds\Roll\MXG_Para_sfx_roll_8956FC97.wem		\Actor-Mixer Hierarchy\Transfer\AdditionalSounds\MXG_Para_sfx_roll		1249196
 	514965240	Pin_04	D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\SFX\AdditionalSounds\Pin\Pin_04_F232EAAC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\BBCol\Pin_Switch\Pin_Single\Pin_04		323336
-	515019361	Para_sfx_newMort_04	D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\SFX\NewMort\Para_sfx_newMort_04_87169198.wem		\Actor-Mixer Hierarchy\Default Work Unit\Blen_MiniMort\NewMort\Para_sfx_newMort_04		81888
+	515019361	Para_sfx_newMort_04	D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\SFX\NewMort\Para_sfx_newMort_04_629B3E5A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Blen_MiniMort\NewMort\Para_sfx_newMort_04		81888
 	534001036	Para_sfx_quil_rez_03	D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\SFX\Rez\Para_sfx_quil_rez_03_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Rez\Para_sfx_quil_rez_03		167904
-	538298497	Splash_Giant_04	D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\SFX\Giant\Splash_Giant_04_281392CE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\Splash\GiantSplash\Giant\Splash_Giant_04		1269596
+	538298497	Splash_Giant_04	D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\SFX\Giant\Splash_Giant_04_7092BF56.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\Splash\GiantSplash\Giant\Splash_Giant_04		1269596
 	601034487	Para_sfx_quil_rez_01	D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\SFX\Rez\Para_sfx_quil_rez_01_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Rez\Para_sfx_quil_rez_01		528904
 	604683501	Para_sfx_fabric_02	D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\SFX\Fabric\Para_sfx_fabric_02_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\BBCol\Fabric\Para_sfx_fabric_02		76352
 	629337519	Para_sfx_Water_med_01	D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\SFX\Water\Med\Para_sfx_Water_med_01_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\Splash\Splash_med\Para_sfx_Water_med_01		918232
@@ -77,17 +80,18 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	700213870	Mortar_Add_01	D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\SFX\Mortar_ADD\Mortar_Add_01_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Blen_MiniMort\Mortar_ADD\Mortar_Add_01		321460
 	706114647	Para_BBCol_Metal_04	D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\SFX\BBCol\Para_BBCol_Metal_04_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\BBCol\metal\Para_BBCol_Metal_04		94524
 	706748188	Para_BBCol_Stone_01	D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\SFX\BBCol\Para_BBCol_Stone_01_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\BBCol\stone\Para_BBCol_Stone_01		33444
-	735821035	Para_sfx_Water_high_02	D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\SFX\Water\High\Para_sfx_Water_high_02_A27E0855.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\Splash\GiantSplash\Splash_big\Para_sfx_Water_high_02		790316
+	735821035	Para_sfx_Water_high_02	D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\SFX\Water\High\Para_sfx_Water_high_02_DA460F8A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\Splash\GiantSplash\Splash_big\Para_sfx_Water_high_02		790316
 	739442581	Para_sfx_quil_rez_02	D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\SFX\Rez\Para_sfx_quil_rez_02_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Rez\Para_sfx_quil_rez_02		196128
-	753585287	Para_sfx_Water_high_01	D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\SFX\Water\High\Para_sfx_Water_high_01_090652B6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\Splash\GiantSplash\Splash_big\Para_sfx_Water_high_01		727604
+	753585287	Para_sfx_Water_high_01	D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\SFX\Water\High\Para_sfx_Water_high_01_825EDD10.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\Splash\GiantSplash\Splash_big\Para_sfx_Water_high_01		727604
 	762137397	Para_sfx_fabric	D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\SFX\Fabric\Para_sfx_fabric_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\BBCol\Fabric\Para_sfx_fabric		79724
 	772084947	Mortar_Add_02	D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\SFX\Mortar_ADD\Mortar_Add_02_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Blen_MiniMort\Mortar_ADD\Mortar_Add_02		397976
-	775682615	Para_sfx_newMort_03	D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\SFX\NewMort\Para_sfx_newMort_03_C79D0121.wem		\Actor-Mixer Hierarchy\Default Work Unit\Blen_MiniMort\NewMort\Para_sfx_newMort_03		81496
+	775682615	Para_sfx_newMort_03	D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\SFX\NewMort\Para_sfx_newMort_03_A28F9C21.wem		\Actor-Mixer Hierarchy\Default Work Unit\Blen_MiniMort\NewMort\Para_sfx_newMort_03		81496
 	776311374	Para_Button	D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\SFX\Para_Button_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\Para_Button		58600
 	791830203	Para_sfx_fabric_04	D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\SFX\Fabric\Para_sfx_fabric_04_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\BBCol\Fabric\Para_sfx_fabric_04		96576
-	812976483	Splash_Giant_01	D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\SFX\Giant\Splash_Giant_01_A0EC0329.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\Splash\GiantSplash\Giant\Splash_Giant_01		1106080
-	834882112	Splash_Giant_02	D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\SFX\Giant\Splash_Giant_02_18D7B901.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\Splash\GiantSplash\Giant\Splash_Giant_02		1159924
-	835095255	Para_sfx_newMort_02	D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\SFX\NewMort\Para_sfx_newMort_02_580CDC87.wem		\Actor-Mixer Hierarchy\Default Work Unit\Blen_MiniMort\NewMort\Para_sfx_newMort_02		73604
+	812976483	Splash_Giant_01	D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\SFX\Giant\Splash_Giant_01_2DF73D22.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\Splash\GiantSplash\Giant\Splash_Giant_01		1106080
+	813411510	MXG_Jack_CircusMX	D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\SFX\MXG_Jack_CircusMX_923C0918.wem		\Actor-Mixer Hierarchy\Transfer\AdditionalSounds\WindUp\MXG_Jack_CircusMX		19162788
+	834882112	Splash_Giant_02	D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\SFX\Giant\Splash_Giant_02_9CFC2D83.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\Splash\GiantSplash\Giant\Splash_Giant_02		1159924
+	835095255	Para_sfx_newMort_02	D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\SFX\NewMort\Para_sfx_newMort_02_718C03C6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Blen_MiniMort\NewMort\Para_sfx_newMort_02		73604
 	857787806	Para_BBCol_Wood_02	D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\SFX\BBCol\Para_BBCol_Wood_02_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\BBCol\wood\Para_BBCol_Wood_02		54040
 	882827273	AR_sfx_balloonRelease_07	D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\SFX\Balloon\Release\AR_sfx_balloonRelease_07_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Balloon\Release\AR_sfx_balloonRelease_07		39952
 	928736289	AR_sfx_balloonRelease_06	D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\SFX\Balloon\Release\AR_sfx_balloonRelease_06_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Balloon\Release\AR_sfx_balloonRelease_06		44048
@@ -96,9 +100,9 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	940477011	Para_BBCol_Stone_03	D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\SFX\BBCol\Para_BBCol_Stone_03_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\BBCol\stone\Para_BBCol_Stone_03		18532
 	957558420	MXG_Para_sfx_puz_correctPiece	D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\SFX\Parapet_sfx_puz\MXG_Para_sfx_puz_correctPiece_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Parapet_sfx\Parapet_sfx_puz_Single\MXG_Para_sfx_puz_correctPiece		591516
 	966810430	Mortar_sweet_01	D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\SFX\Mortar_Sweet\Mortar_sweet_01_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Blen_MiniMort\Mortar_Sweet\Mortar_sweet_01		394928
-	977748934	Para_sfx_Water_high_03	D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\SFX\Water\High\Para_sfx_Water_high_03_971D745A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\Splash\GiantSplash\Splash_big\Para_sfx_Water_high_03		847764
+	977748934	Para_sfx_Water_high_03	D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\SFX\Water\High\Para_sfx_Water_high_03_4A47ACFE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\Splash\GiantSplash\Splash_big\Para_sfx_Water_high_03		847764
 	1013178876	Mortar_sweet_06	D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\SFX\Mortar_Sweet\Mortar_sweet_06_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Blen_MiniMort\Mortar_Sweet\Mortar_sweet_06		345248
-	1019494351	Pin_07	D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\SFX\AdditionalSounds\Pin\Pin_07_FD9F38EA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\BBCol\Pin_Switch\Pin_Multi\Pin_07		477048
+	1019494351	Pin_07	D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\SFX\AdditionalSounds\Pin\Pin_07_44BD2C4F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Add-ons\BBCol\Pin_Switch\Pin_Multi\Pin_07		477048
 	1033327840	AR_sfx_balloonRelease_05	D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\SFX\Balloon\Release\AR_sfx_balloonRelease_05_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Balloon\Release\AR_sfx_balloonRelease_05		21188
 	1066217086	Mortar_sweet_04	D:\Github\Parapet\Parapet_WwiseProject\.cache\Mac\SFX\Mortar_Sweet\Mortar_sweet_04_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Blen_MiniMort\Mortar_Sweet\Mortar_sweet_04		394928
 

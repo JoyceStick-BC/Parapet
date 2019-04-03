@@ -283,11 +283,11 @@
     <Reference Include="UnityEngine.StandardEvents">
       <HintPath>Library\UnityAssemblies\UnityEngine.StandardEvents.dll</HintPath>
     </Reference>
-    <Reference Include="Mono.Simd">
-      <HintPath>Assets\Ocean\Plugins\Mono.Simd.dll</HintPath>
-    </Reference>
     <Reference Include="JMOAssets_CartoonFXFreeWelcome">
       <HintPath>Assets\JMO Assets\Editor\JMOAssets_CartoonFXFreeWelcome.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Simd">
+      <HintPath>Assets\Ocean\Plugins\Mono.Simd.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

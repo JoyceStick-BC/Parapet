@@ -29,6 +29,18 @@
 						<Property Name="WetDryMix" Type="Real32" Value="17"/>
 					</PropertyList>
 				</Effect>
+				<Effect Name="Lower" ID="{E3DF61C3-E522-400D-BFF6-8427752C8E80}" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
+					<PropertyList>
+						<Property Name="Pitch" Type="Real32" Value="-100"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="Click" ID="{1DF6E893-84A5-473D-AE70-2D414CBAEEA8}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+					<PropertyList>
+						<Property Name="FrequencyBand2" Type="Real32" Value="6383"/>
+						<Property Name="GainBand2" Type="Real32" Value="-24"/>
+						<Property Name="QFactorBand2" Type="Real32" Value="7"/>
+					</PropertyList>
+				</Effect>
 			</ChildrenList>
 		</WorkUnit>
 	</Effects>

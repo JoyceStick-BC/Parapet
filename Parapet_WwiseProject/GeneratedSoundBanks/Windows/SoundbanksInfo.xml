@@ -139,6 +139,10 @@
 					<ShortName>Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_25.wav</ShortName>
 					<Path>SFX\Parapet_sfx\Parapet_sfx_Seagull\Seagull_Single_25_56D34C19.wem</Path>
 				</File>
+				<File Id="679140403" Language="SFX">
+					<ShortName>MXG_Para_sfx_jackInTheBox_boo.wav</ShortName>
+					<Path>SFX\MXG_Para_sfx_jackInTheBox_boo_56D34C19.wem</Path>
+				</File>
 				<File Id="773073101" Language="SFX">
 					<ShortName>AdditionalSounds\JackInTheBox\MXG_Para_sfx_jackInTheBox.wav</ShortName>
 					<Path>SFX\AdditionalSounds\JackInTheBox\MXG_Para_sfx_jackInTheBox_56D34C19.wem</Path>
@@ -215,7 +219,7 @@
 				</File>
 				<File Id="326762633" Language="SFX">
 					<ShortName>AdditionalSounds\Pin\Pin_09.wav</ShortName>
-					<Path>SFX\AdditionalSounds\Pin\Pin_09_069298D9.wem</Path>
+					<Path>SFX\AdditionalSounds\Pin\Pin_09_41190DC0.wem</Path>
 				</File>
 				<File Id="459846833" Language="SFX">
 					<ShortName>AdditionalSounds\Pin\Pin_05.wav</ShortName>
@@ -231,7 +235,7 @@
 				</File>
 				<File Id="1019494351" Language="SFX">
 					<ShortName>AdditionalSounds\Pin\Pin_07.wav</ShortName>
-					<Path>SFX\AdditionalSounds\Pin\Pin_07_FD9F38EA.wem</Path>
+					<Path>SFX\AdditionalSounds\Pin\Pin_07_44BD2C4F.wem</Path>
 				</File>
 			</ExcludedMemoryFiles>
 		</SoundBank>
@@ -240,6 +244,7 @@
 			<ShortName>Main_02</ShortName>
 			<Path>Main_02.bnk</Path>
 			<IncludedEvents>
+				<Event Id="3250956673" Name="Pause_WindUP" ObjectPath="\Events\Default Work Unit\Main_02\Pause_WindUP" MaxAttenuation="0.000000"/>
 				<Event Id="3434821814" Name="Play_BalloonRelease" ObjectPath="\Events\Default Work Unit\Main_02\Main_03\Play_BalloonRelease"/>
 				<Event Id="2897532144" Name="Play_BBCol" ObjectPath="\Events\Default Work Unit\Main_02\Play_BBCol" MaxAttenuation="25.000000"/>
 				<Event Id="3909880506" Name="Play_NewMort" ObjectPath="\Events\Default Work Unit\Main_02\Main_03\Play_NewMort"/>
@@ -253,6 +258,8 @@
 				<Event Id="2553766129" Name="Play_Rez" ObjectPath="\Events\Default Work Unit\Main_02\Play_Rez" MaxAttenuation="25.000000"/>
 				<Event Id="2719919427" Name="Play_Roll" ObjectPath="\Events\Default Work Unit\Main_02\Play_Roll" MaxAttenuation="25.000000"/>
 				<Event Id="3948925255" Name="Play_Splash" ObjectPath="\Events\Default Work Unit\Main_02\Play_Splash" MaxAttenuation="100.000000"/>
+				<Event Id="113242507" Name="Play_WindUp" ObjectPath="\Events\Default Work Unit\Main_02\Play_WindUp" MaxAttenuation="20.000000"/>
+				<Event Id="621483562" Name="Resume_Windup" ObjectPath="\Events\Default Work Unit\Main_02\Resume_Windup" MaxAttenuation="0.000000"/>
 				<Event Id="3220749505" Name="Stop_Roll" ObjectPath="\Events\Default Work Unit\Main_02\Stop_Roll" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
@@ -278,7 +285,7 @@
 				</File>
 				<File Id="150565517" Language="SFX">
 					<ShortName>Giant\Splash_Giant_03.wav</ShortName>
-					<Path>SFX\Giant\Splash_Giant_03_CF44A1F8.wem</Path>
+					<Path>SFX\Giant\Splash_Giant_03_6D401DA3.wem</Path>
 				</File>
 				<File Id="167165821" Language="SFX">
 					<ShortName>Rez\Para_sfx_quil_rez_04.wav</ShortName>
@@ -286,7 +293,7 @@
 				</File>
 				<File Id="168529880" Language="SFX">
 					<ShortName>NewMort\Para_sfx_newMort.wav</ShortName>
-					<Path>SFX\NewMort\Para_sfx_newMort_55DBC2B7.wem</Path>
+					<Path>SFX\NewMort\Para_sfx_newMort_82FFA350.wem</Path>
 				</File>
 				<File Id="224643138" Language="SFX">
 					<ShortName>AdditionalSounds\Pin\Pin_03.wav</ShortName>
@@ -310,7 +317,7 @@
 				</File>
 				<File Id="326762633" Language="SFX">
 					<ShortName>AdditionalSounds\Pin\Pin_09.wav</ShortName>
-					<Path>SFX\AdditionalSounds\Pin\Pin_09_069298D9.wem</Path>
+					<Path>SFX\AdditionalSounds\Pin\Pin_09_41190DC0.wem</Path>
 				</File>
 				<File Id="329994621" Language="SFX">
 					<ShortName>Mortar_Sweet\Mortar_sweet_05.wav</ShortName>
@@ -358,7 +365,7 @@
 				</File>
 				<File Id="515019361" Language="SFX">
 					<ShortName>NewMort\Para_sfx_newMort_04.wav</ShortName>
-					<Path>SFX\NewMort\Para_sfx_newMort_04_87169198.wem</Path>
+					<Path>SFX\NewMort\Para_sfx_newMort_04_629B3E5A.wem</Path>
 				</File>
 				<File Id="534001036" Language="SFX">
 					<ShortName>Rez\Para_sfx_quil_rez_03.wav</ShortName>
@@ -366,7 +373,7 @@
 				</File>
 				<File Id="538298497" Language="SFX">
 					<ShortName>Giant\Splash_Giant_04.wav</ShortName>
-					<Path>SFX\Giant\Splash_Giant_04_281392CE.wem</Path>
+					<Path>SFX\Giant\Splash_Giant_04_7092BF56.wem</Path>
 				</File>
 				<File Id="601034487" Language="SFX">
 					<ShortName>Rez\Para_sfx_quil_rez_01.wav</ShortName>
@@ -406,7 +413,7 @@
 				</File>
 				<File Id="735821035" Language="SFX">
 					<ShortName>Water\High\Para_sfx_Water_high_02.wav</ShortName>
-					<Path>SFX\Water\High\Para_sfx_Water_high_02_A27E0855.wem</Path>
+					<Path>SFX\Water\High\Para_sfx_Water_high_02_DA460F8A.wem</Path>
 				</File>
 				<File Id="739442581" Language="SFX">
 					<ShortName>Rez\Para_sfx_quil_rez_02.wav</ShortName>
@@ -414,7 +421,7 @@
 				</File>
 				<File Id="753585287" Language="SFX">
 					<ShortName>Water\High\Para_sfx_Water_high_01.wav</ShortName>
-					<Path>SFX\Water\High\Para_sfx_Water_high_01_090652B6.wem</Path>
+					<Path>SFX\Water\High\Para_sfx_Water_high_01_825EDD10.wem</Path>
 				</File>
 				<File Id="762137397" Language="SFX">
 					<ShortName>Fabric\Para_sfx_fabric.wav</ShortName>
@@ -426,7 +433,7 @@
 				</File>
 				<File Id="775682615" Language="SFX">
 					<ShortName>NewMort\Para_sfx_newMort_03.wav</ShortName>
-					<Path>SFX\NewMort\Para_sfx_newMort_03_C79D0121.wem</Path>
+					<Path>SFX\NewMort\Para_sfx_newMort_03_A28F9C21.wem</Path>
 				</File>
 				<File Id="776311374" Language="SFX">
 					<ShortName>Para_Button.wav</ShortName>
@@ -438,15 +445,19 @@
 				</File>
 				<File Id="812976483" Language="SFX">
 					<ShortName>Giant\Splash_Giant_01.wav</ShortName>
-					<Path>SFX\Giant\Splash_Giant_01_A0EC0329.wem</Path>
+					<Path>SFX\Giant\Splash_Giant_01_2DF73D22.wem</Path>
+				</File>
+				<File Id="813411510" Language="SFX">
+					<ShortName>MXG_Jack_CircusMX.wav</ShortName>
+					<Path>SFX\MXG_Jack_CircusMX_923C0918.wem</Path>
 				</File>
 				<File Id="834882112" Language="SFX">
 					<ShortName>Giant\Splash_Giant_02.wav</ShortName>
-					<Path>SFX\Giant\Splash_Giant_02_18D7B901.wem</Path>
+					<Path>SFX\Giant\Splash_Giant_02_9CFC2D83.wem</Path>
 				</File>
 				<File Id="835095255" Language="SFX">
 					<ShortName>NewMort\Para_sfx_newMort_02.wav</ShortName>
-					<Path>SFX\NewMort\Para_sfx_newMort_02_580CDC87.wem</Path>
+					<Path>SFX\NewMort\Para_sfx_newMort_02_718C03C6.wem</Path>
 				</File>
 				<File Id="857787806" Language="SFX">
 					<ShortName>BBCol\Para_BBCol_Wood_02.wav</ShortName>
@@ -482,7 +493,7 @@
 				</File>
 				<File Id="977748934" Language="SFX">
 					<ShortName>Water\High\Para_sfx_Water_high_03.wav</ShortName>
-					<Path>SFX\Water\High\Para_sfx_Water_high_03_971D745A.wem</Path>
+					<Path>SFX\Water\High\Para_sfx_Water_high_03_4A47ACFE.wem</Path>
 				</File>
 				<File Id="1013178876" Language="SFX">
 					<ShortName>Mortar_Sweet\Mortar_sweet_06.wav</ShortName>
@@ -490,7 +501,7 @@
 				</File>
 				<File Id="1019494351" Language="SFX">
 					<ShortName>AdditionalSounds\Pin\Pin_07.wav</ShortName>
-					<Path>SFX\AdditionalSounds\Pin\Pin_07_FD9F38EA.wem</Path>
+					<Path>SFX\AdditionalSounds\Pin\Pin_07_44BD2C4F.wem</Path>
 				</File>
 				<File Id="1033327840" Language="SFX">
 					<ShortName>Balloon\Release\AR_sfx_balloonRelease_05.wav</ShortName>

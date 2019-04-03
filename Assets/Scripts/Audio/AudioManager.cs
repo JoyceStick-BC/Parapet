@@ -10,6 +10,9 @@ public class AudioManager : MonoBehaviour {
     public GameObject ambObj;
     private GameObject multiQuil;
 
+    public bool handleIsInteract = false;
+    private bool handleStarted = false;
+
     private float timeOfQuilCol = 0;
     private int numberOfQuilCol = 0;
 
@@ -282,6 +285,28 @@ public class AudioManager : MonoBehaviour {
     public void PlayButton (GameObject button)
     {
         AkSoundEngine.PostEvent("Play_Para_Button", button);
+    }
+
+    public void TriggerHandle (GameObject handle)
+    {
+        if (handleIsInteract && handleStarted) ResumeHandle(handle);
+        else if (handleIsInteract && !handleStarted) Play_Handle(handle);
+    }
+
+    private void Play_Handle (GameObject handle)
+    {
+        AkSoundEngine.PostEvent("Play_WindUp", handle);
+        handleStarted = true;
+    }
+
+    private void ResumeHandle (GameObject handle)
+    {
+        AkSoundEngine.PostEvent("Resume_Windup", handle);
+    }
+
+    public void Pause_Handle(GameObject handle)
+    {
+        AkSoundEngine.PostEvent("Pause_WindUP", handle);
     }
 
 }

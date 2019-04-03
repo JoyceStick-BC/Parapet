@@ -243,6 +243,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\DestroyAfter10.cs" />
     <Compile Include="Assets\FlyAway.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_AutoStopLoopedEffect.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_New.cs" />
@@ -295,8 +296,10 @@
     <Compile Include="Assets\Scripts\DestroyCam.cs" />
     <Compile Include="Assets\Scripts\Explode.cs" />
     <Compile Include="Assets\Scripts\ExplosionTest.cs" />
+    <Compile Include="Assets\Scripts\JackHalo.cs" />
     <Compile Include="Assets\Scripts\Jackrotate.cs" />
     <Compile Include="Assets\Scripts\MiniCannon.cs" />
+    <Compile Include="Assets\Scripts\ParapetHalo.cs" />
     <Compile Include="Assets\Scripts\PinReset.cs" />
     <Compile Include="Assets\Scripts\PuzzleMgr.cs" />
     <Compile Include="Assets\Scripts\ReleaseBalloons.cs" />

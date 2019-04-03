@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using VRTK;
+
 
 public class Jackrotate : MonoBehaviour {
 
@@ -8,18 +10,34 @@ public class Jackrotate : MonoBehaviour {
     private bool played = false;
     public Animator myAnimationController;
 
+
     private float min;
     private float max;
     private bool goUp = true;
+
 
     // Use this for initialization
     void Start () {
         min = 0;
         max = .1f;
-	}
-	
-	// Update is called once per frame
-	void Update () {
+
+        GetComponent<VRTK_InteractableObject>().InteractableObjectGrabbed += new InteractableObjectEventHandler(Jack_Grabbed);
+        GetComponent<VRTK_InteractableObject>().InteractableObjectUngrabbed += new InteractableObjectEventHandler(Jack_Ungrabbed);
+
+    }
+
+    private void Jack_Grabbed(object sender, InteractableObjectEventArgs e)
+    {
+        AudioManager.Instance.handleIsInteract = true;
+    }
+
+    private void Jack_Ungrabbed(object sender, InteractableObjectEventArgs e)
+    {
+        AudioManager.Instance.handleIsInteract = false;
+    }
+
+    // Update is called once per frame
+    void Update () {
         float x = gameObject.transform.eulerAngles.x;
         float x2 = gameObject.transform.rotation.x;
         //Debug.Log("Euler: " + x);
@@ -37,7 +55,12 @@ public class Jackrotate : MonoBehaviour {
         }
         if (x2 >= min && x2 <= max)
         {
-            Debug.Log("Full rotation");
+            StopAllCoroutines();
+            StartCoroutine(timer());
+            if (!played)
+            {
+                AudioManager.Instance.TriggerHandle(gameObject);
+            }
             count++;
             if(max >= .7)
             {
@@ -61,4 +84,10 @@ public class Jackrotate : MonoBehaviour {
             }
         }
 	}
+
+    IEnumerator timer ()
+    {
+        yield return new WaitForSecondsRealtime(2f);
+        AudioManager.Instance.Pause_Handle(gameObject);
+    }
 }
