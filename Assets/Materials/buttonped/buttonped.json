@@ -33,7 +33,7 @@
         }
     },
     "texturesets": {
-        "Button_Green": {
+        "Button_Silver": {
             "shader": "Main shader"
         },
         "Pedestal": {
